@@ -40,7 +40,7 @@ Amuse with:
 - turn on the TV and give him the remote control ("Finally I can continue watching "How to sell drugs online (fast)". Be quite little human")
 ------------------------------------------------------------------
 
-## **What have to programmed to realize the Project?**
+## **What has to be programmed to realize the Project?**
 - a class to create your own cat. 
 --> the result is, you can't create your own cat, Yoshi decides who he is and how he looks. We are  not on a "Wishconcert" ;)
 - Queries (Abfragen) with prompt to get in the pet properties

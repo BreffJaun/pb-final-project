@@ -13,3 +13,4 @@ class TamaYoshi {
         this.boringLevel = 100;
     }
 }
+
