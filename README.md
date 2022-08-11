@@ -9,9 +9,9 @@ Project Name: "TamaYoshi" --> an Tamagotchi like game (just with a fat cat as yo
 **Hungry: Feed your Pet with delicious food**
 
 Feed with:
-- Tuna
-- Salmon
-- Feed with cheap Cat food from the Supermarket       
+- Tuna ("that makes me full, but not satisfied")
+- Salmon ("delicious")
+- Feed with cheap Cat food from the Supermarket  ("are you Kidding me?")     
 - expensive cat food, "the finest of the finest" ("you may kiss the paw now")
 - a Burger ("lets do it")
 - Lasagne ("let's do the Garfield way")
@@ -28,7 +28,7 @@ Feed with:
 Heal with:
 - stroke the belly ("purr purr....purr it's better now")
 - massage your pet ("yeahh...this point in the neck, yeahh exactly")
-- stroking the head
+- stroking the head (purr purr....don't stop")
 - kiss the paw ("but was also time for this my loyal human")
 
 **Boring: play with....or even better, play for your cat, to amuse him**
@@ -41,7 +41,8 @@ Amuse with:
 ------------------------------------------------------------------
 
 ## **What have to programmed to realize the Project?**
-- a class to create your own cat. --> the result is, you can't create your own cat, Yoshi decides who he is. We are  not on a "Whisconcert" ;)
+- a class to create your own cat. 
+--> the result is, you can't create your own cat, Yoshi decides who he is and how he looks. We are  not on a "Wishconcert" ;)
 - Queries (Abfragen) with prompt to get in the pet properties
 - a countdown to see when the pet is hungry, thirsty, sick, or bored.
 
