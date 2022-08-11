@@ -41,7 +41,7 @@ Amuse with:
 ------------------------------------------------------------------
 
 ## **What have to programmed to realize the Project?**
-- a class to create your own cat.
+- a class to create your own cat. --> the result is, you can't create your own cat, Yoshi decides who he is. We are  not on a "Whisconcert" ;)
 - Queries (Abfragen) with prompt to get in the pet properties
 - a countdown to see when the pet is hungry, thirsty, sick, or bored.
 
