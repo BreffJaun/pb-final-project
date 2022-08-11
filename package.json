@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "name": "pb-final-project",
+  "version": "1.0.0",
+  "description": "JavaScript Modul Final Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BreffJaun/pb-final-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BreffJaun/pb-final-project/issues"
+  },
+  "homepage": "https://github.com/BreffJaun/pb-final-project#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "prompt-sync": "^4.2.0"
+  }
+}
