@@ -7,7 +7,7 @@ Project Name: "TamaYoshi" --> an Tamagotchi like game (just with a fat cat as yo
 -----------------------------------------
 
 ### **Pet Needs**
-##The 4 main needs are 
+## The 4 main needs are 
 1. Hunger 
 2. Thirst
 3. Health
