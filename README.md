@@ -71,8 +71,6 @@ For each need, you have 3 things to choose from to satisfy it. These 3 choices c
 
 **1. Hunger**   
 
-=>  Effect on:   
-
 |   **Name**    |     Tuna     |   Usual Cat food   |   Lasagne   |
 |:-------------:|:------------:|:------------------:|:-----------:|
 |     **+**     |  Hunger: +75 |     Hunger: +50    | Hunger: +25 |
@@ -83,73 +81,31 @@ For each need, you have 3 things to choose from to satisfy it. These 3 choices c
 
 **2. Thirst**   
 
-=>  Effect on:
-
 |   **Name**    |     Water    |        Milk          |  Champagne  |
 |:-------------:|:------------:|:--------------------:|:-----------:|
 |     **+**     |  Thirst: +75 |     Thirst: +50      | Thirst: +25 |
 |     **-**     |  Mood:   -25 |     Mood: -25        | Health: -75 |
 |   **Print**   |  "Go away with the cheap booze.....but thanks loyal human" | "uhh mewow"    | "just a little dropplet for my royal paw" |
 
+------------------------------------------------------------------------
 
-    Thirst: +75;
-    Mood:   -25;
-    Print to console: "Go away with the cheap booze.....but thanks loyal human"
+**3. Health**   
 
-- Water (neutral choice):
-=>  Effect on:
-    Thirst: +50;
-    Mood: -25;
-    Print to console: "uhh mewow"
-
-- Champagne (bad choice)
-=>  Effect on:
-    Thirst: +25;
-    Health: -75;
-    Print to console: "just a little dropplet for my royal paw"
+|   **Name**    |    Massage   |       Stroke       |   Kiss the paw   |
+|:-------------:|:------------:|:------------------:|:----------------:|
+|     **+**     |  Health: +75 |     Health: +50    | Health: +25      |
+|     **-**     |  Hunger: -25 |     Thirst: -25    | Mood: -75        |
+|   **Print**   | "yeahh...this point in the neck, yeahh exactly" | "purr purr....purr it's better now"    | "but was also time for this my loyal human" |
 
 ------------------------------------------------------------------------
 
-**3. Health**
-- Massage your pet (good choice):
-=>  Effect on:
-    Health: +75;
-    Hunger: -25;
-    Print to console: "yeahh...this point in the neck, yeahh exactly"
+**4. Mood**  
 
-- Stroke the belly (neutral choice):
-=>  Effect on:
-    Health: +50;
-    Thirst: -25;
-    Print to console: "purr purr....purr it's better now"
-
-- Kiss the paw (bad choice)
-=>  Effect on:
-    Health: +25;
-    Mood: -75;
-    Print to console: "but was also time for this my loyal human"
-
-------------------------------------------------------------------------
-
-4. Mood
-**4. Mood**
-- Throw a ball (good choice):
-=>  Effect on:
-    Mood: +75;
-    Hunger: -25;
-    Print to console: "do i look like i'm running after it? Run yourself, I am royalty and this is beneath me."
-
-- Dance for your cat (neutral choice):
-=>  Effect on:
-    Mood: +50;
-    Thirst: -25;
-    Print to console: "dance little monkey...dance!"
-
-- Turn on the TV and give your Fluffiness the remote control (bad choice)
-=>  Effect on:
-    Mood: +75;
-    Health: -75;
-    Print to console: "Finally I can continue watching "How to sell drugs online (fast)". Do not disturb me"
+|   **Name**    | Throw a ball | Dance for your cat | Turn on the TV |
+|:-------------:|:------------:|:------------------:|:--------------:|
+|     **+**     |  Mood: +75   |     Mood: +50      | Mood:   +25    |
+|     **-**     |  Hunger: -25 |     Thirst: -25    | Health: -50    |
+|   **Print**   | "that makes me full, but not satisfied" | "dance little monkey...dance!"    | "Finally I can continue watching "How to sell drugs online (fast)". Do not disturb me" |
 
 
 <!-- 
