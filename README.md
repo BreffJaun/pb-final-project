@@ -36,7 +36,7 @@ For each need, you have 3 things to choose from to satisfy it. These 3 choices c
   The following choices are available to select:
 - delicious milk
 - water
-- Prosecco
+- Champagne
 
 **3. Health: Means here more a nervous breakdown or a "meowlife crisis" of his purrriness**   
 
