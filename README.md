@@ -6,8 +6,8 @@ JavaScript Modul Final Project
 Project Name: "TamaYoshi" --> an Tamagotchi like game (just with a fat cat as your pet ;)
 -----------------------------------------
 
-### **Pet Needs**
-## The 4 main needs are 
+## **Pet Needs**
+### The 4 main needs are 
 1. Hunger 
 2. Thirst
 3. Health
