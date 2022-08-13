@@ -85,10 +85,10 @@ For each need, you have 3 things to choose from to satisfy it. These 3 choices c
 
 =>  Effect on:
 
-|   **Name**    |     Water    |      Milk          |  Champagne  |
-|:-------------:|:------------:|:------------------:|:-----------:|
-|     **+**     |  Thirst: +75 |     Thirst: +50    | Thirst: +25 |
-|     **-**     |  Mood:   -25 |     Mood: -25      | Health: -75 |
+|   **Name**    |     Water    |        Milk          |  Champagne  |
+|:-------------:|:------------:|:--------------------:|:-----------:|
+|     **+**     |  Thirst: +75 |     Thirst: +50      | Thirst: +25 |
+|     **-**     |  Mood:   -25 |     Mood: -25        | Health: -75 |
 |   **Print**   |  "Go away with the cheap booze.....but thanks loyal human" | "uhh mewow"    | "just a little dropplet for my royal paw" |
 
 
