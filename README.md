@@ -16,6 +16,12 @@ Project Name: "TamaYoshi" --> an Tamagotchi like game (just with a fat cat as yo
 Explanation:
 You will Start with a set of stats for each of the 4 needs. At the beginning, every need on default is at 100 Points. The needs will reduce over time (getting hungry, thirsty, sick and unhappy).
 
++------------+--------------+-------------+-----------+
+|   Hunger   |    Thirst    |   Health    |   Mood    |
++------------+--------------+-------------------------+
+|    100     |     100      |     100     |    100    |
++------------+--------------+-------------+-----------+
+
 For each need, you have 3 things to choose from to satisfy it. These 3 choices consist of a good, a bad and a neutral one. Every decision also has an impact on the other needs. Note this to satisfy his fluffy highness.
 
 
