@@ -70,12 +70,12 @@ For each need, you have 3 things to choose from to satisfy it. These 3 choices c
 4. Mood
 
 **1. Hunger**
-- Tuna (good choice):
-=>  Effect on:
-    Hunger: +75;
-    Mood:   -25;
-    Print to console: "that makes me full, but not satisfied"
-
+- Tuna (good choice):   
+=>  Effect on:   
+    Hunger: +75;   
+    Mood:   -25;   
+    Print to console: "that makes me full, but not satisfied"   
+    
 - Usual Cat food from the Supermarket (neutral choice):
 =>  Effect on:
     Hunger: +50;
