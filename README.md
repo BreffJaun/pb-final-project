@@ -64,11 +64,6 @@ For each need, you have 3 things to choose from to satisfy it. These 3 choices c
 
 ## **Values and effects of the needs:**
 
-1. Hunger 
-2. Thirst
-3. Health
-4. Mood
-
 **1. Hunger**   
 
 |   **Name**    |     Tuna     |   Usual Cat food   |   Lasagne   |
