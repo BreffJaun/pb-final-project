@@ -24,33 +24,33 @@ You will Start with a set of stats for each of the 4 needs. At the beginning, ev
 For each need, you have 3 things to choose from to satisfy it. These 3 choices consist of a good, a bad and a neutral one. Every decision also has an impact on the other needs. Note this to satisfy his fluffy highness.
 
 
-**1. Hunger: Feed your Pet with a selection of several foods**
-  The following choices are available to select: 
+**1. Hunger: Feed your Pet with a selection of several foods**   
 
-- Tuna ("that makes me full, but not satisfied")
-- Usual Cat food from the Supermarket  ("are you Kidding me?")
-- Lasagne ("let's do the Garfield way, you may kiss the paw now")
-
-**2. Thirst: Quench the thirst of his fluffiness with several drinks**
-  The following choices are available to select: 
-
-- delicious milk ("uhh mewow")
-- water ("Go away with the cheap booze.....but thanks loyal human")
-- Prosecco ("just a little dropplet for my royal paw") 
-
-**3. Health: Means here more a nervous breakdown or a "meowlife crisis" of his purrriness**
   The following choices are available to select:
+- Tuna
+- Usual Cat food from the Supermarket
+- Lasagne
 
-- massage your pet ("yeahh...this point in the neck, yeahh exactly")
-- stroke the belly ("purr purr....purr it's better now")
-- kiss the paw ("but was also time for this my loyal human")
+**2. Thirst: Quench the thirst of his fluffiness with several drinks**   
 
-**4. Mood: play with....or even better, play for your majesty, to amuse him**
   The following choices are available to select:
+- delicious milk
+- water
+- Prosecco
 
-- throw a ball ("do i look like i'm running after it? Run yourself, I am royalty and this is beneath me.")
-- dance for your cat ("dance little monkey...dance!")
-- turn on the TV and give him the remote control ("Finally I can continue watching "How to sell drugs online (fast)". Be quite little human")
+**3. Health: Means here more a nervous breakdown or a "meowlife crisis" of his purrriness**   
+
+  The following choices are available to select:
+- massage your pet
+- stroke the belly
+- kiss the paw
+
+**4. Mood: play with....or even better, play for your majesty, to amuse him**   
+
+  The following choices are available to select:
+- throw a ball
+- dance for your cat
+- turn on the TV and give him the remote control
 ------------------------------------------------------------------
 
 ## **What has to be programmed to realize the Project?**
@@ -87,7 +87,9 @@ For each need, you have 3 things to choose from to satisfy it. These 3 choices c
     Hunger: +25;
     Health: -50;
     Print to console: "let's do the Garfield way, you may kiss the paw now"
+
 ------------------------------------------------------------------------
+
 **2. Thirst**
 - Milk (good choice):
 =>  Effect on:
@@ -106,7 +108,9 @@ For each need, you have 3 things to choose from to satisfy it. These 3 choices c
     Thirst: +25;
     Health: -75;
     Print to console: "just a little dropplet for my royal paw"
+
 ------------------------------------------------------------------------
+
 **3. Health**
 - Massage your pet (good choice):
 =>  Effect on:
@@ -125,7 +129,9 @@ For each need, you have 3 things to choose from to satisfy it. These 3 choices c
     Health: +25;
     Mood: -75;
     Print to console: "but was also time for this my loyal human"
+
 ------------------------------------------------------------------------
+
 4. Mood
 **4. Mood**
 - Throw a ball (good choice):
