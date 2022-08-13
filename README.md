@@ -74,6 +74,7 @@ For each need, you have 3 things to choose from to satisfy it. These 3 choices c
 =>  Effect on:   
     Hunger: +75;   
     Mood:   -25;   
+    
 |   **Name**    |     Tuna     |   Usual Cat food   |   Lasagne   |
 |:-------------:|:------------:|:------------------:|:-----------:|
 |     **+**     |  Hunger: +75 |     Hunger: +50    | Hunger: +25 |
