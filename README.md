@@ -74,8 +74,15 @@ For each need, you have 3 things to choose from to satisfy it. These 3 choices c
 =>  Effect on:   
     Hunger: +75;   
     Mood:   -25;   
-    Print to console: "that makes me full, but not satisfied"   
     
+|   **Name**    |     Tuna     |   Usual Cat food   |   Lasagne   |
+|:-------------:|:------------ |:-------------------|:------------|
+|     **+**     |  Hunger: +75 |     Hunger: +50    | Hunger: +25 |
+|     **-**     |  Mood:   -25 |     Thirst: -25    | Health: -50 |
+
+
+    Print to console: "that makes me full, but not satisfied"   
+
 - Usual Cat food from the Supermarket (neutral choice):
 =>  Effect on:
     Hunger: +50;
