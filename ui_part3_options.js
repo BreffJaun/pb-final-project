@@ -20,6 +20,12 @@ const printLine = () => {
 
 
 
-    console.log(printDots());
+console.log(printDots());
 console.log(printOptions());
 console.log(printLine());
+
+
+
+export {printComment};
+
+console.log(printComment(36));

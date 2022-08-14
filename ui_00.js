@@ -1,3 +1,3 @@
-import {printComment} from "./ui_part2_comments";
+import {  } from "ui_part2_comments";
 
 console.log(printComment(36));
