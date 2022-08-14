@@ -1,4 +1,4 @@
-console.log(`
+console.log(`vers1
 
     { FOOD }            { DRINKS }         { ACTIVITIES }          { HAPPYNESS }
 
@@ -13,7 +13,7 @@ console.log(`
 
 
 
-console.log(`
+console.log(`vers2
 
     FOOD >>             F1 = Tuna           F2 = Canned Food    F3 = Lasagne          
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -27,7 +27,7 @@ console.log(`
 `);
 
 
-console.log(`
+console.log(`vers3
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
