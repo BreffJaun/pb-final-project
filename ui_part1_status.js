@@ -3,7 +3,7 @@ const printLine = () => {
 };
 
 
-const printHappyness = (happy, health) => {
+const printHappyness = ( happy, health ) => {
     let print = "";
     for (let i = 0; i < 50; i++) {
         if (i <= happy/2) {
@@ -44,8 +44,11 @@ const printHealth = (health) => {
 
 
 
-console.log(printLine());
-console.log(printHappyness(52));
-console.log(printActivity(19));
-console.log(printHealth(89));
+function printStatus ( happyness, activity, health ) {
+    console.log(printLine());
+    console.log(printHappyness( happyness, health));
+    console.log(printActivity( activity ));
+    console.log(printHealth( health ));
+}
 
+printStatus (52, 19, 86);

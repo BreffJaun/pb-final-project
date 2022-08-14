@@ -1,9 +1,3 @@
-const printDots = () => {
-    return `\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -`
-};
-
-
-
 const printOptions = () => {
     return`
     FOOD                   DRINKS                 ACTIVITIES             HAPPYNESS
@@ -13,19 +7,17 @@ const printOptions = () => {
     { F3 } Lasagne         { F6 } Champagne       { F9 } Massage         { F12 } xxxxx`};
 
 
-
 const printLine = () => {
     return `\n===============================================================================================\n`
 };
 
 
 
-console.log(printDots());
-console.log(printOptions());
-console.log(printLine());
+
+function printMenu  () {
+    console.log(printOptions());
+    console.log(printLine());
+}
 
 
-
-export {printComment};
-
-console.log(printComment(36));
+printMenu ();

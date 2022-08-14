@@ -1,4 +1,4 @@
-const printCommentsHealth = (health) => {
+const printCommentsHealth = ( health ) => {
 
     if ( health <= 0) {
         return `    "YOU ARE FIRED!"`;

@@ -1,4 +1,4 @@
-const printCommentsActivities = (activities) => {
+const printCommentsActivities = ( activities ) => {
 
     if ( activities <= 0 ) {
         return `    "0xxxxxxxxxxxxxxxxxxxxxx"`;
@@ -24,4 +24,6 @@ const printCommentsActivities = (activities) => {
 }
 
 console.log(printCommentsActivities(36));
+
+
 

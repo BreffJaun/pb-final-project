@@ -1,4 +1,4 @@
-const printCommentsFood = (food) => {
+const printCommentsFood = ( food ) => {
 
     if ( food <= 0 ) {
         return `    "0xxxxxxxxxxxxxxxxxxxxxx"`;

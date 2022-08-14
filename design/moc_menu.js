@@ -45,7 +45,6 @@ console.log(`vers3
 
 
 
-
 console.log(`
 
     FOOD               DRINKS                ACTIVITIES              HAPPYNESS
