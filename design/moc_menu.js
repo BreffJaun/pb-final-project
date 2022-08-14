@@ -1,12 +1,12 @@
 console.log(`vers1
 
-    { FOOD }            { DRINKS }         { ACTIVITIES }          { HAPPYNESS }
+    { FOOD }              { DRINKS }          { ACTIVITIES }          { HAPPYNESS }
 
-    F1 = tuna           F4 = Water          F7 = safari             F10 =
-    F2 = canned food    F5 = milk           F8 = couch surfing      F11 =
-    F3 = lasagne        F6 = champagne      F9 = massage            F12 =
+    F1 = tuna             F4 = Water          F7 = safari             F10 =
+    F2 = canned food      F5 = milk           F8 = couch surfing      F11 =
+    F3 = lasagne          F6 = champagne      F9 = massage            F12 =
 
-=========================================================================================
+    ==============================================================================================
 
 `);
 
@@ -22,7 +22,7 @@ console.log(`vers2
     ACTIVITIES >>       F7 = Safari         F8 = Couch Surfing  F9 = Massage
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -   
     HAPPYNESS >>        F10 =               F11 =               F12 = 
-=========================================================================================
+    ==============================================================================================
 
 `);
 
@@ -37,7 +37,7 @@ console.log(`vers3
     { F2 } Canned food    { F5 } Milk         { F8 } Couch surfing    { F11 } xxxxx
     { F3 } Lasagne        { F6 } Champagne    { F9 } Massage          { F12 } xxxxx
 
-=========================================================================================
+    ==============================================================================================
 
 `);
 
@@ -54,6 +54,6 @@ console.log(`
     { F2 } Cat Food    { F5 } Milk           { F8 } Couch Surfing    { F11 } xxxxx
     { F3 } Lasagne     { F6 } Champagne      { F9 } Massage          { F12 } xxxxx
 
-=========================================================================================
+==============================================================================================
 
 `);

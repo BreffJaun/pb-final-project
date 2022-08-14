@@ -1,5 +1,5 @@
 const printLine = () => {
-    return `\n==============================================================================================\n`
+    return `\n===============================================================================================\n`
 };
 
 
@@ -16,8 +16,6 @@ const printHappyness = (happy, health) => {
 };
 
 
-
-
 const printActivity = (activ) => {
     let print = "";
     for (let i = 0; i < 50; i++) {
@@ -29,8 +27,6 @@ const printActivity = (activ) => {
     }
     return `    Activity:   ${print}     |    ----V----`
 };
-
-
 
 
 const printHealth = (health) => {
