@@ -41,22 +41,106 @@ const repeatIt = () => { console.log('Hello again'); };
 
 // ERSTER TEST MIT EINEM COUNTER
 
+// TIMER //
+
+// CREATION OF THE 4 NEEDS AND THEIR BASIC VALUES
 let health = 100;
 let mood = 100;
 let hunger = 100;
 let thirst = 100;
+
+// NEEDS INTERFACE
+const printLine = () => {
+    return `\n===============================================================================================\n`
+};
+
+const printMood = ( mood, health ) => {
+    let print = "";
+    for (let i = 0; i < 50; i++) {
+        if (i <= mood/2) {
+            print = print.concat(`●`)
+        } else {
+            print = print + `.`
+        };
+    }
+    return `    Mood:     ${print}     |    ${health} / 100  `
+};
+
+
+const printHunger = (hunger) => {
+    let print = "";
+    for (let i = 0; i < 50; i++) {
+        if (i <= hunger/2) {
+            print = print.concat(`●`)
+        } else {
+            print = print + `.`
+        };
+    }
+    return `    Hunger:   ${print}     |    ----V----`
+};
+
+const printThirst = (thirst) => {
+    let print = "";
+    for (let i = 0; i < 50; i++) {
+        if (i <= thirst/2) {
+            print = print.concat(`●`)
+        } else {
+            print = print + `.`
+        };
+    }
+    return `    Thirst:   ${print}     |     HEALTH \n`
+};
+
+function printStatus ( mood, hunger, thirst, health ) {
+    console.log(printLine());
+    console.log(printMood( mood, health));
+    console.log(printHunger( hunger ));
+    console.log(printThirst( thirst ));
+};
+
+// CAT PRINT OUTPUT FIELD
+const catPrintOutputField = `
+----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+`;
+
+// USER MENU INTERFACE
+const menuInterface = `
+FOOD                   DRINKS                 ACTIVITIES             HAPPYNESS
+-----------------      -----------------      -----------------      -----------------
+{ F1 } Tuna            { F4 } Water           { F7 } Safari          { F10 } xxxxx
+{ F2 } Cat Food        { F5 } Milk            { F8 } Couch Surfing   { F11 } xxxxx
+{ F3 } Lasagne         { F6 } Champagne       { F9 } Massage         { F12 } xxxxx
+`;
+
 let countdownForNeeds = () => { 
     // to clear the console on every execution
     console.clear();
     // each need is decreased by 1 for each execution
     health-- && mood-- && hunger-- && thirst--;
     // print the currant status of needs in the console 
-    console.log(`Health: ${health}`);
-    console.log(`Mood:   ${mood}`);
-    console.log(`Hunger: ${hunger}`);
-    console.log(`Thirst: ${thirst}`);
+    console.log();
+    // console.log(`HEALTH: ${health}`);
+    // console.log(`MOOD:   ${mood}`);
+    // console.log(`HUNGER: ${hunger}`);
+    // console.log(`THIRST: ${thirst}`);
+    printStatus (mood, hunger, health, thirst);
 
-    // DETERMINE THE WARNINGS 
+    // DETERMINE THE WARNINGS OF THE 4 NEEDS //
     // HEALTH
     health <= 75 && health > 50 ? console.log('I need a curd mask...with cucumber slices for my eyes!') :
     health <= 50 && health > 25 ? console.log('I need a spa right away') :
@@ -95,8 +179,10 @@ let countdownForNeeds = () => {
         console.log('You dont care enough about my thirst. YOU ARE FIRED! ! !');
         clearInterval(countdownMain);
     }
+    console.log(catPrintOutputField);
+    console.log(menuInterface);
 };
-// SET THE DIFFICULTY LEVELS
+// SET THE DIFFICULTY LEVELS //
 // DIFFICULTY ARRAY OF OBJECTS
 const difficulty = [
     { Footmen: 1000 },   // => Hausdiener
@@ -124,11 +210,3 @@ const setDifficulty = () => {
 setDifficulty();
 
 const countdownMain = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])); 
-
-// const changeTheNeeds = () => {
-//     const queryTheDifficulty = prompt(`Choose your difficulty level: `);
-//     console.log(`You have chosen the ${chalk.bold(Object.keys(difficulty[queryTheDifficulty - 1]))} difficulty. Good Luck, you'll need it!`);
-//     const catchTheNum = queryTheDifficulty-1;
-//     catchTheNumArr.push(catchTheNum);
-// };
-// changeTheNeeds();
