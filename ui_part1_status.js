@@ -1,9 +1,13 @@
-const printLine = () => {
-    return `\n===============================================================================================\n`
+const printHeadLine = () => {
+    return`
+                                    ●-=========xXx=========-●
+==================================-●  " t a m a Y O S H I "  ●-==================================
+                                    ●-=========xXx=========-●
+`
 };
 
 
-const printHappyness = ( happy, health ) => {
+const printHappyness = ( happy ) => {
     let print = "";
     for (let i = 0; i < 50; i++) {
         if (i <= happy/2) {
@@ -12,43 +16,60 @@ const printHappyness = ( happy, health ) => {
             print = print + `.`
         };
     }
-    return `    Happyness:  ${print}     |     ${health} / 100  `
+    return `     Happyness: ${print}      ●-=======xXx=======-●`
 };
 
 
-const printActivity = (activ) => {
+const printActivity = ( activity ) => {
     let print = "";
     for (let i = 0; i < 50; i++) {
-        if (i <= activ/2) {
+        if (i <= activity/2) {
             print = print.concat(`●`)
         } else {
             print = print + `.`
         };
     }
-    return `    Activity:   ${print}     |    ----V----`
+    return `      Activity: ${print}      |    H E A L T H    |`
 };
 
 
-const printHealth = (health) => {
+const printThurst = ( thurst, health ) => {
     let print = "";
     for (let i = 0; i < 50; i++) {
-        if (i <= health/2) {
+        if (i <= thurst/2) {
             print = print.concat(`●`)
         } else {
             print = print + `.`
         };
     }
-    return `    Health:     ${print}     |     HEALTH \n`
+    return `        Thurst: ${print}      |    ${health} von 100     |`
+};
+
+
+const printHunger = (hunger) => {
+    let print = "";
+    for (let i = 0; i < 50; i++) {
+        if (i <= hunger/2) {
+            print = print.concat(`●`)
+        } else {
+            print = print + `.`
+        };
+    }
+    return `        Hunger: ${print}      ●-=======xXx=======-●\n`
 };
 
 
 
 
-function printStatus ( happyness, activity, health ) {
-    console.log(printLine());
-    console.log(printHappyness( happyness, health));
+
+
+
+function printStatus ( happyness, activity, thurst, hunger, health ) {
+    console.log(printHeadLine());
+    console.log(printHappyness( happyness));
     console.log(printActivity( activity ));
-    console.log(printHealth( health ));
+    console.log(printThurst( thurst, health ));
+    console.log(printHunger( hunger ));
 }
 
-printStatus (52, 19, 86);
+printStatus (10, 40, 80, 90, 50);

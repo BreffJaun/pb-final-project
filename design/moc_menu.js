@@ -27,9 +27,9 @@ console.log(`vers2
 `);
 
 
-console.log(`vers3
 
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+console.log(`vers3
 
     F O O D               D R I N K S         A C T I V I T I E S     H A P P Y N E S S
 
@@ -37,7 +37,7 @@ console.log(`vers3
     { F2 } Canned food    { F5 } Milk         { F8 } Couch surfing    { F11 } xxxxx
     { F3 } Lasagne        { F6 } Champagne    { F9 } Massage          { F12 } xxxxx
 
-    ==============================================================================================
+==============================================================================================
 
 `);
 

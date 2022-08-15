@@ -7,16 +7,14 @@ const printOptions = () => {
     { F3 } Lasagne         { F6 } Champagne       { F9 } Massage         { F12 } xxxxx`};
 
 
-const printLine = () => {
-    return `\n===============================================================================================\n`
+const printStyleLine = () => {
+    return `\n==================================-●-=========xXx=========-●-==================================`
 };
-
-
 
 
 function printMenu  () {
     console.log(printOptions());
-    console.log(printLine());
+    console.log(printStyleLine());
 }
 
 
