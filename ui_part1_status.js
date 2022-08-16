@@ -16,7 +16,7 @@ const printHappyness = ( happy ) => {
             print = print + `.`
         };
     }
-    return `     Happyness: ${print}      ●-=======xXx=======-●`
+    return `          Food: ${print}      ●-=======xXx=======-●`
 };
 
 
@@ -29,7 +29,7 @@ const printActivity = ( activity ) => {
             print = print + `.`
         };
     }
-    return `      Activity: ${print}      |    H E A L T H    |`
+    return `        Drinks: ${print}      |    H E A L T H    |`
 };
 
 
@@ -42,7 +42,7 @@ const printThurst = ( thurst, health ) => {
             print = print + `.`
         };
     }
-    return `        Thurst: ${print}      |    ${health} von 100     |`
+    return `          Mood: ${print}      |    ${health} von 100     |`
 };
 
 
