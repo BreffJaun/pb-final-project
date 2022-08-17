@@ -36,7 +36,7 @@ let countdownForNeeds = () => {
     console.log();       
     printStatus ( yoshi.food, yoshi.drink, yoshi.mood, yoshi.health ); 
 
-    console.log(printCatNormal())
+    console.log(printCat())
     // DETERMINE THE WARNINGS OF THE 4 NEEDS //
     // HEALTH
     health <= 75 && health > 50 ? console.log('     I need a curd mask...with cucumber slices for my eyes!') :
