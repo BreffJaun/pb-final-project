@@ -2,10 +2,7 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync({eot: true});
 import chalk from 'chalk';
-// ----------------------------
-
 // =========================================================
-// TIMER TEST AREA //
 
 /* CONVERSION TABLE 
 1000 ms     = 1 s
@@ -13,33 +10,7 @@ import chalk from 'chalk';
 100000 ms   = 100 s = 1 m 40 s // => The time span we need for the game
 */
 
-// VARIABLES / FUNCTIONS
-
-function repeatIt2() {
-    console.log('Hello again 2');;
-}
-
-const repeatIt = () => { console.log('Hello again'); };
-
 // ===================================================================
-
-// ERSTE TESTS MIT setTimeout()
-// const test1 = setTimeout(function () { repeatIt() }, 1000);
-// const test2 = setTimeout(function () { repeatIt2() }, 3000);
-// clearTimeout(test1);
-// clearTimeout(test2);
-
-// ===================================================================
-
-// ERSTE TESTS MIT setInterval()
-// const test3 = setInterval(function () { repeatIt() }, 1000);
-// const test4 = setInterval(function () { repeatIt2() }, 3000);
-// clearInterval(test3);
-// clearInterval(test4);
-
-// ===================================================================
-
-// ERSTER TEST MIT EINEM COUNTER
 
 // TIMER //
 
@@ -153,17 +124,15 @@ FOOD                   DRINKS                 ACTIVITIES             HAPPYNESS
 let countdownForNeeds = () => { 
     // to clear the console on every execution
     console.clear();
+    
     // each need is decreased by 1 for each execution
     health-- && mood-- && hunger-- && thirst--;
+
     // print the currant status of needs in the console 
     console.log();
-    // console.log(`HEALTH: ${health}`);
-    // console.log(`MOOD:   ${mood}`);
-    // console.log(`HUNGER: ${hunger}`);
-    // console.log(`THIRST: ${thirst}`);
     console.log(printHeadLine);
     printStatus (mood, hunger, health, thirst);
-
+    
     // DETERMINE THE WARNINGS OF THE 4 NEEDS //
     // HEALTH
     health <= 75 && health > 50 ? console.log('I need a curd mask...with cucumber slices for my eyes!') :
@@ -209,9 +178,9 @@ let countdownForNeeds = () => {
 // SET THE DIFFICULTY LEVELS //
 // DIFFICULTY ARRAY OF OBJECTS
 const difficulty = [
-    { Footmen: 1000 },   // => Hausdiener
-    { Valet: 500 },      // => Kammerdiener
-    { Butler: 250 },     // => (Chef-) Diener
+    { Footmen: 2000 },   // => Hausdiener
+    { Valet: 1000 },     // => Kammerdiener
+    { Butler: 500 },     // => (Chef-) Diener
 ];
 
 // DIFFICULTY TERMINAL TEXT
@@ -234,3 +203,4 @@ const setDifficulty = () => {
 setDifficulty();
 
 const countdownMain = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])); 
+
