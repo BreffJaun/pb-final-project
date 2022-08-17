@@ -110,19 +110,21 @@ const printCatHate = () => {
 `};
 
 
-
-
-
-
-export default printCatNormal;
-
-function printCat ( health ) {
-  if ( health > 95){
-    printCatHappy();
-  } else if ( health < 1)  {
-
+function printCat ( yoshi ) {
+  if ( yoshi.health > 90){
+    return printCatHappy();
+  } else if ( yoshi.health > 60 ) {
+    return printCatNormal();
+  } else if ( yoshi.health > 35) {
+    return printCatBored()
+  } else if ( yoshi.health > 10) {
+    return printCatAngry()
+  } else if ( yoshi.health > 0 ) {
+    return printCatHate()
   }
 }
+
+export default printCat;
 
 
 
