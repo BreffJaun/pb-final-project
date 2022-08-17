@@ -19,3 +19,5 @@ function printMenu  () {
 
 
 printMenu ();
+
+export default printMenu;
