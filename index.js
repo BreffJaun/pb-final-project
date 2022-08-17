@@ -16,3 +16,4 @@ class TamaYoshi {
 
 // funktionen zum print vom User Interface
 import frageSeiten from './ui.js'
+
