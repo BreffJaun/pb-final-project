@@ -119,4 +119,4 @@ const countdownMain = setInterval(function () { countdownForNeeds() }, Object.va
 let modus = Object.keys(difficulty[catchTheNumArr]).join("");
 console.log(yoshi);
 
-export default 
+export default yoshi 
