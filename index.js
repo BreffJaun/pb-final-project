@@ -2,7 +2,6 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 import chalk from 'chalk';
-import printHeadline from './ui1_header.js'; 
 import printStatus from './ui1_header.js';
 import printMenu from './ui3_footer.js'
 import printCatNormal from './ui2_body.js'
@@ -20,6 +19,7 @@ const yoshi = {
     food : 100,
     drink : 100,
     mood : 100,
+    health : 100
 }
 
 let countdownForNeeds = () => { 
@@ -27,8 +27,7 @@ let countdownForNeeds = () => {
     console.clear();
     let food = yoshi.food 
     let drink = yoshi.drink
-    let mood = yoshi.mood 
-    let health = yoshi.health   
+    let mood = yoshi.mood       
     // each need is decreased by 1 for each execution
 
     yoshi.food -= 1
@@ -118,4 +117,6 @@ setDifficulty();
 
 const countdownMain = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])); 
 let modus = Object.keys(difficulty[catchTheNumArr]).join("");
+console.log(yoshi);
 
+export default 
