@@ -17,8 +17,8 @@ import chalk from 'chalk';
 // CREATION OF THE 4 NEEDS AND THEIR BASIC VALUES
 let health = 100;
 let mood = 100;
-let hunger = 100;
-let thirst = 100;
+let food = 100;
+let drink = 100;
 
 // HEADER
 const printHeadLine = 
@@ -48,36 +48,36 @@ const printMood = ( mood ) => {
 };
 
 
-const printHunger = (hunger) => {
+const printfood = (food) => {
     let print = "";
     for (let i = 0; i < 50; i++) {
-        if (i <= hunger / 2) {
+        if (i <= food / 2) {
             print = print.concat(`●`)
         } else {
             print = print + `.`
         };
     }
-    return `    Hunger:   ${print}      |    H E A L T H    |`
+    return `    food:   ${print}      |    H E A L T H    |`
 };
 
-const printThirst = (thirst) => {
+const printdrink = (drink) => {
     let print = "";
     for (let i = 0; i < 50; i++) {
-        if (i <= thirst/2) {
+        if (i <= drink/2) {
             print = print.concat(`●`)
         } else {
             print = print + `.`
         };
     }
-    return `    Thirst:   ${print}      |    ${health} von 100     |`
+    return `    drink:   ${print}      |    ${health} von 100     |`
 };
 
 
-function printStatus ( mood, hunger, thirst) {
+function printStatus ( mood, food, drink) {
     console.log(printLine());
     console.log(printMood( mood));
-    console.log(printHunger( hunger ));
-    console.log(printThirst(thirst));
+    console.log(printfood( food ));
+    console.log(printdrink(drink));
     
 };
 
@@ -117,14 +117,14 @@ let countdownForNeeds = () => {
     // each need is decreased by 1 for each execution
 
     mood -= 2
-    hunger -= 1
-    thirst -= 4
-    health = ((mood + hunger + thirst) / 3).toFixed()
+    food -= 1
+    drink -= 4
+    health = ((mood + food + drink) / 3).toFixed()
 
     // print the currant status of needs in the console 
     console.log();
     console.log(printHeadLine);
-    printStatus (mood, hunger, health, thirst);
+    printStatus (mood, food, health, drink);
     
     // DETERMINE THE WARNINGS OF THE 4 NEEDS //
     // HEALTH
@@ -137,15 +137,15 @@ let countdownForNeeds = () => {
     mood <= 60 && mood > 30 ? console.log('Hello...i am hungry!') : 
     mood <= 30 ? console.log('Where is the jester?') : console.log();
     
-    // HUNGER
-    hunger <= 80 && hunger > 55 ? console.log('Feed me!') :
-    hunger <= 55 && hunger > 35 ? console.log('I am bored...just a reminder') :
-    hunger <= 35 ? console.log('I can see my paws after a long time, so TIME TO FEED ME NOW!') : console.log();
+    // food
+    food <= 80 && food > 55 ? console.log('Feed me!') :
+    food <= 55 && food > 35 ? console.log('I am bored...just a reminder') :
+    food <= 35 ? console.log('I can see my paws after a long time, so TIME TO FEED ME NOW!') : console.log();
     
-    // THIRST
-    thirst <= 70 && thirst > 45 ? console.log('Give me something to drink') :
-    thirst <= 45 && thirst > 20 ? console.log('My delicate royal lips are a little too dry') :
-    thirst <= 20 ? console.log('I dehydrate....I already see flying mices') : console.log();
+    // drink
+    drink <= 70 && drink > 45 ? console.log('Give me something to drink') :
+    drink <= 45 && drink > 20 ? console.log('My delicate royal lips are a little too dry') :
+    drink <= 20 ? console.log('I dehydrate....I already see flying mices') : console.log();
 
     // BREAK COMMAND => only works with if-else, not with ternary!
     if (health <= 0) {
@@ -156,13 +156,13 @@ let countdownForNeeds = () => {
         console.clear();
         console.log('You dont care enough about my mood. YOU ARE FIRED! ! !');
         clearInterval(countdownMain);
-    } else if (hunger <= 0) {
+    } else if (food <= 0) {
         console.clear();
-        console.log('You dont care enough about my hunger. YOU ARE FIRED! ! !');
+        console.log('You dont care enough about my food. YOU ARE FIRED! ! !');
         clearInterval(countdownMain);
-    } else if (thirst <= 0) {
+    } else if (drink <= 0) {
         console.clear();
-        console.log('You dont care enough about my thirst. YOU ARE FIRED! ! !');
+        console.log('You dont care enough about my drink. YOU ARE FIRED! ! !');
         clearInterval(countdownMain);
     }
     console.log(catPrintOutputField);
