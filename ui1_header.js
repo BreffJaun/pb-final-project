@@ -30,7 +30,7 @@ const printDrinks = ( drinks, health ) => {
             print = print + `.`
         };
     }
-    return `    Drinks:   ${print}    |         ${health} %        |`
+    return `    Drinks:   ${print}    |         ${health.tofixed()} %        |`
 };
 
 
