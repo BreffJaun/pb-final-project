@@ -7,30 +7,58 @@ import printMenu from './ui3_footer.js'
 import printCat from './ui2_body.js'
 
 let time = 0;
-let services = 0;
-
+let services = 0
 const yoshi = {    
     name : 'Yoshi',
     food : 100,
     drink : 100,
     mood : 100,
     health : 100,
+
     feedTuna(){
-        this.food += 20
+        this.food += 18
+        this.mood += 5
+        services++
+    },
+    feedCatfood(){
+        this.food += 10
+        this.mood -= 5
+        services++
+    },
+    feedLasagne(){
+        this.food += 25
         this.mood += 10
         services++
-    },   
-    drinkWater(){
-        this.drink += 20
-        this.mood -= 10
-        services++
+    },  
 
+    drinkWater(){
+        this.drink += 25
+        this.mood -= 4
+        services++
     },
+    drinkMilk(){
+        this.drink += 18
+        this.mood += 4
+        services++
+    },
+    drinkChampagne(){
+        this.drink += 10
+        this.mood += 10
+        services++
+    },
+
     turnOnTv(){
+        this.mood += 12        
+        services++
+    },
+    dance(){
+        this.mood += 25        
+        services++
+    },
+    strokeBelly(){
         this.mood += 20        
         services++
     }
-
 }
 
 let countdownForNeeds = () => { 
@@ -42,9 +70,9 @@ let countdownForNeeds = () => {
     let health = yoshi.health  
 
 
-    yoshi.food -= 1
-    yoshi.drink -= 3    
-    yoshi.mood -= 2;
+    yoshi.food -= 2;
+    yoshi.drink -= 4;    
+    yoshi.mood -= 3;
     yoshi.health = ((yoshi.food + yoshi.drink + yoshi.mood) / 3).toFixed() 
 
     // print the currant status of needs in the console  
@@ -55,7 +83,7 @@ let countdownForNeeds = () => {
     // INTERACTION 
         const interact = () =>{
            printMenu ();
-           const interaction = prompt("Type 1 - 9 for Interaction  ")             
+           const interaction = prompt("Help me M0therfuc3r  ")             
             if (interaction === "1"){                
                 yoshi.feedTuna()                   
             }if (interaction === "2"){                
@@ -84,9 +112,10 @@ let countdownForNeeds = () => {
         console.log('     I need a curd mask...with cucumber slices for my eyes!')        
         interact()
     }else if (health <= 50 && health > 40){
-    console.log('     I need a spa right away')
-    } else if(health <= 25 ){
-     console.log('     I feel dizzy....catch me up')
+        console.log('     I need a spa right away')
+        interact()
+    }else if(health <= 25 ){
+        console.log('     I feel dizzy....catch me up')
     }else {
         console.log();
     }
@@ -136,7 +165,7 @@ let countdownForNeeds = () => {
 };
 
 const difficulty = [
-    { Footmen: 4000 },   // => Hausdiener
+    { Footmen: 4500 },   // => Hausdiener
     { Valet: 3000 },     // => Kammerdiener
     { Butler: 500 },     // => (Chef-) Diener
 ];
