@@ -1,29 +1,30 @@
 console.log(`
-                                    ●-=========xXx=========-●
-==================================-●  " t a m a Y O S H I "  ●-==================================
-                                    ●-=========xXx=========-●
+                                   ●-=========xXx=========-●
+=================================-●  " t a m a Y O S H I "  ●-==================================
+                                   ●-=========xXx=========-●
                                                                      ●-========xXx========-● 
       Food:    ●●●●●●●●●●●●●●●●●●●...............................    |  -= H E A L T H =-  |
     Drinks:    ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●.................    |         78 %        |
       Mood:    ●●●●●●●●●.........................................    ●-========xXx========-●
 
-           X                                   X           _xXXXXx_              
-           XX     __-xxxXXXXXXXXXXXxxx-__     XX         xX-      -Xx             
-           X XX_xX                       Xx_XX X        X-          -X           Game-Mode:
-           X   >                           <   X        X-           -X          easy
-           X        _xXXXx       xXXXx_        X         XXx-         -X              
-           X      X        X   X        X      X            X-        -X        -====xXx====-
-           X     X         |   |         X     XXXxx__       X-       -X          
-           X     |     (●) |   | (●)     |     X       Xx    X-       -X         Play-Time:   
-            X    X         X   X         x     X         XX-X-       -X          08:16 min
-            xX     >=--=<X   ▼   x>=--=<      Xx_          Xx-     -xX           
-          X  XX         ===> Y <===          XX  X-        X-   -xXX            -====xXx====-
-         X    XXx        (___|___)        xXX     X-       X_xxXX-               
-          X       XXx     V     V       xXX       X-       X                     Decisions:             
-           Xx       XXXx=-------==xxXXX        xXX_____xXX                       112                   
-            XXXXXxxxx___________________xxXXXXX-                                 
-
-                           "Your highness approves of your services!"                           
+           X-_                                   X  
+           XX  -_ _-=-vvvVVVVVVVVVVvvv=-_     XX            _=vVVVv=_         -= G A M E =- 
+           X Xv_xX                       Xx_vX X           x         X       ●-====xXx====-●
+           X   >                           <   X          X-         -X      |             |  
+           X        =vVVv=       =vVVv=        X          Xx-         -X     |  Mode:      |
+           X      X        X   X        X      X            X-        -X     |  easy       |
+           X     X         |   |         X     XXXxx=_       X-       -X     >  ---------  <
+           X     |     (●) |   | (●)     |     X       Xx    X-       -X     |  Time:      |
+            X    X         X   X         x     X         XX-X-       -X      |  08:16 min  |
+            xX     >=--=<X   ▼   x>=--=<      Xx_          Xx-     -xX       >  ---------  <
+          X  XX         ===> Y <===          XX  X-        X-   -xXX         |  Services:  |
+         X    XXx        (___|___)        xXX     X-       X_xxXX-           |  121        |
+          X       XXx     V     V       xXX       X-       X                 |             |           
+           Xx-_      XXXx=-------==xxXXX     _-xXX_____=xXX                  ●-====xXx====-●      
+               -XXxxx=________________=xxXXX-         vVVv                       
+                vVVv                   vVVv
+                           "Your highness approves of your services!" 
+                          
 
          -= F O O D =-                  -= D R I N K S =-                  -= M O O D =-       
     ●-========xXx========-●          ●-========xXx========-●          ●-========xXx========-●
@@ -31,10 +32,36 @@ console.log(`
       { 2 } xxxxxxxxxxxxx              { 5 } xxxxxxxxxxxxx              { 8 } xxxxxxxxxxxxx
       { 3 } xxxxxxxxxxxxx              { 6 } xxxxxxxxxxxxx              { 9 } xxxxxxxxxxxxx
 
-=================================================================================================
+================================================================================================
 `);
 
 
+
+
+/*
+.-.
+                      |_:_|
+                     /(_Y_)\
+.                   ( \/M\/ )
+ '.               _.'-/'-'\-'._
+   ':           _/.--'[[[[]'--.\_
+     ':        /_'  : |::"| :  '.\
+       ':     //   ./ |oUU| \.'  :\
+         ':  _:'..' \_|___|_/ :   :|
+           ':.  .'  |_[___]_|  :.':\
+            [::\ |  :  | |  :   ; : \
+             '-'   \/'.| |.' \  .;.' |
+             |\_    \  '-'   :       |
+             |  \    \ .:    :   |   |
+             |   \    | '.   :    \  |
+             /       \   :. .;       |
+            /     |   |  :__/     :  \\
+           |  |   |    \:   | \   |   ||
+          /    \  : :  |:   /  |__|   /|
+      snd |     : : :_/_|  /'._\  '--|_\
+          /___.-/_|-'   \  \
+                         '-'
+*/
 
 
 // console.log(`

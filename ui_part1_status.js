@@ -63,7 +63,6 @@ const printHunger = (hunger) => {
 
 
 
-
 function printStatus ( happyness, activity, thurst, hunger, health ) {
     console.log(printHeadLine());
     console.log(printHappyness( happyness));
@@ -73,3 +72,8 @@ function printStatus ( happyness, activity, thurst, hunger, health ) {
 }
 
 printStatus (10, 40, 80, 90, 50);
+
+
+
+
+export default printStatus; 
