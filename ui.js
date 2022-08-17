@@ -20,6 +20,8 @@ import printMenu from './ui3_footer.js'
 
 printMenu ();
 
+export default ui.js
+
 
 
 
