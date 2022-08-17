@@ -78,7 +78,6 @@ function printStatus ( mood, hunger, thirst) {
     console.log(printMood( mood));
     console.log(printHunger( hunger ));
     console.log(printThirst(thirst));
-    
 };
 
 // CAT PRINT OUTPUT FIELD
