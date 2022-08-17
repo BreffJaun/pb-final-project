@@ -49,6 +49,16 @@ let mood = 100;
 let hunger = 100;
 let thirst = 100;
 
+// HEADER
+const printHeadLine = 
+`
+                                    ●-=========xXx=========-●
+==================================-●  " t a m a Y O S H I "  ●-==================================
+                                    ●-=========xXx=========-●
+`
+;
+
+
 // NEEDS INTERFACE
 const printLine = () => {
     return `\n===============================================================================================\n`
@@ -63,7 +73,7 @@ const printMood = ( mood, health ) => {
             print = print + `.`
         };
     }
-    return `    Mood:     ${print}     |    ${health} / 100  `
+    return `    Mood:     ${print}      ●-=======xXx=======-●`
 };
 
 
@@ -76,7 +86,7 @@ const printHunger = (hunger) => {
             print = print + `.`
         };
     }
-    return `    Hunger:   ${print}     |    ----V----`
+    return `    Hunger:   ${print}      |    H E A L T H    |`
 };
 
 const printThirst = (thirst) => {
@@ -88,14 +98,27 @@ const printThirst = (thirst) => {
             print = print + `.`
         };
     }
-    return `    Thirst:   ${print}     |     HEALTH \n`
+    return `    Thirst:   ${print}      |    ${health} von 100     |`
+};
+
+const printHealth = (health) => {
+    let print = "";
+    for (let i = 0; i < 50; i++) {
+        if (i <= thirst/2) {
+            print = print.concat(`●`)
+        } else {
+            print = print + `.`
+        };
+    }
+    return `    Health:   ${print}      ●-=======xXx=======-●\n`
 };
 
 function printStatus ( mood, hunger, thirst, health ) {
     console.log(printLine());
     console.log(printMood( mood, health));
     console.log(printHunger( hunger ));
-    console.log(printThirst( thirst ));
+    console.log(printThirst(thirst));
+    console.log(printHealth( health ));
 };
 
 // CAT PRINT OUTPUT FIELD
@@ -138,6 +161,7 @@ let countdownForNeeds = () => {
     // console.log(`MOOD:   ${mood}`);
     // console.log(`HUNGER: ${hunger}`);
     // console.log(`THIRST: ${thirst}`);
+    console.log(printHeadLine);
     printStatus (mood, hunger, health, thirst);
 
     // DETERMINE THE WARNINGS OF THE 4 NEEDS //
