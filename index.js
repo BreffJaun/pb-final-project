@@ -27,7 +27,8 @@ let countdownForNeeds = () => {
     console.clear();
     let food = yoshi.food 
     let drink = yoshi.drink
-    let mood = yoshi.mood       
+    let mood = yoshi.mood
+    let health = yoshi.health       
     // each need is decreased by 1 for each execution
 
     yoshi.food -= 1
