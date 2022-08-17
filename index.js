@@ -9,11 +9,6 @@ import printCatNormal from './ui2_body.js'
 let time = 0;
 let services = 0;
 
-
-// ----------------------------
-
-
-
 const yoshi = {    
     name : 'Yoshi',
     food : 100,
@@ -27,8 +22,10 @@ let countdownForNeeds = () => {
     console.clear();
     let food = yoshi.food 
     let drink = yoshi.drink
-    let mood = yoshi.mood       
-    // each need is decreased by 1 for each execution
+    let mood = yoshi.mood   
+    let health = yoshi.health  
+
+    // each need is decreased for each execution
 
     yoshi.food -= 1
     yoshi.drink -= 3    
@@ -99,9 +96,9 @@ const difficulty = [
 // DIFFICULTY TERMINAL TEXT
 const textForDifficulty = `
 Choose your difficulty level!
-Type in 1 for Footmen (Easy)
-Type in 2 for Valet   (Heavy)
-Type in 3 for Butler  (Deadly)
+Type 1 for Footmen (Easy)
+Type 2 for Valet   (Heavy)
+Type 3 for Butler  (Deadly)
 `;
 
 // LET THE USER CHOOSE THE DIFFICULTY LEVEL
@@ -117,6 +114,5 @@ setDifficulty();
 
 const countdownMain = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])); 
 let modus = Object.keys(difficulty[catchTheNumArr]).join("");
-console.log(yoshi);
 
 export default yoshi 
