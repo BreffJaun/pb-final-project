@@ -88,7 +88,7 @@ const printCatNormal = () => {
 
 
 
-const printCatHappy = () => {
+const printCatHappy2 = () => {
   return`
 -----X-_                                 X  
 -----XX  -_ _-=-vvvVVVVVVVVVVvvv=-_     XX            _=vVVVv=_        -= G A M E =- 
@@ -110,4 +110,6 @@ const printCatHappy = () => {
 
 
 
-console.log(printCatFriendly());
+
+
+export default printCatNormal;
