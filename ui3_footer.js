@@ -9,9 +9,21 @@ function printMenu  () {
       { 1 } Hot Lasagne              { 2 } Nice Champagne           { 3 } Stroke my Belly!
 
                                             You can't stop the time!
-                                       You just don't see it passing by!
-
-- - - - - - - - - - - - - - - - - - - - - - -=xXx=- - - - - - - - - - - - - - - - - - - - - - - -
 `};
 
+
+// hier kommen die Kommentare
+
+
+const printMinusLine = () => {
+  return `
+  - - - - - - - - - - - - - - - - - - - - - - --=xXx=-- - - - - - - - - - - - - - - - - - - - - -`
+};
+
+// hier kommt die Console
+
+
+
 export default printMenu;
+
+export default printMinusLine;

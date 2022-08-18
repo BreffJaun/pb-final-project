@@ -16,7 +16,7 @@ const printCatHappy = () => {
       X  XX                              xX  X--       X-   -xXX            |  _________  |
      X    XXx                          xXX    X-.      X_xxXX-              |             |
      X       XXx                   xXX        X-.      X                    |  Services:  |
-     Xx-_       XXXx=-------==xxXXX         XX_____=xXX                     |  121        |
+     Xx-_       XXXx=-------==xxXXX         XX_____=xXX                     |  ${yoshi.serv()}        |
        Xx                                -xX                                |             |
          XXXxxx=--________________--=xxXXX                                  ●-====xXx====-●
 
@@ -40,7 +40,7 @@ const printCatNormal = () => {
       X  XX         ===> Y <===          XX  X-        X-   -xXX            |  _________  |
      X    XXx        (___|___)        xXX     X-       X_xxXX-              |             |
      X      XXx                     xXX     X-.      X_xxXX-                |  Services:  |
-     Xx-_       XXXx=-------==xxXXX         XX_____=xXX                     |  121        |
+     Xx-_       XXXx=-------==xxXXX         XX_____=xXX                     |  ${yoshi.serv()}        |
        Xx                                -xX                                |             |
          XXXxxx=--________________--=xxXXX                                  ●-====xXx====-●                  
 
@@ -64,7 +64,7 @@ const printCatBored = () => {
       X  XX    >=--=<X   ▼   x>=--=<     XX  X-        X-   -xXX            |  _________  |
      X    XXx       ===> Y <===       xXX     X-       X_xxXX-              |             |
      X       XXx     (___|___)     xXX        X-.      X                    |  Services:  |
-     Xx-_       XXXx=-V-----V=xxXXX         XX_____=xXX                     |  121        |
+     Xx-_       XXXx=-V-----V=xxXXX         XX_____=xXX                     |  ${yoshi.serv()}        |
        Xx                                -xX                                |             |
          XXXxxx=--________________--=xxXXX                                  ●-====xXx====-●                      
 
@@ -88,7 +88,7 @@ const printCatAngry = () => {
       X  XX        |            |        XX  X-        X-   -xXX            |  _________  |
      X    XXx      |AAA__|___AAA|      xXX     X-       X_xxXX-             |             |
      X       XXx  (      Y       )  xXX       X-.      X                    |  Services:  |
-     Xx-_       XXXx=----_---==xxXXX         XX_____=xXX                    |  121        |
+     Xx-_       XXXx=----_---==xxXXX         XX_____=xXX                    |  ${yoshi.serv()}        |
        Xx                                -xX       vVVv                     |             |
          XXXxxx=--________________--=xxXXX                                  ●-====xXx====-●                      
            vVVv                      vVVv
@@ -113,7 +113,7 @@ const printCatHate = () => {
       X                         X   -x=-___                -=X              |  _________  |
       X                                   xxx===--__-==xxXX*                |             |
       X                                                   X                 |  Services:  |
-      X           X                           X           X                 |  121        |
+      X           X                           X           X                 |  ${yoshi.serv()}        |
       X           X==-________-=A=-_______-==Xx          xX                 |             |
        Xx_     _xX                             X=_     _=x                  ●-====xXx====-●
           vVVv                                     vVVv
