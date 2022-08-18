@@ -9,7 +9,7 @@ const printMode = () => {
                                    -= G A M E - M O D E S =-
                                           - --=xXx=-- - 
 
-                                          
+
        -= F O O T M A N =-               -= V A L E T =-                -= B U T L E R =-       
     ●-=========xXx=========-●       ●-=========xXx=========-●       ●-=========xXx=========-●  
 
@@ -17,11 +17,11 @@ const printMode = () => {
 
     - - - - --=xXx=-- - - - -       - - - - --=xXx=-- - - - -       - - - - --=xXx=-- - - - -
 
-      The servant,                    The servant,                    The head servant           
-      to wait at                      who takes care of               in a household who
-      table, attend the               his clothes and                 is usually in charge 
-      door, and run various           performs other                  of food service,
-      errands, as in                  personal services.              the care of silverware,
+      The servant,                     The servant,                   The head servant           
+      to wait at                       who takes care of              in a household who
+      table, attend the                his clothes and                is usually in charge 
+      door, and run various            performs other                 of food service,
+      errands, as in                   personal services.             the care of silverware,
       a palace.                                                       and the deportment
                                                                       of the other servants.
 
