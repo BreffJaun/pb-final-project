@@ -6,7 +6,6 @@ import printStatus from './ui1_header.js';
 import printMenu from './ui3_footer.js'
 import printCat from './ui2_body.js'
 
-
 let time = 0;
 let services = 0;
 
@@ -16,7 +15,8 @@ const yoshi = {
     drink: 100,
     mood: 100,
     health: 100,
-    
+    services: 0,
+
     // INTERACTIONS
     // FOOD
     feedTuna() {
@@ -80,7 +80,7 @@ const yoshi = {
 };
 
 let countdownForNeeds = () => {
-    // SET SERVICES (TIME PER UNIT) HIGHER
+    // SET TIME (TIME PER UNIT) HIGHER
     if (Object.values(difficulty[catchTheNumArr]) === 4000) {
         time += (Object.values(difficulty[catchTheNumArr]) / 1000); 
     } else if (Object.values(difficulty[catchTheNumArr]) === 3000) {
@@ -109,7 +109,7 @@ let countdownForNeeds = () => {
     // INTERACTION 
     const interact = () =>{
         printMenu ();
-        const interaction = prompt("Type 1 - 9 for Interaction  ")             
+        const interaction = prompt("      Type 1 - 9 for Interaction  ")             
             if (interaction === "7"){                
                 yoshi.feedTuna()                   
             }if (interaction === "4"){                
@@ -130,18 +130,28 @@ let countdownForNeeds = () => {
                 yoshi.turnOnTv()                   
         }
     }
+   
+
+    // INTERACTION BREAKPOINT 
+
+    if( health < 80 && health > 75 ){
+        interact();
+    }  
+    if( health < 55 && health > 50 ){
+        interact();
+    }
+    if( health < 25 && health > 15 ){
+        interact();
+    }
 
     // DETERMINE THE WARNINGS OF THE 4 NEEDS //
     // HEALTH
-    if (health <= 75 && health > 65){
+    if (health <= 75 && health > 65){    
         console.log('     I need a curd mask...with cucumber slices for my eyes!');
-        interact();
     } else if (health <= 50 && health > 40){
-        console.log('     I need a spa right away');
-        interact();
-    } else if(health <= 25 ){
+        console.log('     I need a spa right away');        
+    } else if(health <= 25 ){ 
         console.log('     I feel dizzy....catch me up')
-        interact();
     } else {
         console.log();
     };
