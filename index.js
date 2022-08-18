@@ -64,19 +64,19 @@ const yoshi = {
         this.mood += 30
         this.food -= 25
         console.log("purr purr....purr it's better now");
-        services++
+        this.services++
     },
     dance() {
         this.mood += 20
         this.drink -= 10
         console.log("dance little monkey...dance!");
-        services++
+        this.services++
     },
     turnOnTv() {
         this.mood += 20
         this.health -= 30
         console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
-        services++
+        this.services++
     },
     serv(){
         if( this.services === 0 ){
