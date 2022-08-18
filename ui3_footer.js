@@ -8,9 +8,9 @@ function printMenu  () {
       { 4 } Cat Food                 { 5 } Cool Fresh Milk          { 6 } Dance for me!
       { 1 } Hot Lasagne              { 2 } Nice Champagne           { 3 } Stroke my Belly!
 
-                                            You can't stop the time!
+                                     YOU CAN'T STOP THE TIME!                                     
 `};
 
 
-export default printMenu;
 
+export default printMenu;

@@ -121,8 +121,6 @@ const printCatHate = () => {
 
 
 
-
-
 function printCat ( yoshi ) {
   if ( yoshi.health > 90){
     return printCatHappy();
