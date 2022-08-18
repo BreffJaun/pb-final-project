@@ -11,7 +11,7 @@ import printMenu from "./ui3_footer.js";
 // ===============================
 
 const interact = () =>{
-    printMenu();
+    
     const interaction = prompt("     Type 1 - 9 for Interaction  ")             
         if (interaction === "7"){                
             yoshi.feedTuna()                   
