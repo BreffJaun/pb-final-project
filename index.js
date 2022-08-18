@@ -217,7 +217,7 @@ let countdownForNeeds = () => {
         interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
     }
     
-    // console.log(yoshi);
+    console.log(yoshi);
 };
 
 // EVERYTHING WHAT IS NEED FOR CHOOSE THE DIFFICULTY // 
