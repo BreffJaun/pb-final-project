@@ -76,9 +76,14 @@ const printdrink = (drink) => {
 function printStatus ( mood, food, drink) {
     console.log(printLine());
     console.log(printMood( mood));
+
+    console.log(printHunger( hunger ));
+    console.log(printThirst(thirst));
+
     console.log(printfood( food ));
     console.log(printdrink(drink));
     
+
 };
 
 // CAT PRINT OUTPUT FIELD

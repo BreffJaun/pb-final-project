@@ -82,7 +82,7 @@ const printCatAngry = () => {
      XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX            _=vVVVv=_        -= G A M E =- 
      X >v_x=                       =x_v< X           x         X      ●-====xXx====-●
      X        -{_____  |  _____}-        X          X-         -X     |             |
-     X          __()_  ▼  _()__<         X          Xx-         -X    |  Mode:      |
+     X        > __()_  ▼  _()_ <         X          Xx-         -X    |  Mode:      |
      X            ===> Y <===            X            X-        -X    |  easy       |
      X       (  _______A_______  )       XXXxx=_       X-       -X    |  ---------  |
      X           vvVV vvvv VVvv          X       Xx    X-       -X    |  Time:      |
@@ -90,9 +90,9 @@ const printCatAngry = () => {
       xX         |            |         xXx_         Xx-     -xX      |  ---------  |
     X  XX        |            |        XX  X-        X-   -xXX        |  Services:  |
    X    XXx      |AAA__|___AAA|    xXX      X-       X_xxXX-          |  121        |
-   X       XXx  (              )  xXX       X-.      X                |             |
+   X       XXx  (      Y       )  xXX       X-.      X                |             |
    Xx-_       XXXx=-------==xxXXX         XX_____=xXX                 ●-====xXx====-●
-     Xx                                -xX
+     Xx                                -xX       vVVVv
        XXXxxx=--________________--=xxXXX                       
          vVVv                      vVVv
 `};
@@ -124,9 +124,8 @@ const printCatHate = () => {
          vVVv                      vVVv
 `};
 
-
-
 function printCat ( yoshi ) {
+
   if ( yoshi.health > 90){
     return printCatHappy();
   } else if ( yoshi.health > 60 ) {
@@ -135,9 +134,10 @@ function printCat ( yoshi ) {
     return printCatBored()
   } else if ( yoshi.health > 10) {
     return printCatAngry()
-  } else if ( yoshi.health > 0 ) {
+  } else if ( yoshi.health >= 0 ) {
     return printCatHate()
   }
 }
 
 export default printCat;
+
