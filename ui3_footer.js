@@ -1,5 +1,5 @@
 function printMenu  () {
-    console.log(`
+    return `
 - - - - - - - - - - - - - - - - - - - - - - -=xXx=- - - - - - - - - - - - - - - - - - - - - - - -
 
           -= F O O D =-                -= D R I N K S =-                -= M O O D =-       
@@ -11,7 +11,7 @@ function printMenu  () {
                                             You can't stop the time!
                                        You just don't see it passing by!
 
-      - - - - - - - - - - - - - - - - - - - - - - -=xXx=- - - - - - - - - - - - - - - - - - - - - - - -
-`)};
+- - - - - - - - - - - - - - - - - - - - - - -=xXx=- - - - - - - - - - - - - - - - - - - - - - - -
+`};
 
 export default printMenu;
