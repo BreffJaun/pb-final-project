@@ -1,5 +1,6 @@
 import yoshi from './index.js'
 
+
 const printCatHappy = () => {
   return`
 
@@ -8,7 +9,7 @@ const printCatHappy = () => {
        X  >_xX                       Xx_<  X         X            X         ●-====xXx====-●
        X        =vVVv=       =vVVv=        X          X-          -x        |             |
        X       X       X   X       X       X           x-         -X        |  Mode:      |
-       X      X        X   X        X      X            X-        -X        |  easy       |
+       X      X        X   X        X      X            X-        -X        |  ${yoshi.lvl()}    |
        X                 ▼                 XXXxx=_       X-       -X        |  _________  |
        X            ===> Y <===            X       Xx    X-       -x        |             |
         X          (_____|_____)           X.        XX-X-       -X         |  Time:      |
@@ -32,7 +33,7 @@ const printCatNormal = () => {
        X Xv_xX                       Xx_vX X           x         X          ●-====xXx====-●
        X   >                           <   X          X-         -X         |             |
        X        =vVVv=       =vVVv=        X          Xx-         -X        |  Mode:      |
-       X      X        X   X        X      X            X-        -X        |  easy       |
+       X      X        X   X        X      X            X-        -X        |  ${yoshi.lvl()}    |
        X     X         |   |         X     XXXxx=_       X-       -X        |  _________  |
        X     |     (●) |   | (●)     |     X       Xx    X-       -X        |             |
         X    X         X   X         x     X         XX-X-       -X         |  Time:      |
@@ -56,7 +57,7 @@ const printCatBored = () => {
        X Xv_xX                       Xx_vX X           x         X          ●-====xXx====-●
        X    X                          X   X          X-         -X         |             |
        X                                   X          Xx-         -X        |  Mode:      |
-       X        =vVVv=       =vVVv=        X            X-        -X        |  easy       |
+       X        =vVVv=       =vVVv=        X            X-        -X        |  ${yoshi.lvl()}    |
        X      X        X   X        X      XXXxx=_       X-       -X        |  _________  |
        X     X---------|   |---------X     X       Xx    X-       -X        |             |
         X    | (●)     |   | (●)     |     X         XX-X-       -X         |  Time:      |
@@ -80,7 +81,7 @@ const printCatAngry = () => {
        X >v_x=                       =x_v< X           x         X          ●-====xXx====-●
        X        -{_____  |  _____}-        X          X-         -X         |             |
        X        > __()_  ▼  _()_ <         X          Xx-         -X        |  Mode:      |
-       X            ===> Y <===            X            X-        -X        |  easy       |
+       X            ===> Y <===            X            X-        -X        |  ${yoshi.lvl()}    |
        X       (  _______A_______  )       XXXxx=_       X-       -X        |  _________  |
        X           vvVV vvv VVvv           X       Xx    X-       -X        |             |
         X          |           |           X         XX-X-       -X         |  Time:      |
@@ -105,7 +106,7 @@ const printCatHate = () => {
        X    xX                       Xx    X           x         X          ●-====xXx====-●
        X   >                           <   X          X-         -X         |             |
        X                                   X          Xx-         -X        |  Mode:      |
-       X              _-=xxXXXXXXXXXXxx=-_ X            X-        -X        |  easy       |
+       X              _-=xxXXXXXXXXXXxx=-_ X            X-        -X        |  ${yoshi.lvl()}    |
        X        _=xxX=            -._     =XXXxx=_       X-       -X        |  _________  |
        X    XXX                        -- _      =Xx    X-       -X         |             |
         =xX                     ._           =-___-=X-X-        -X          |  Time:      |

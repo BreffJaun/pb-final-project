@@ -50,6 +50,7 @@ const printMood = ( mood ) => {
 
 
 function printStatus ( food, drinks, mood, health ) {
+    
     console.log(printHeadLine());
     console.log(printFood( food ));
     console.log(printDrinks( drinks, health ));

@@ -26,66 +26,112 @@ const yoshi = {
     mood: 100,
     health: 100,
     services: 0,
+    mode: "",
 
     // INTERACTIONS
     // FOOD
     feedTuna() {
+        if (this.food < 71){ 
         this.food += 30
         this.mood -= 25
         console.log("that makes me full, but not satisfied");
         this.services++
+        }else {
+            this.food = 100;
+            this.services++
+        }
     },
     feedCatfood() {
+        if (this.food < 81){
         this.food += 20
         this.drink -= 25
         console.log("are you Kidding me?");
         this.services++
+        }else{
+            this.food = 100;
+            this.services++
+        }
     },
     feedLasagne() {
+        if (this.food < 91){
         this.food += 10
         this.health -= 30
         console.log("let's do the Garfield way, you may kiss the paw now");
         this.services++
+        }else {
+            this.food = 100;
+            this.services++
+        }
     },
 
     // DRINK
     drinkWater() {
+        if (this.drink < 71){
         this.drink += 30
         this.mood -= 25
         console.log("Go away with the cheap booze.....but thanks loyal human");
         this.services++
+    }else {
+        this.drink = 100;
+        this.services++
+    }
     },
     drinkMilk() {
+        if(this.drink < 81){
         this.drink += 20
         this.mood -= 20
         console.log("uhh mewow");
         this.services++
+        }else {
+            this.drink = 100;
+            this.services++
+    }
     },
     drinkChampagne() {
+        if(this.drink < 91){
         this.drink += 10
         this.health -= 30
         console.log("just a little dropplet for my royal paw");
         this.services++
+        }else {
+            this.drink = 100;
+            this.services++
+    }
     },
 
     // MOOD
     strokeBelly() {
+        if(this.mood < 71){
         this.mood += 30
         this.food -= 25
         console.log("purr purr....purr it's better now");
         this.services++
+        }else {
+            this.mood = 100;
+            this.services++
+        }
     },
     dance() {
+        if(this.mood < 81){
         this.mood += 20
         this.drink -= 10
         console.log("dance little monkey...dance!");
         this.services++
+        }else {
+            this.mood = 100;
+            this.services++
+        }
     },
     turnOnTv() {
+        if(this.mood < 81){
         this.mood += 20
         this.health -= 30
         console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
         this.services++
+        }else {
+            this.mood = 100;
+            this.services++
+    }
     },
     serv(){
         if( this.services === 0 ){
@@ -100,6 +146,17 @@ const yoshi = {
         if( this.services.toString().length === 3 ){
             return this.services
         }
+    },
+    lvl(){
+        if (this.mode.length === 7){
+            return this.mode
+        }
+        if( this.mode.length === 6 ){
+            return this.mode + " "
+        }        
+        if( this.mode.length === 5 ){
+            return this.mode + "  "
+        }
     }
 };
 
@@ -113,7 +170,7 @@ let countdownForNeeds = () => {
         time += (Object.values(difficulty[catchTheNumArr]) / 1000);
     };
 
-
+    
     // to clear the console on every execution
     console.clear();
     let food = yoshi.food 
@@ -124,17 +181,59 @@ let countdownForNeeds = () => {
     yoshi.food -= 1;
     yoshi.drink -= 3;    
     yoshi.mood -= 2;
-    yoshi.health = parseInt(((yoshi.food + yoshi.drink + yoshi.mood) / 3).toFixed()); 
+
+    yoshi.health = parseInt(((yoshi.food + yoshi.drink + yoshi.mood) / 3).toFixed()) 
 
     // print the currant status of needs in the console  
     console.log();       
     printStatus ( yoshi.food, yoshi.drink, yoshi.mood, yoshi.health ); 
+    console.log(printCat(yoshi))
+
+    // INTERACTION 
+    const interact = () =>{
+        console.log(printMenu ())
+        const interaction = prompt("      Type 1 - 9 for Interaction  ")             
+            if (interaction === "7"){                
+                yoshi.feedTuna()                   
+            }if (interaction === "4"){                
+                yoshi.feedCatfood()                   
+            }if (interaction === "1"){                
+                yoshi.feedLasagne()                   
+            }if (interaction === "8"){                
+                yoshi.drinkWater()                   
+            }if (interaction === "5"){                
+                yoshi.drinkMilk()                   
+            }if (interaction === "2"){                
+                yoshi.drinkChampagne()                   
+            }if (interaction === "9"){                
+                yoshi.strokeBelly() 
+            }if (interaction === "6"){                
+                yoshi.dance()                   
+            }if (interaction === "3"){                
+                yoshi.turnOnTv()                   
+        }
+    }
+
+    // INTERACTION BREAKPOINT 
+
+    if( health < 80 && health > 75 ){
+        interact();
+    }  
+    if( health < 55 && health > 50 ){
+        interact();
+    }
+    if( health < 25 && health > 15 ){
+        interact();
+    }
+
     console.log(printCat(yoshi));
+
 
     // MENU //  
     console.log(printMenu());
     // BREAK COMMAND //
     break_The_Interval(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+
     // PRINT THE WARNINGS OF THE 4 NEEDS //
     needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
     // INTERACTION BRAKEPOINT
@@ -148,6 +247,7 @@ let countdownForNeeds = () => {
         interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
     }
     console.log(yoshi);
+
 };
 
 const difficulty = [
@@ -177,5 +277,7 @@ setDifficulty();
 
 const countdownMain = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])); 
 let modus = Object.keys(difficulty[catchTheNumArr]).join("");
+
+yoshi.mode = Object.keys(difficulty[catchTheNumArr]).join("");
 
 export default yoshi;
