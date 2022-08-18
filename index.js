@@ -81,11 +81,11 @@ const yoshi = {
 let countdownForNeeds = () => {
     // SET SERVICES (TIME PER UNIT) HIGHER
     if (Object.values(difficulty[catchTheNumArr]) === 4000) {
-        time += 4; 
+        time += (Object.values(difficulty[catchTheNumArr]) / 1000); 
     } else if (Object.values(difficulty[catchTheNumArr]) === 3000) {
-        time += 3;
+        time += (Object.values(difficulty[catchTheNumArr]) / 1000);
     } else if (Object.values(difficulty[catchTheNumArr]) === 500) {
-        time += 0.5;
+        time += (Object.values(difficulty[catchTheNumArr]) / 1000);
     };
 
     // to clear the console on every execution
