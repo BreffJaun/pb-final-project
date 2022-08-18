@@ -8,36 +8,35 @@ import printMinusLine from './ui_layout.js';
 
 // =======================================
 
-
 const break_The_Interval = () => {
     if (yoshi.health <= 0) {
-        console.clear();
         clearInterval(countdownMain);
+        console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         console.log(printMenu());
-        console.log('You dont care enough about my health. YOU ARE FIRED! ! !');
+        console.log('     You dont care enough about my HEALTH. YOU ARE FIRED! ! !');
     } else if (yoshi.mood <= 0) {
-        console.clear();
         clearInterval(countdownMain);
+        console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
         console.log(printCat(yoshi));
         console.log(printMenu());
-        console.log('You dont care enough about my mood. YOU ARE FIRED! ! !');
+        console.log('     You dont care enough about my MOOD. YOU ARE FIRED! ! !');
     } else if (yoshi.food <= 0) {
-        console.clear();
         clearInterval(countdownMain);
+        console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         console.log(printMenu());
-        console.log('You dont care enough about my food. YOU ARE FIRED! ! !');
+        console.log('     You dont care enough about my FOOD. YOU ARE FIRED! ! !');
     } else if (yoshi.drink <= 0) {
-        console.clear();
         clearInterval(countdownMain);
+        console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         console.log(printMenu());
-        console.log('You dont care enough about my drink. YOU ARE FIRED! ! !');
+        console.log('     You dont care enough about my DRINK. YOU ARE FIRED! ! !');
     }
 };
 

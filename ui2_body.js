@@ -130,11 +130,15 @@ function printCat ( yoshi ) {
     return printCatBored()
   } else if ( yoshi.health > 10) {
     return printCatAngry()
-  } else if ( yoshi.health > 0 ) {
+  } else if ( yoshi.health <= 0) {
+    return printCatHate()
+  } else if (yoshi.food <= 0) {
+    return printCatHate()
+  } else if (yoshi.drink <= 0) {
+    return printCatHate()
+  } else if (yoshi.mood <= 0) {
     return printCatHate()
   }
 }
-
-
 
 export default printCat;

@@ -11,7 +11,8 @@ import printCat from './ui2_body.js';
 import printMode from './ui0_mode.js';
 import printMinusLine from './ui_layout.js';
 import needs_terminal_warnings from './determine_warnings.js';
-import break_The_Interval from './break_commands.js'
+import break_The_Interval from './break_commands.js';
+import interact from './interact_querry.js';
 
 // ==================================================
 
@@ -128,51 +129,25 @@ let countdownForNeeds = () => {
     // print the currant status of needs in the console  
     console.log();       
     printStatus ( yoshi.food, yoshi.drink, yoshi.mood, yoshi.health ); 
-    console.log(printCat(yoshi))
+    console.log(printCat(yoshi));
 
-    // INTERACTION 
-    const interact = () =>{
-        printMenu ();
-        const interaction = prompt("      Type 1 - 9 for Interaction  ")             
-            if (interaction === "7"){                
-                yoshi.feedTuna()                   
-            }if (interaction === "4"){                
-                yoshi.feedCatfood()                   
-            }if (interaction === "1"){                
-                yoshi.feedLasagne()                   
-            }if (interaction === "8"){                
-                yoshi.drinkWater()                   
-            }if (interaction === "5"){                
-                yoshi.drinkMilk()                   
-            }if (interaction === "2"){                
-                yoshi.drinkChampagne()                   
-            }if (interaction === "9"){                
-                yoshi.strokeBelly() 
-            }if (interaction === "6"){                
-                yoshi.dance()                   
-            }if (interaction === "3"){                
-                yoshi.turnOnTv()                   
-        }
-    }
-
-    // INTERACTION BREAKPOINT 
-
-    if( health < 80 && health > 75 ){
-        interact();
-    }  
-    if( health < 55 && health > 50 ){
-        interact();
-    }
-    if( health < 25 && health > 15 ){
-        interact();
-    }
-
+    // MENU //  
+    console.log(printMenu());
     // BREAK COMMAND //
     break_The_Interval(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
-    // MENU //  
-    printMenu();
     // PRINT THE WARNINGS OF THE 4 NEEDS //
     needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+    // INTERACTION BRAKEPOINT
+    if( health < 80 && health > 75 ){
+        interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+    }  
+    if( health < 55 && health > 50 ){
+        interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+    }
+    if( health < 25 && health > 15 ){
+        interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+    }
+
 };
 
 const difficulty = [
