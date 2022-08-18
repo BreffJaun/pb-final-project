@@ -20,7 +20,7 @@ const printIntro = () => {
 
                                   Let us know your high score! 'Cause we
                                   can't program databases yet, send us
-                                  screenshots or ask us by mail or GitHub 
+                                  screenshots by mail or GitHub, or ask us 
                                   when the databases will be ready.
 
 
