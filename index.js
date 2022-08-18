@@ -6,6 +6,7 @@ import printStatus from './ui1_header.js';
 import printMenu from './ui3_footer.js'
 import printCat from './ui2_body.js'
 
+
 let time = 0;
 let services = 0;
 
