@@ -10,14 +10,12 @@ import printMenu from './ui3_footer.js';
 import printCat from './ui2_body.js';
 import printMode from './ui0_mode.js';
 import printMinusLine from './ui_minusLine.js';
+import printSubLine from './ui_subline.js';
 import needs_terminal_warnings from './ui_determine_warnings.js';
 import break_The_Interval from './break_commands.js';
 import interact from './interact_querry.js';
 
 // ==================================================
-
-let time = 0;
-// let services = 0;
 
 const yoshi = {
     name: 'Yoshi',
@@ -27,6 +25,7 @@ const yoshi = {
     health: 100,
     services: 0,
     mode: "",
+    time: 0,
 
     // INTERACTIONS
     // FOOD
@@ -157,85 +156,56 @@ const yoshi = {
         if( this.mode.length === 5 ){
             return this.mode + "  "
         }
+    },
+    tim() {
+        if (this.time.toString().length === 1) {
+            return "00" + this.time;
+        }; 
+        if (this.time.toString().length === 2) {
+            return "0" + this.time;
+        };
+        if (this.time.toString().length === 3) {
+            return this.time;
+        }; 
     }
 };
 
 let countdownForNeeds = () => {
     // SET TIME (TIME PER UNIT) HIGHER
     if (catchTheNumArr.length > 0 ) {
-        time += (Object.values(difficulty[catchTheNumArr]) / 1000); 
+        yoshi.time += (Object.values(difficulty[catchTheNumArr]) / 1000); 
     } else if (catchTheNumArr.length > 0) {
-        time += (Object.values(difficulty[catchTheNumArr]) / 1000);
+        yoshi.time += (Object.values(difficulty[catchTheNumArr]) / 1000);
     } else if (catchTheNumArr.length > 0) {
-        time += (Object.values(difficulty[catchTheNumArr]) / 1000);
+        yoshi.time += (Object.values(difficulty[catchTheNumArr]) / 1000);
     };
 
-    
     // to clear the console on every execution
     console.clear();
     let food = yoshi.food 
     let drink = yoshi.drink
     let mood = yoshi.mood   
-    let health = yoshi.health  
+    let health = yoshi.health
+    let time = yoshi.time;
 
+    // NEEDS CALCULATION //
     yoshi.food -= 1;
     yoshi.drink -= 3;    
     yoshi.mood -= 2;
-
     yoshi.health = parseInt(((yoshi.food + yoshi.drink + yoshi.mood) / 3).toFixed()) 
 
-    // print the currant status of needs in the console  
+    // PRINT STATUS //  
     console.log();       
     printStatus ( yoshi.food, yoshi.drink, yoshi.mood, yoshi.health ); 
     console.log(printCat(yoshi))
-
-    // INTERACTION 
-    const interact = () =>{
-        console.log(printMenu ())
-        const interaction = prompt("      Type 1 - 9 for Interaction  ")             
-            if (interaction === "7"){                
-                yoshi.feedTuna()                   
-            }if (interaction === "4"){                
-                yoshi.feedCatfood()                   
-            }if (interaction === "1"){                
-                yoshi.feedLasagne()                   
-            }if (interaction === "8"){                
-                yoshi.drinkWater()                   
-            }if (interaction === "5"){                
-                yoshi.drinkMilk()                   
-            }if (interaction === "2"){                
-                yoshi.drinkChampagne()                   
-            }if (interaction === "9"){                
-                yoshi.strokeBelly() 
-            }if (interaction === "6"){                
-                yoshi.dance()                   
-            }if (interaction === "3"){                
-                yoshi.turnOnTv()                   
-        }
-    }
-
-    // INTERACTION BREAKPOINT 
-
-    if( health < 80 && health > 75 ){
-        interact();
-    }  
-    if( health < 55 && health > 50 ){
-        interact();
-    }
-    if( health < 25 && health > 15 ){
-        interact();
-    }
-
-    console.log(printCat(yoshi));
-
-
     // MENU //  
     console.log(printMenu());
     // BREAK COMMAND //
     break_The_Interval(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
-
     // PRINT THE WARNINGS OF THE 4 NEEDS //
     needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+    console.log(printSubLine());
+    console.log();
     // INTERACTION BRAKEPOINT
     if( health < 80 && health > 75 ){
         interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
@@ -246,38 +216,30 @@ let countdownForNeeds = () => {
     if( health < 25 && health > 15 ){
         interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
     }
-    console.log(yoshi);
-
+    
+    // console.log(yoshi);
 };
 
+// EVERYTHING WHAT IS NEED FOR CHOOSE THE DIFFICULTY // 
 const difficulty = [
     { Footmen: 4000 },   // => Hausdiener
     { Valet: 3000 },     // => Kammerdiener
-    { Butler: 500 },     // => (Chef-) Diener
+    { Butler: 1000 },     // => (Chef-) Diener
 ];
-
-// DIFFICULTY TERMINAL TEXT
-const textForDifficulty = `
-Choose your difficulty level!
-Type 1 for Footmen (Easy)
-Type 2 for Valet   (Heavy)
-Type 3 for Butler  (Deadly)
-`;
 
 // LET THE USER CHOOSE THE DIFFICULTY LEVEL
 const catchTheNumArr = [];
 const setDifficulty = () => {
-    console.log(textForDifficulty);
-    const queryTheDifficulty = prompt(`Choose your difficulty level: `);
-    console.log(`You have chosen the ${chalk.bold(Object.keys(difficulty[queryTheDifficulty - 1]))} difficulty. Good Luck, you'll need it!`);
+    console.log(printMode());
+    console.log(printSubLine());
+    const queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
     const catchTheNum = queryTheDifficulty-1;
     catchTheNumArr.push(catchTheNum);
 };
 setDifficulty();
 
 const countdownMain = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])); 
-let modus = Object.keys(difficulty[catchTheNumArr]).join("");
-
 yoshi.mode = Object.keys(difficulty[catchTheNumArr]).join("");
 
 export default yoshi;
+
