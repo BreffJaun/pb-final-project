@@ -2,10 +2,18 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 import chalk from 'chalk';
+// ==================================
+
+// JS DATA IMPORTS
 import printStatus from './ui1_header.js';
-import printMenu from './ui3_footer.js'
-import printCat from './ui2_body.js'
-import printMode from './ui0_mode.js'
+import printMenu from './ui3_footer.js';
+import printCat from './ui2_body.js';
+import printMode from './ui0_mode.js';
+import printMinusLine from './ui3_footer.js';
+import needs_terminal_warnings from './determine_warnings.js';
+import break_The_Interval from './break_commands.js'
+
+// ==================================================
 
 let time = 0;
 // let services = 0;
@@ -94,8 +102,6 @@ const yoshi = {
     }
 };
 
-
-
 let countdownForNeeds = () => {
     // SET TIME (TIME PER UNIT) HIGHER
     if (catchTheNumArr.length > 0 ) {
@@ -148,7 +154,6 @@ let countdownForNeeds = () => {
                 yoshi.turnOnTv()                   
         }
     }
-   
 
     // INTERACTION BREAKPOINT 
 
@@ -162,78 +167,12 @@ let countdownForNeeds = () => {
         interact();
     }
 
-    // DETERMINE THE WARNINGS OF THE 4 NEEDS //
-    // HEALTH
-    if (health <= 75 && health > 65){    
-        console.log('     I need a curd mask...with cucumber slices for my eyes!');
-    } else if (health <= 50 && health > 40){
-        console.log('     I need a spa right away');        
-    } else if(health <= 25 ){ 
-        console.log('     I feel dizzy....catch me up')
-    } else {
-        console.log();
-    };
-    
-    // FOOD
-    if (food <= 80 && food > 70) {
-        console.log('     Feed me!');
-    } else if (food <= 55 && food > 45) {
-        console.log('     I am bored...just a reminder');
-    } else if (food <= 35) {
-        console.log('     I can see my paws after a long time, so TIME TO FEED ME NOW!');
-    } else {
-        console.log();
-    }
-    
-    // DRINK
-    if (drink <= 70 && drink > 60) {
-        console.log('     Give me something to drink');
-    } else if (drink <= 45 && drink > 35) {
-        console.log('     My delicate royal lips are a little too dry');
-    } else if (drink <= 20) {
-        console.log('     I dehydrate....I already see flying mices');
-    } else {
-        console.log()
-    };
-
-    // MOOD
-    if (mood <= 90 && mood > 80) {
-        console.log('     Entertain me!');
-    } else if (mood <= 60 && mood > 50) {
-        console.log('     Hello...i am hungry!');
-    } else if (mood <= 30) {
-        console.log('     Where is the jester?');
-    } else {
-        console.log();
-    }
-
-    // BREAK COMMAND => only works with if-else, not with ternary!
-    if (health <= 0) {
-        console.clear();
-        console.log('You dont care enough about my health. YOU ARE FIRED! ! !');
-        clearInterval(countdownMain);
-        printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
-        console.log(printCat(yoshi))       
-    } else if (mood <= 0) {
-        console.clear();
-        console.log('You dont care enough about my mood. YOU ARE FIRED! ! !');
-        clearInterval(countdownMain);
-        printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
-        console.log(printCat(yoshi))        
-    } else if (food <= 0) {
-        console.clear();
-        console.log('You dont care enough about my food. YOU ARE FIRED! ! !');
-        clearInterval(countdownMain);
-        printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
-        console.log(printCat(yoshi))        
-    } else if (drink <= 0) {
-        console.clear();
-        console.log('You dont care enough about my drink. YOU ARE FIRED! ! !');
-        clearInterval(countdownMain);
-        printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
-        console.log(printCat(yoshi))        
-    }    
-    printMenu ();
+    // BREAK COMMAND //
+    break_The_Interval(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+    // MENU //  
+    printMenu();
+    // PRINT THE WARNINGS OF THE 4 NEEDS //
+    needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
 };
 
 const difficulty = [
@@ -264,4 +203,4 @@ setDifficulty();
 const countdownMain = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])); 
 let modus = Object.keys(difficulty[catchTheNumArr]).join("");
 
-export default yoshi
+export default yoshi;
