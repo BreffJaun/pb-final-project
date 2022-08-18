@@ -15,7 +15,7 @@ const printCatHappy = () => {
       X          (_____|_____)           X.        XX-X-       -X     |  08:16 min  |
       xX           V       V            xXx_.        Xx-     -xX      |  ---------  |
     X  XX                              xX  X--       X-   -xXX        |  Services:  |
-   X    XXx                          xXX    X-.      X_xxXX-          |  121        |
+   X    XXx                          xXX    X-.      X_xxXX-          |  ${yoshi.serv()}        |
    X       XXx                   xXX        X-.      X                |             |
    Xx-_       XXXx=-------==xxXXX         XX_____=xXX                 ●-====xXx====-●
      Xx                                -xX
@@ -39,7 +39,7 @@ const printCatNormal = () => {
       X    X         X   X         x     X         XX-X-       -X     |  08:16 min  |
       xX     >=--=<X   ▼   x>=--=<      Xx_          Xx-     -xX      |  ---------  |
     X  XX         ===> Y <===          XX  X-        X-   -xXX        |  Services:  |
-   X    XXx        (___|___)        xXX     X-       X_xxXX-          |  121        |
+   X    XXx        (___|___)        xXX     X-       X_xxXX-          |  ${yoshi.serv()}        |
    X      XXx                     xXX     X-.      X_xxXX-            |             |
    Xx-_       XXXx=-------==xxXXX         XX_____=xXX                 ●-====xXx====-●
      Xx                                -xX
@@ -63,7 +63,7 @@ const printCatBored = () => {
       X    | (●)     |   | (●)     |     X         XX-X-       -X     |  08:16 min  |
       xX   X         X   X         x    Xx_          Xx-     -xX      |  ---------  |
     X  XX    >=--=<X   ▼   x>=--=<     XX  X-        X-   -xXX        |  Services:  |
-   X    XXx       ===> Y <===       xXX     X-       X_xxXX-          |  121        |
+   X    XXx       ===> Y <===       xXX     X-       X_xxXX-          |  ${yoshi.serv()}        |
    X       XXx     (___|___)     xXX        X-.      X                |             |
    Xx-_       XXXx=-V-----V=xxXXX         XX_____=xXX                 ●-====xXx====-●
      Xx                                -xX
@@ -87,7 +87,7 @@ const printCatAngry = () => {
       X          |            |          X         XX-X-       -X     |  08:16 min  |
       xX         |            |         xXx_         Xx-     -xX      |  ---------  |
     X  XX        |            |        XX  X-        X-   -xXX        |  Services:  |
-   X    XXx      |AAA__|___AAA|    xXX      X-       X_xxXX-          |  121        |
+   X    XXx      |AAA__|___AAA|    xXX      X-       X_xxXX-          |  ${yoshi.serv()}        |
    X       XXx  (      Y       )  xXX       X-.      X                |             |
    Xx-_       XXXx=-------==xxXXX         XX_____=xXX                 ●-====xXx====-●
      Xx                                -xX       vVVVv

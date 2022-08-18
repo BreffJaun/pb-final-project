@@ -8,7 +8,7 @@ import printCat from './ui2_body.js'
 import printMode from './ui0_mode.js'
 
 let time = 0;
-let services = 0;
+// let services = 0;
 
 const yoshi = {
     name: 'Yoshi',
@@ -24,19 +24,19 @@ const yoshi = {
         this.food += 30
         this.mood -= 25
         console.log("that makes me full, but not satisfied");
-        services++
+        this.services++
     },
     feedCatfood() {
         this.food += 20
         this.drink -= 25
         console.log("are you Kidding me?");
-        services++
+        this.services++
     },
     feedLasagne() {
         this.food += 10
         this.health -= 30
         console.log("let's do the Garfield way, you may kiss the paw now");
-        services++
+        this.services++
     },
 
     // DRINK
@@ -44,19 +44,19 @@ const yoshi = {
         this.drink += 30
         this.mood -= 25
         console.log("Go away with the cheap booze.....but thanks loyal human");
-        services++
+        this.services++
     },
     drinkMilk() {
         this.drink += 20
         this.mood -= 20
         console.log("uhh mewow");
-        services++
+        this.services++
     },
     drinkChampagne() {
         this.drink += 10
         this.health -= 30
         console.log("just a little dropplet for my royal paw");
-        services++
+        this.services++
     },
 
     // MOOD
@@ -79,14 +79,14 @@ const yoshi = {
         services++
     },
     serv(){
-        if( this.services.toString().length === 0 ){
-            return 000
+        if( this.services === 0 ){
+            return "000"
         }
         if( this.services.toString().length === 1 ){
-            return 00 + this.services
+            return "00" + this.services
         }
         if( this.services.toString().length === 2 ){
-            return 0 + this.services
+            return "0" + this.services
         }
         if( this.services.toString().length === 3 ){
             return this.services
@@ -98,13 +98,14 @@ const yoshi = {
 
 let countdownForNeeds = () => {
     // SET TIME (TIME PER UNIT) HIGHER
-    if (Object.values(difficulty[catchTheNumArr]) === 4000) {
+    if (catchTheNumArr.length > 0 ) {
         time += (Object.values(difficulty[catchTheNumArr]) / 1000); 
-    } else if (Object.values(difficulty[catchTheNumArr]) === 3000) {
+    } else if (catchTheNumArr.length > 0) {
         time += (Object.values(difficulty[catchTheNumArr]) / 1000);
-    } else if (Object.values(difficulty[catchTheNumArr]) === 500) {
+    } else if (catchTheNumArr.length > 0) {
         time += (Object.values(difficulty[catchTheNumArr]) / 1000);
     };
+
 
     // to clear the console on every execution
     console.clear();
@@ -260,7 +261,7 @@ const setDifficulty = () => {
 };
 setDifficulty();
 
-//const countdownMain = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])); 
+const countdownMain = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])); 
 let modus = Object.keys(difficulty[catchTheNumArr]).join("");
 
 export default yoshi
