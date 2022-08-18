@@ -8,7 +8,10 @@ function printMenu  () {
       { 4 } Cat Food                 { 5 } Cool Fresh Milk          { 6 } Dance for me!
       { 1 } Hot Lasagne              { 2 } Nice Champagne           { 3 } Stroke my Belly!
 
+                                            You can't stop the time!
+                                       You just don't see it passing by!
 
+      - - - - - - - - - - - - - - - - - - - - - - -=xXx=- - - - - - - - - - - - - - - - - - - - - - - -
 `)};
 
 export default printMenu;
