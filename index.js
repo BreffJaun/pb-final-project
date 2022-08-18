@@ -14,6 +14,7 @@ const yoshi = {
     drink : 100,
     mood : 100,
     health : 100,
+    services: 0,
 
     feedTuna(){
         this.food += 18
@@ -61,6 +62,8 @@ const yoshi = {
     }
 }
 
+const service = (services) =>{}
+
 let countdownForNeeds = () => { 
     // to clear the console on every execution
     console.clear();
@@ -78,12 +81,12 @@ let countdownForNeeds = () => {
     // print the currant status of needs in the console  
     console.log();       
     printStatus ( yoshi.food, yoshi.drink, yoshi.mood, yoshi.health ); 
-    console.log(printCat(yoshi))
+    console.log(printCat(yoshi))    
 
     // INTERACTION 
         const interact = () =>{
            printMenu ();
-           const interaction = prompt("Help me M0therfuc3r  ")             
+           const interaction = prompt("type 1-9   ")             
             if (interaction === "1"){                
                 yoshi.feedTuna()                   
             }if (interaction === "2"){                
@@ -192,4 +195,6 @@ setDifficulty();
 const countdownMain = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])); 
 let modus = Object.keys(difficulty[catchTheNumArr]).join("");
 
-export default yoshi
+export default yoshi;
+export default modus;
+export default service; 

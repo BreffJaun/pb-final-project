@@ -1,4 +1,7 @@
 import yoshi from './index.js'
+import mode from './index.js'
+import service from './index.js'
+
 
 const printCatHappy = () => {
   return`
