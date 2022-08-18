@@ -181,12 +181,7 @@ let countdownForNeeds = () => {
     };
 
     // to clear the console on every execution
-    console.clear();
-    let food = yoshi.food 
-    let drink = yoshi.drink
-    let mood = yoshi.mood   
-    let health = yoshi.health
-    let time = yoshi.time;
+    console.clear();  
 
     // NEEDS CALCULATION //
     yoshi.food -= 1;
@@ -198,22 +193,56 @@ let countdownForNeeds = () => {
     console.log();       
     printStatus ( yoshi.food, yoshi.drink, yoshi.mood, yoshi.health ); 
     console.log(printCat(yoshi))
+
     // MENU //  
     console.log(printMenu());
+
     // BREAK COMMAND //
-    break_The_Interval(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+    if (yoshi.health === 0 || yoshi.health < 0) {       
+        clearInterval(countdownMain);
+        console.clear();
+        printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+        console.log(printCat(yoshi));
+        console.log(printMenu());
+        console.log('You dont care enough about my health. YOU ARE FIRED! ! !');
+    }
+    if (yoshi.mood <= 0) {        
+        clearInterval(countdownMain);
+        console.clear();
+        printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
+        console.log(printCat(yoshi));
+        console.log(printMenu());
+        console.log('You dont care enough about my mood. YOU ARE FIRED! ! !');
+    }
+    if (yoshi.food <= 0) {     
+        clearInterval(countdownMain);
+        console.clear();
+        printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+        console.log(printCat(yoshi));
+        console.log(printMenu());
+        console.log('You dont care enough about my food. YOU ARE FIRED! ! !');
+    }
+    if (yoshi.drink === 0 || yoshi.drink < 0) {        
+        clearInterval(countdownMain);
+        console.clear();
+        printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+        console.log(printCat(yoshi));
+        console.log(printMenu());
+        console.log('     You dont care enough about my DRINK. YOU ARE FIRED ! ! !');
+    }
     // PRINT THE WARNINGS OF THE 4 NEEDS //
     needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
     console.log(printSubLine());
     console.log();
+
     // INTERACTION BRAKEPOINT
-    if( health < 80 && health > 75 ){
+    if( yoshi.health < 80 && yoshi.health > 75 ){
         interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
     }  
-    if( health < 55 && health > 50 ){
+    if( yoshi.health < 55 && yoshi.health > 50 ){
         interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
     }
-    if( health < 25 && health > 15 ){
+    if( yoshi.health < 25 && yoshi.health > 15 ){
         interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
     }
     
@@ -224,7 +253,7 @@ let countdownForNeeds = () => {
 const difficulty = [
     { Footmen: 4000 },   // => Hausdiener
     { Valet: 3000 },     // => Kammerdiener
-    { Butler: 1000 },     // => (Chef-) Diener
+    { Butler: 250 },     // => (Chef-) Diener
 ];
 
 // LET THE USER CHOOSE THE DIFFICULTY LEVEL

@@ -9,40 +9,37 @@ import printMinusLine from './ui_minusLine.js';
 // =======================================
 
 const break_The_Interval = () => {
-    if (yoshi.health <= 0) {
+    if (yoshi.health === 0 || yoshi.health < 0) {       
         clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         console.log(printMenu());
-        console.log('You dont care enough about my health. YOU ARE FIRED! ! !');
+        console.log('           You dont care enough about my health. YOU ARE FIRED! ! !');
     }
-    if (yoshi.mood <= 0) {
-        console.clear();
+    if (yoshi.mood <= 0) {        
         clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
         console.log(printCat(yoshi));
         console.log(printMenu());
-        console.log('You dont care enough about my mood. YOU ARE FIRED! ! !');
+        console.log('           You dont care enough about my mood. YOU ARE FIRED! ! !');
     }
-    if (yoshi.food <= 0) {
-        console.clear();
+    if (yoshi.food <= 0) {     
         clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         console.log(printMenu());
-        console.log('You dont care enough about my food. YOU ARE FIRED! ! !');
+        console.log('           You dont care enough about my food. YOU ARE FIRED! ! !');
     }
-    if (yoshi.drink <= 0) {
-        console.clear();
+    if (yoshi.drink === 0 || yoshi.drink < 0) {        
         clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         console.log(printMenu());
-        console.log('     You dont care enough about my DRINK. YOU ARE FIRED ! ! !');
+        console.log('           You dont care enough about my DRINK. YOU ARE FIRED ! ! !');
     }
 };
 

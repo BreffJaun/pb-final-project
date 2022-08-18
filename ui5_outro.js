@@ -19,8 +19,8 @@ const printIntro = () => {
                                   
 
                                   Let us know your high score! 'Cause we
-                                  can't programm databases yet, send us
-                                  screenshots or ask us by mail or GitHub 
+                                  can't program databases yet, send us
+                                  screenshots by mail or GitHub, or ask us 
                                   when the databases will be ready.
 
 
@@ -31,15 +31,15 @@ const printIntro = () => {
                                     -= i t z F l o r i a n =-
 
                                -= g r o s s e s b e w i r k e n =-    
--
+
                                           - --=xXx=-- - 
 
                                   
-                                  Feel feel to contact us.
-                                  Would be a pleasure and fun.
+                                  Feel free to contact us.
+                                  Would be a pleasure.
                                   
                                   
-                                  ... Really!
+                                  ... And awesome!
 
 
                                     - - - - --=xXx=-- - - - -                                           
