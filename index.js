@@ -9,8 +9,8 @@ import printStatus from './ui1_header.js';
 import printMenu from './ui3_footer.js';
 import printCat from './ui2_body.js';
 import printMode from './ui0_mode.js';
-import printMinusLine from './ui_layout.js';
-import needs_terminal_warnings from './determine_warnings.js';
+import printMinusLine from './ui_minusLine.js';
+import needs_terminal_warnings from './ui_determine_warnings.js';
 import break_The_Interval from './break_commands.js';
 import interact from './interact_querry.js';
 
@@ -124,7 +124,7 @@ let countdownForNeeds = () => {
     yoshi.food -= 1;
     yoshi.drink -= 3;    
     yoshi.mood -= 2;
-    yoshi.health = ((yoshi.food + yoshi.drink + yoshi.mood) / 3).toFixed() 
+    yoshi.health = parseInt(((yoshi.food + yoshi.drink + yoshi.mood) / 3).toFixed()); 
 
     // print the currant status of needs in the console  
     console.log();       
@@ -147,7 +147,7 @@ let countdownForNeeds = () => {
     if( health < 25 && health > 15 ){
         interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
     }
-
+    console.log(yoshi);
 };
 
 const difficulty = [

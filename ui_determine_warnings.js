@@ -1,6 +1,6 @@
 // JS DATA IMPORTS
 import yoshi from "./index.js"
-import printMinusLine from './ui_layout.js';
+import printMinusLine from './ui_minusLine.js';
 
 // ===============================
 
