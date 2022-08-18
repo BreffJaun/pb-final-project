@@ -26,4 +26,3 @@ const printMinusLine = () => {
 
 export default printMenu;
 
-export default printMinusLine;

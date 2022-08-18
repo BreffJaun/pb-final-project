@@ -1,5 +1,6 @@
 import yoshi from './index.js'
 
+
 const printCatHappy = () => {
   return`
 
@@ -8,7 +9,7 @@ const printCatHappy = () => {
        X  >_xX                       Xx_<  X         X            X         ●-====xXx====-●
        X        =vVVv=       =vVVv=        X          X-          -x        |             |
        X       X       X   X       X       X           x-         -X        |  Mode:      |
-       X      X        X   X        X      X            X-        -X        |  easy       |
+       X      X        X   X        X      X            X-        -X        |  ${yoshi.lvl()}    |
        X                 ▼                 XXXxx=_       X-       -X        |  _________  |
        X            ===> Y <===            X       Xx    X-       -x        |             |
         X          (_____|_____)           X.        XX-X-       -X         |  Time:      |
