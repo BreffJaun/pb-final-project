@@ -35,8 +35,8 @@ const printIntro = () => {
                                           - --=xXx=-- - 
 
                                   
-                                  Feel feel to contact us.
-                                  Would be a pleasure and fun.
+                                  Feel free to contact us.
+                                  Would be a pleasure for us.
                                   
                                   
                                   ... Really!
