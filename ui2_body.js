@@ -114,7 +114,7 @@ const printCatHate = () => {
       X    X         X   X         x     X         XX-X-       -X     |  08:16 min  |
       xX     >=--=<X   ▼   x>=--=<      Xx_          Xx-     -xX      |  ---------  |
     X  XX         ===> Y <===          XX  X-        X-   -xXX        |  Services:  |
-   X    XXx        (___|___)        xXX     X-       X_xxXX-          |  121        |
+   X    XXx        (___|___)        xXX     X-       X_xxXX-          |  ${yoshi.serv()}        |
    X       XXx      Vvv vvV       xXX       X-.      X                |             |
    Xx-_       XXXx=-------==xxXXX         XX_____=xXX                 ●-====xXx====-●
      Xx                                -xX
