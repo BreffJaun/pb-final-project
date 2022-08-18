@@ -1,4 +1,6 @@
-import yoshi from './index.js'
+
+
+
 
 const printCatHappy = () => {
   return`
