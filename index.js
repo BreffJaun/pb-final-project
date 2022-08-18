@@ -113,11 +113,11 @@ let countdownForNeeds = () => {
             }if (interaction === "6"){                
                 yoshi.drinkChampagne()                   
             }if (interaction === "7"){                
-                yoshi.turnOnTv()                   
+                yoshi.strokeBelly() 
             }if (interaction === "8"){                
                 yoshi.dance()                   
             }if (interaction === "9"){                
-                yoshi.strokeBelly()                   
+                yoshi.turnOnTv()                   
         }
     }
 
