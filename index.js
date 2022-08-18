@@ -9,48 +9,48 @@ import printCat from './ui2_body.js'
 let time = 0;
 let services = 0;
 
-const yoshi = {    
-    name : 'Yoshi',
-    food : 100,
-    drink : 100,
-    mood : 100,
+const yoshi = {
+    name: 'Yoshi',
+    food: 100,
+    drink: 100,
+    mood: 100,
     health: 100,
     
     // INTERACTIONS
     // FOOD
-    feedTuna(){
+    feedTuna() {
         this.food += 30
         this.mood -= 25
         console.log("that makes me full, but not satisfied");
         services++
     },
-        feedCatfood(){
+    feedCatfood() {
         this.food += 20
         this.drink -= 25
         console.log("are you Kidding me?");
         services++
-    }, 
-    feedLasagne(){
+    },
+    feedLasagne() {
         this.food += 10
         this.health -= 30
         console.log("let's do the Garfield way, you may kiss the paw now");
         services++
-    }, 
+    },
 
     // DRINK
-    drinkWater(){
+    drinkWater() {
         this.drink += 30
         this.mood -= 25
         console.log("Go away with the cheap booze.....but thanks loyal human");
         services++
     },
-    drinkMilk(){
+    drinkMilk() {
         this.drink += 20
         this.mood -= 20
         console.log("uhh mewow");
         services++
     },
-    drinkChampagne(){
+    drinkChampagne() {
         this.drink += 10
         this.health -= 30
         console.log("just a little dropplet for my royal paw");
@@ -58,27 +58,36 @@ const yoshi = {
     },
 
     // MOOD
-    strokeBelly(){
-        this.mood += 30   
+    strokeBelly() {
+        this.mood += 30
         this.food -= 25
         console.log("purr purr....purr it's better now");
         services++
     },
-    dance(){
+    dance() {
         this.mood += 20
         this.drink -= 10
         console.log("dance little monkey...dance!");
         services++
     },
-    turnOnTv(){
+    turnOnTv() {
         this.mood += 20
-        this.health -= 30        
+        this.health -= 30
         console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
         services++
     }
-}
+};
 
-let countdownForNeeds = () => { 
+let countdownForNeeds = () => {
+    // SET SERVICES (TIME PER UNIT) HIGHER
+    if (Object.values(difficulty[catchTheNumArr]) === 4000) {
+        services += 4; 
+    } else if (Object.values(difficulty[catchTheNumArr]) === 3000) {
+        services += 3;
+    } else if (Object.values(difficulty[catchTheNumArr]) === 4000) {
+        services += 0.5;
+    };
+
     // to clear the console on every execution
     console.clear();
     let food = yoshi.food 
