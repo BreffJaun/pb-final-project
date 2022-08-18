@@ -5,6 +5,7 @@ import chalk from 'chalk';
 import printStatus from './ui1_header.js';
 import printMenu from './ui3_footer.js'
 import printCat from './ui2_body.js'
+import printMode from './ui0_mode.js'
 
 let time = 0;
 let services = 0;
@@ -76,8 +77,24 @@ const yoshi = {
         this.health -= 30
         console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
         services++
+    },
+    serv(){
+        if( this.services.toString().length === 0 ){
+            return 000
+        }
+        if( this.services.toString().length === 1 ){
+            return 00 + this.services
+        }
+        if( this.services.toString().length === 2 ){
+            return 0 + this.services
+        }
+        if( this.services.toString().length === 3 ){
+            return this.services
+        }
     }
 };
+
+
 
 let countdownForNeeds = () => {
     // SET TIME (TIME PER UNIT) HIGHER
@@ -243,7 +260,7 @@ const setDifficulty = () => {
 };
 setDifficulty();
 
-const countdownMain = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])); 
+//const countdownMain = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])); 
 let modus = Object.keys(difficulty[catchTheNumArr]).join("");
 
 export default yoshi
