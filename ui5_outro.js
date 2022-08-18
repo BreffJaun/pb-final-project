@@ -6,24 +6,37 @@ const printIntro = () => {
 
 
                                           - --=xXx=-- - 
-                                     - -= W E L C O M E =- -                                  
+                               - -= Y O U   A R E   F I R E D =- -                                                                 
                                           - --=xXx=-- - 
 
 
-                                  This is a BRANDNEW RETRO game. 
-                                  Dedicated to a Cat named YOSHI
-                                  that calls itself "Your Highness".
+                                  Never mind...
+                                  
+                                  
+                                  "Your Highness" uses up personnel
+                                  every minute. So if you lasted 
+                                  several minutes, that's really remarkable.
+                                  
+
+                                  Let us know your high score! 'Cause we
+                                  can't programm databases yet, send us
+                                  screenshots or ask us by mail or GitHub 
+                                  when the databases will be ready.
 
 
-                                  What you are about to experience
-                                  is what it's like to walk in 
-                                  "full time servant shoes" for
-                                  "Your Highness".
+                                          - --=xXx=-- -         
+
+                                     -= B r e f f J a u n =-
+
+                                    -= i t z F l o r i a n =-
+
+                               -= g r o s s e s b e w i r k e n =-    
+-
+                                          - --=xXx=-- - 
 
                                   
-                                  Needs are high, time is little.
-                                  Enjoy the challenge an have fun.
-                                  And we wish you good luck. 
+                                  Feel feel to contact us.
+                                  Would be a pleasure and fun.
                                   
                                   
                                   ... Really!
