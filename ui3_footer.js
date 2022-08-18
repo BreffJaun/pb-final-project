@@ -12,18 +12,5 @@ function printMenu  () {
 `};
 
 
-// hier kommen die Kommentare
-
-
-const printMinusLine = () => {
-  return `
-- - - - - - - - - - - - - - - - - - - - - - --=xXx=-- - - - - - - - - - - - - - - - - - - - - -`
-};
-
-// hier kommt die Console
-
-
-
 export default printMenu;
 
-export default printMinusLine;

@@ -9,7 +9,7 @@ import printStatus from './ui1_header.js';
 import printMenu from './ui3_footer.js';
 import printCat from './ui2_body.js';
 import printMode from './ui0_mode.js';
-import printMinusLine from './ui3_footer.js';
+import printMinusLine from './ui_layout.js';
 import needs_terminal_warnings from './determine_warnings.js';
 import break_The_Interval from './break_commands.js'
 
