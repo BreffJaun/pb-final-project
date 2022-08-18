@@ -36,10 +36,10 @@ const printIntro = () => {
 
                                   
                                   Feel free to contact us.
-                                  Would be a pleasure for us.
+                                  Would be a pleasure.
                                   
                                   
-                                  ... Really!
+                                  ... And awesome!
 
 
                                     - - - - --=xXx=-- - - - -                                           
