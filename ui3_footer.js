@@ -1,5 +1,5 @@
 function printMenu  () {
-    return `
+  return `
 - - - - - - - - - - - - - - - - - - - - - - -=xXx=- - - - - - - - - - - - - - - - - - - - - - - -
 
           -= F O O D =-                -= D R I N K S =-                -= M O O D =-       
@@ -17,7 +17,7 @@ function printMenu  () {
 
 const printMinusLine = () => {
   return `
-  - - - - - - - - - - - - - - - - - - - - - - --=xXx=-- - - - - - - - - - - - - - - - - - - - - -`
+- - - - - - - - - - - - - - - - - - - - - - --=xXx=-- - - - - - - - - - - - - - - - - - - - - -`
 };
 
 // hier kommt die Console
