@@ -14,23 +14,68 @@ const yoshi = {
     food : 100,
     drink : 100,
     mood : 100,
-    health : 100,
+    health: 100,
+    
+    // INTERACTIONS
+    // FOOD
     feedTuna(){
+        this.food += 30
+        this.mood -= 25
+        console.log("that makes me full, but not satisfied");
+        services++
+    },
+        feedCatfood(){
         this.food += 20
-        this.mood += 10
+        this.drink -= 25
+        console.log("are you Kidding me?");
         services++
-    },   
-    drinkWater(){
-        this.drink += 20
-        this.mood -= 10
+    }, 
+    feedLasagne(){
+        this.food += 10
+        this.health -= 30
+        console.log("let's do the Garfield way, you may kiss the paw now");
         services++
+    }, 
 
+    // DRINK
+    drinkWater(){
+        this.drink += 30
+        this.mood -= 25
+        console.log("Go away with the cheap booze.....but thanks loyal human");
+        services++
+    },
+    drinkMilk(){
+        this.drink += 20
+        this.mood -= 20
+        console.log("uhh mewow");
+        services++
+    },
+    drinkChampagne(){
+        this.drink += 10
+        this.health -= 30
+        console.log("just a little dropplet for my royal paw");
+        services++
+    },
+
+    // MOOD
+    strokeBelly(){
+        this.mood += 30   
+        this.food -= 25
+        console.log("purr purr....purr it's better now");
+        services++
+    },
+    dance(){
+        this.mood += 20
+        this.drink -= 10
+        console.log("dance little monkey...dance!");
+        services++
     },
     turnOnTv(){
-        this.mood += 20        
+        this.mood += 20
+        this.health -= 30        
+        console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
         services++
     }
-
 }
 
 let countdownForNeeds = () => { 
@@ -41,9 +86,8 @@ let countdownForNeeds = () => {
     let mood = yoshi.mood   
     let health = yoshi.health  
 
-
-    yoshi.food -= 1
-    yoshi.drink -= 3    
+    yoshi.food -= 1;
+    yoshi.drink -= 3;    
     yoshi.mood -= 2;
     yoshi.health = ((yoshi.food + yoshi.drink + yoshi.mood) / 3).toFixed() 
 
@@ -53,9 +97,9 @@ let countdownForNeeds = () => {
     console.log(printCat(yoshi))
 
     // INTERACTION 
-        const interact = () =>{
-           printMenu ();
-           const interaction = prompt("Type 1 - 9 for Interaction  ")             
+    const interact = () =>{
+        printMenu ();
+        const interaction = prompt("Type 1 - 9 for Interaction  ")             
             if (interaction === "1"){                
                 yoshi.feedTuna()                   
             }if (interaction === "2"){                
@@ -75,36 +119,61 @@ let countdownForNeeds = () => {
             }if (interaction === "9"){                
                 yoshi.strokeBelly()                   
         }
-            
     }
 
-    // DETERMINE THE WARNINGS OF THE 4 NEEDS //    IN IF ELSE ABFRAGE ABÄNDERN DAMIT WIR MEHRERE AKTIONEN AUSFÜHREN KÖNNEN FÜR DIE INTERAKTIONEN 
+    // DETERMINE THE WARNINGS OF THE 4 NEEDS //
     // HEALTH
     if (health <= 75 && health > 65){
-        console.log('     I need a curd mask...with cucumber slices for my eyes!')        
-        interact()
-    }else if (health <= 50 && health > 40){
-    console.log('     I need a spa right away')
+        console.log('     I need a curd mask...with cucumber slices for my eyes!');        
+    } else if (health <= 50 && health > 40){
+        console.log('     I need a spa right away');
     } else if(health <= 25 ){
-     console.log('     I feel dizzy....catch me up')
-    }else {
+        console.log('     I feel dizzy....catch me up')
+    } else {
+        console.log();
+    };
+    
+    // FOOD
+    if (food <= 80 && food > 70) {
+        console.log('     Feed me!');
+        interact();
+    } else if (food <= 55 && food > 45) {
+        console.log('     I am bored...just a reminder');
+        interact();
+    } else if (food <= 35) {
+        console.log('     I can see my paws after a long time, so TIME TO FEED ME NOW!');
+        interact();
+    } else {
         console.log();
     }
     
-    // food
-    food <= 80 && food > 70 ? console.log('     Feed me!') :
-    food <= 55 && food > 45 ? console.log('     I am bored...just a reminder') :
-    food <= 35 ? console.log('     I can see my paws after a long time, so TIME TO FEED ME NOW!') : console.log();
-    
-    // drink
-    drink <= 70 && drink > 60 ? console.log('     Give me something to drink') :
-    drink <= 45 && drink > 35 ? console.log('     My delicate royal lips are a little too dry') :
-    drink <= 20 ? console.log('     I dehydrate....I already see flying mices') : console.log();
-    
+    // DRINK
+    if (drink <= 70 && drink > 60) {
+        console.log('     Give me something to drink');
+        interact();
+    } else if (drink <= 45 && drink > 35) {
+        console.log('     My delicate royal lips are a little too dry');
+        interact();
+    } else if (drink <= 20) {
+        console.log('     I dehydrate....I already see flying mices');
+        interact();
+    } else {
+        console.log()
+    };
+
     // MOOD
-    mood <= 90 && mood > 80 ? console.log('     Entertain me!') :
-    mood <= 60 && mood > 50 ? console.log('     Hello...i am hungry!') : 
-    mood <= 30 ? console.log('     Where is the jester?') : console.log();
+    if (mood <= 90 && mood > 80) {
+        console.log('     Entertain me!');
+        interact();
+    } else if (mood <= 60 && mood > 50) {
+        console.log('     Hello...i am hungry!');
+        interact();
+    } else if (mood <= 30) {
+        console.log('     Where is the jester?');
+        interact();
+    } else {
+        console.log();
+    }
 
     // BREAK COMMAND => only works with if-else, not with ternary!
     if (health <= 0) {
