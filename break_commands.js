@@ -16,21 +16,24 @@ const break_The_Interval = () => {
         console.log(printCat(yoshi));
         console.log(printMenu());
         console.log('You dont care enough about my health. YOU ARE FIRED! ! !');
-    } else if (yoshi.mood <= 0) {
+    }
+    if (yoshi.mood <= 0) {
         console.clear();
         clearInterval(countdownMain);
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
         console.log(printCat(yoshi));
         console.log(printMenu());
         console.log('You dont care enough about my mood. YOU ARE FIRED! ! !');
-    } else if (yoshi.food <= 0) {
+    }
+    if (yoshi.food <= 0) {
         console.clear();
         clearInterval(countdownMain);
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         console.log(printMenu());
         console.log('You dont care enough about my food. YOU ARE FIRED! ! !');
-    } else if (yoshi.drink <= 0) {
+    }
+    if (yoshi.drink <= 0) {
         console.clear();
         clearInterval(countdownMain);
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
