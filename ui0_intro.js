@@ -1,4 +1,4 @@
-const printMode = () => {
+const printIntro = () => {
     return`
                                     ●-=========xXx=========-●
 ==================================-●  " t a m a Y O S H I "  ●-==================================
@@ -6,37 +6,31 @@ const printMode = () => {
 
 
                                           - --=xXx=-- - 
-                                  - -= G A M E - M O D E S =- -
+                                     - -= W E L C O M E =- -                                  
                                           - --=xXx=-- - 
 
 
-       -= F O O T M A N =-               -= V A L E T =-                -= B U T L E R =-       
-    ●-=========xXx=========-●       ●-=========xXx=========-●       ●-=========xXx=========-●  
+                                  This is a BRANDNEW RETRO game. 
+                                  Dedicated to a Cat named YOSHI
+                                  but calls itself "Your Highness".
 
-           "Hausdiener"                   "Kammerdiener"                  "Chef-Diener"
 
-    - - - - --=xXx=-- - - - -       - - - - --=xXx=-- - - - -       - - - - --=xXx=-- - - - -
+                                  What you are about to experience
+                                  is what it's like to walk in 
+                                  "full time servant shoes" for
+                                  "Your Highness".
 
-      The servant,                     The servant,                   The head servant           
-      to wait at                       who takes care of              in a household who
-      table, attend the                his clothes and                is usually in charge 
-      door, and run various            performs other                 of food service,
-      errands, as in                   personal services.             the care of silverware,
-      a palace.                                                       and the deportment
-                                                                      of the other servants.
+                                  
+                                  Needs are high, time is little.
+                                  Enjoy the challenge an have fun.
+                                  And we wish you good luck. 
+                                  
+                                  
+                                  ... Really!
 
-    - - - - --=xXx=-- - - - -       - - - - --=xXx=-- - - - -       - - - - --=xXx=-- - - - -
 
-      Mode: E A S Y                    Mode: N O R M A L              Mode: H A R D
-      Reaction: 5 sec                  Reaction: 2.5 sec              Reaction: 1 sec
-
-    - - - - --=xXx=-- - - - -       - - - - --=xXx=-- - - - -       - - - - --=xXx=-- - - - -
-
-      Enter { 1 }  to start            Enter { 2 } to start           Enter { 2 } to start
-
-    ●-=========xXx=========-●       ●-=========xXx=========-●       ●-=========xXx=========-● 
-
+                                    - - - - --=xXx=-- - - - -                                           
     `
 };
 
-export default printMode; 
+export default printIntro; 
