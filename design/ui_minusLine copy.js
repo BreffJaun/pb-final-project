@@ -34,10 +34,14 @@ const printMinus = () => {
 
 const printMinused = () => {
     return `
-    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    - - - - - - - - - - - - - - - - - - - - - - --=xXx=-- - - - - - - - - - - - - - - - - - - - - -`
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -`
 };
 
+
+const printMinusLine = () => {
+    return `
+    - - - - - - - - - - - - - - - - - - - - - - --=xXx=-- - - - - - - - - - - - - - - - - - - - - -`
+};
 
 
 const printDots = () => {
@@ -51,3 +55,4 @@ const printDoted = () => {
 };
 
 
+export default printMinusLine;

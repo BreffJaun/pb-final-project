@@ -76,18 +76,18 @@ const printCatBored = () => {
 const printCatAngry = () => {
   return`
 
-       X-_                                _X  
+       X-_                               _-X  
        XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX            _=vVVVv=_            -= G A M E =- 
        X >v_x=                       =x_v< X           x         X          ●-====xXx====-●
        X        -{_____  |  _____}-        X          X-         -X         |             |
        X        > __()_  ▼  _()_ <         X          Xx-         -X        |  Mode:      |
        X            ===> Y <===            X            X-        -X        |  ${yoshi.lvl()}    |
        X       (  _______A_______  )       XXXxx=_       X-       -X        |  _________  |
-       X           vvVV vvvv VVvv          X       Xx    X-       -X        |             |
-        X          |            |          X         XX-X-       -X         |  Time:      |
-        xX         |            |         xXx_         Xx-     -xX          |  08:16 min  |
-      X  XX        |            |        XX  X-        X-   -xXX            |  _________  |
-     X    XXx      |AAA__|___AAA|      xXX     X-       X_xxXX-             |             |
+       X           vvVV vvv VVvv           X       Xx    X-       -X        |             |
+        X          |           |           X         XX-X-       -X         |  Time:      |
+        xX         |           |          xXx_         Xx-     -xX          |  08:16 min  |
+      X  XX        |           |         XX  X-        X-   -xXX            |  _________  |
+     X    XXx      |AAA__|__AAA|       xXX     X-       X_xxXX-             |             |
      X       XXx  (      Y       )  xXX       X-.      X                    |  Services:  |
      Xx-_       XXXx=----_---==xxXXX         XX_____=xXX                    |  ${yoshi.serv()}        |
        Xx                                -xX       vVVv                     |             |
@@ -110,8 +110,8 @@ const printCatHate = () => {
        X        _=xxX=            -._     =XXXxx=_       X-       -X        |  _________  |
        X    XXX                        -- _      =Xx    X-       -X         |             |
         =xX                     ._           =-___-=X-X-        -X          |  Time:      |
-       x                           -                          -X            |  08:16 min  |
-      X                         X   -x=-___                -=X              |  _________  |
+       x                           -_                         -X            |  08:16 min  |
+      X                        ><    -=x___                -=X              |  _________  |
       X                                   xxx===--__-==xxXX*                |             |
       X                                                   X                 |  Services:  |
       X           X                           X           X                 |  ${yoshi.serv()}        |
@@ -122,9 +122,16 @@ const printCatHate = () => {
 
 
 
-
-
-function printCat ( yoshi ) {
+function printCat(yoshi) {
+  if (yoshi.food <= 0) {
+    return printCatHate()
+  }
+  if (yoshi.drink <= 0) {
+    return printCatHate()
+  }
+  if (yoshi.mood <= 0) {
+    return printCatHate()
+  };
   if ( yoshi.health > 90){
     return printCatHappy();
   } else if ( yoshi.health > 60 ) {
@@ -133,11 +140,9 @@ function printCat ( yoshi ) {
     return printCatBored()
   } else if ( yoshi.health > 10) {
     return printCatAngry()
-  } else if ( yoshi.health > 0 ) {
+  } else if ( yoshi.health <= 0) {
     return printCatHate()
   }
-}
-
-
+};
 
 export default printCat;

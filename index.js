@@ -9,9 +9,10 @@ import printStatus from './ui1_header.js';
 import printMenu from './ui3_footer.js';
 import printCat from './ui2_body.js';
 import printMode from './ui0_mode.js';
-import printMinusLine from './ui3_footer.js';
-import needs_terminal_warnings from './determine_warnings.js';
-import break_The_Interval from './break_commands.js'
+import printMinusLine from './ui_minusLine.js';
+import needs_terminal_warnings from './ui_determine_warnings.js';
+import break_The_Interval from './break_commands.js';
+import interact from './interact_querry.js';
 
 // ==================================================
 
@@ -180,6 +181,7 @@ let countdownForNeeds = () => {
     yoshi.food -= 1;
     yoshi.drink -= 3;    
     yoshi.mood -= 2;
+
     yoshi.health = parseInt(((yoshi.food + yoshi.drink + yoshi.mood) / 3).toFixed()) 
 
     // print the currant status of needs in the console  
@@ -224,13 +226,28 @@ let countdownForNeeds = () => {
         interact();
     }
 
+    console.log(printCat(yoshi));
+
+
+    // MENU //  
+    console.log(printMenu());
     // BREAK COMMAND //
     break_The_Interval(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
-    // MENU //  
-    console.log(printMenu ())
+
     // PRINT THE WARNINGS OF THE 4 NEEDS //
     needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
-    
+    // INTERACTION BRAKEPOINT
+    if( health < 80 && health > 75 ){
+        interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+    }  
+    if( health < 55 && health > 50 ){
+        interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+    }
+    if( health < 25 && health > 15 ){
+        interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+    }
+    console.log(yoshi);
+
 };
 
 const difficulty = [
