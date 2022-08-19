@@ -185,8 +185,8 @@ const difficulty = [
 // LET THE USER CHOOSE THE DIFFICULTY LEVEL
 const catchTheNumArr = [];
 const setDifficulty = () => {
-    console.log(printMode());
-    console.log(printSubLine());
+    printMode();
+    printSubLine();
     const queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
     const catchTheNum = queryTheDifficulty-1;
     catchTheNumArr.push(catchTheNum);
@@ -219,7 +219,7 @@ let countdownForNeeds = () => {
     console.log(printCat(yoshi))
 
     // MENU //  
-    console.log(printMenu());
+    printMenu();
 
     // BREAK COMMAND //
     if (yoshi.health <= 0) {
@@ -227,7 +227,7 @@ let countdownForNeeds = () => {
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
-        console.log(printMenu());
+        printMenu();
         console.log('     You dont care enough about my HEALTH. YOU ARE FIRED ! ! !');
     }
     if (yoshi.mood <= 0) {
@@ -235,7 +235,7 @@ let countdownForNeeds = () => {
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
         console.log(printCat(yoshi));
-        console.log(printMenu());
+        printMenu();
         console.log('     You dont care enough about my MOOD. YOU ARE FIRED ! ! !');
     }
     if (yoshi.food <= 0) {
@@ -243,7 +243,7 @@ let countdownForNeeds = () => {
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
-        console.log(printMenu());
+        printMenu();
         console.log('     You dont care enough about my FOOD. YOU ARE FIRED ! ! !');
     }
     if (yoshi.drink <= 0) {
@@ -251,12 +251,12 @@ let countdownForNeeds = () => {
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
-        console.log(printMenu());
+        printMenu();
         console.log('     You dont care enough about my DRINK. YOU ARE FIRED ! ! !');
     }
     // PRINT THE WARNINGS OF THE 4 NEEDS //
     needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
-    console.log(printSubLine());
+    printSubLine();
     console.log();
 
     // INTERACTION BRAKEPOINT
