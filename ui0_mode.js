@@ -1,5 +1,5 @@
-const printMode = () => {
-    return`
+function printMode () {
+    console.log(`
                                     ●-=========xXx=========-●
 ==================================-●  " t a m a Y O S H I "  ●-==================================
                                     ●-=========xXx=========-●
@@ -37,6 +37,10 @@ const printMode = () => {
     ●-=========xXx=========-●       ●-=========xXx=========-●       ●-=========xXx=========-● 
 
     `
-};
+)};
+
+printMode()
 
 export default printMode; 
+
+
