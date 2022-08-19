@@ -12,10 +12,10 @@ import printMode from './ui0_mode.js';
 import printMinusLine from './ui_minusLine.js';
 import printSubLine from './ui_subline.js';
 import needs_terminal_warnings from './ui_determine_warnings.js';
-import break_The_Interval from './break_commands.js';
+// import break_The_Interval from './break_commands.js';
 import interact from './interact_querry.js';
 import printIntro from './ui0_intro.js';
-import printTheIntro from './ui0_intro.js';
+// import printTheIntro from './ui0_intro.js';
 
 // ==================================================
 
@@ -174,9 +174,7 @@ const yoshi = {
 };
 
 // START THE INTRO
-
 // printTheIntro();
-
 
 // EVERYTHING WHAT IS NEED FOR CHOOSE THE DIFFICULTY // 
 const difficulty = [
@@ -188,16 +186,13 @@ const difficulty = [
 // LET THE USER CHOOSE THE DIFFICULTY LEVEL
 let catchTheNumArr = [];
 const setDifficulty = () => {
+    printIntro();
     printMode();
-    printSubLine();      
-    let queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);    
-     if( queryTheDifficulty != "1" && queryTheDifficulty != "2" && queryTheDifficulty != "3" ){          
-          queryTheDifficulty = prompt(`                                  Choose your difficulty level: `)             
-         }
-        const catchTheNum = queryTheDifficulty-1;
-        catchTheNumArr.push(catchTheNum);
-    };
-
+    printSubLine();
+    const queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
+    const catchTheNum = queryTheDifficulty-1;
+    catchTheNumArr.push(catchTheNum);
+};
 setDifficulty();
 yoshi.mode = Object.keys(difficulty[catchTheNumArr]).join("");
 
@@ -236,7 +231,8 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
-        console.log('     You dont care enough about my HEALTH. YOU ARE FIRED ! ! !');
+// .....console.log(chalk.redBrightbold('===============================================================================================')
+        console.log(chalk.redBrightbold('                               You make me sick!  YOU ARE FIRED!                               '));
     }
     if (yoshi.mood <= 0) {
         clearInterval(countdownMain);
@@ -244,7 +240,8 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
         console.log(printCat(yoshi));
         printMenu();
-        console.log('     You dont care enough about my MOOD. YOU ARE FIRED ! ! !');
+// .....console.log(chalk.redBright.bold('===============================================================================================')
+        console.log(chalk.redBright.bold('                           I didn´t have enough fun!  YOU ARE FIRED!                           '));
     }
     if (yoshi.food <= 0) {
         clearInterval(countdownMain);
@@ -252,7 +249,8 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
-        console.log('     You dont care enough about my FOOD. YOU ARE FIRED ! ! !');
+// .....console.log(chalk.redBright.bold('===============================================================================================')
+        console.log(chalk.redBright.bold('                               I was too hungry!  YOU ARE FIRED!                               '));
     }
     if (yoshi.drink <= 0) {
         clearInterval(countdownMain);
@@ -260,7 +258,8 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
-        console.log('     You dont care enough about my DRINK. YOU ARE FIRED ! ! !');
+// .....console.log(chalk.redBright.bold('===============================================================================================')
+        console.log(chalk.redBright.bold('                              I got too thirsty!   YOU ARE FIRED!                              '));
     }
     // PRINT THE WARNINGS OF THE 4 NEEDS //
     needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
