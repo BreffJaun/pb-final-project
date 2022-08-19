@@ -14,6 +14,8 @@ import printSubLine from './ui_subline.js';
 import needs_terminal_warnings from './ui_determine_warnings.js';
 import break_The_Interval from './break_commands.js';
 import interact from './interact_querry.js';
+import printIntro from './ui0_intro.js';
+import printTheIntro from './ui0_intro.js';
 
 // ==================================================
 
@@ -170,6 +172,28 @@ const yoshi = {
     }
 };
 
+// START THE INTRO
+printTheIntro();
+
+// EVERYTHING WHAT IS NEED FOR CHOOSE THE DIFFICULTY // 
+const difficulty = [
+    { Footmen: 4000 },   // => Hausdiener
+    { Valet: 3000 },     // => Kammerdiener
+    { Butler: 250 },     // => (Chef-) Diener
+];
+
+// LET THE USER CHOOSE THE DIFFICULTY LEVEL
+const catchTheNumArr = [];
+const setDifficulty = () => {
+    console.log(printMode());
+    console.log(printSubLine());
+    const queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
+    const catchTheNum = queryTheDifficulty-1;
+    catchTheNumArr.push(catchTheNum);
+};
+setDifficulty();
+yoshi.mode = Object.keys(difficulty[catchTheNumArr]).join("");
+
 let countdownForNeeds = () => {
     // SET TIME (TIME PER UNIT) HIGHER
     if (catchTheNumArr.length > 0 ) {
@@ -198,7 +222,7 @@ let countdownForNeeds = () => {
     console.log(printMenu());
 
     // BREAK COMMAND //
-    if (yoshi.health === 0 || yoshi.health < 0) {       
+    if (yoshi.health <= 0) {
         clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
@@ -206,7 +230,7 @@ let countdownForNeeds = () => {
         console.log(printMenu());
         console.log('You dont care enough about my health. YOU ARE FIRED! ! !');
     }
-    if (yoshi.mood <= 0) {        
+    if (yoshi.mood <= 0) {
         clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
@@ -214,7 +238,7 @@ let countdownForNeeds = () => {
         console.log(printMenu());
         console.log('You dont care enough about my mood. YOU ARE FIRED! ! !');
     }
-    if (yoshi.food <= 0) {     
+    if (yoshi.food <= 0) {
         clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
@@ -222,7 +246,7 @@ let countdownForNeeds = () => {
         console.log(printMenu());
         console.log('You dont care enough about my food. YOU ARE FIRED! ! !');
     }
-    if (yoshi.drink === 0 || yoshi.drink < 0) {        
+    if (yoshi.drink <= 0) {
         clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
@@ -245,30 +269,14 @@ let countdownForNeeds = () => {
     if( yoshi.health < 25 && yoshi.health > 15 ){
         interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
     }
-    
-    console.log(yoshi);
+    // console.log(yoshi);
 };
 
-// EVERYTHING WHAT IS NEED FOR CHOOSE THE DIFFICULTY // 
-const difficulty = [
-    { Footmen: 4000 },   // => Hausdiener
-    { Valet: 3000 },     // => Kammerdiener
-    { Butler: 250 },     // => (Chef-) Diener
-];
-
-// LET THE USER CHOOSE THE DIFFICULTY LEVEL
-const catchTheNumArr = [];
-const setDifficulty = () => {
-    console.log(printMode());
-    console.log(printSubLine());
-    const queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
-    const catchTheNum = queryTheDifficulty-1;
-    catchTheNumArr.push(catchTheNum);
-};
-setDifficulty();
-
-const countdownMain = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])); 
-yoshi.mode = Object.keys(difficulty[catchTheNumArr]).join("");
+const countdownMain = () => { setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])) }; 
+const startCountdownMain = () => { setTimeout(function () { countdownMain() }, 15000)};
+startCountdownMain();
 
 export default yoshi;
+
+
 
