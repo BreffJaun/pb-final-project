@@ -222,6 +222,7 @@ let countdownForNeeds = () => {
     console.log(printMenu());
 
     // BREAK COMMAND //
+<<<<<<< HEAD
     if (yoshi.health <= 0) {
         clearInterval(countdownMain);
         console.clear();
