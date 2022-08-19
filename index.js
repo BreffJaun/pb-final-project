@@ -173,7 +173,7 @@ const yoshi = {
 };
 
 // START THE INTRO
-printTheIntro();
+// printTheIntro();
 
 // EVERYTHING WHAT IS NEED FOR CHOOSE THE DIFFICULTY // 
 const difficulty = [
@@ -222,14 +222,13 @@ let countdownForNeeds = () => {
     console.log(printMenu());
 
     // BREAK COMMAND //
-<<<<<<< HEAD
     if (yoshi.health <= 0) {
         clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         console.log(printMenu());
-        console.log('You dont care enough about my health. YOU ARE FIRED! ! !');
+        console.log('     You dont care enough about my HEALTH. YOU ARE FIRED ! ! !');
     }
     if (yoshi.mood <= 0) {
         clearInterval(countdownMain);
@@ -237,7 +236,7 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
         console.log(printCat(yoshi));
         console.log(printMenu());
-        console.log('You dont care enough about my mood. YOU ARE FIRED! ! !');
+        console.log('     You dont care enough about my MOOD. YOU ARE FIRED ! ! !');
     }
     if (yoshi.food <= 0) {
         clearInterval(countdownMain);
@@ -245,7 +244,7 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         console.log(printMenu());
-        console.log('You dont care enough about my food. YOU ARE FIRED! ! !');
+        console.log('     You dont care enough about my FOOD. YOU ARE FIRED ! ! !');
     }
     if (yoshi.drink <= 0) {
         clearInterval(countdownMain);
@@ -273,9 +272,13 @@ let countdownForNeeds = () => {
     // console.log(yoshi);
 };
 
-const countdownMain = () => { setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])) }; 
-const startCountdownMain = () => { setTimeout(function () { countdownMain() }, 15000)};
-startCountdownMain();
+const countdownMain = (setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])));
+
+// const countdownMain = () => { setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])) }; 
+// const startCountdownMain = () => { setTimeout(function () { countdownMain() }, 15000)};
+// startCountdownMain();
+// const countdownMainStop = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr]));
+
 
 export default yoshi;
 
