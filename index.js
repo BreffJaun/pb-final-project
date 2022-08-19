@@ -227,7 +227,7 @@ let countdownForNeeds = () => {
     // BREAK COMMAND //
 
     if (yoshi.health <= 0) {
-        clearInterval(countdownMainStop);
+        clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
@@ -235,7 +235,7 @@ let countdownForNeeds = () => {
         console.log('     You dont care enough about my HEALTH. YOU ARE FIRED ! ! !');
     }
     if (yoshi.mood <= 0) {
-        clearInterval(countdownMainStop);
+        clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
         console.log(printCat(yoshi));
@@ -243,7 +243,7 @@ let countdownForNeeds = () => {
         console.log('     You dont care enough about my MOOD. YOU ARE FIRED ! ! !');
     }
     if (yoshi.food <= 0) {
-        clearInterval(countdownMainStop);
+        clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
@@ -251,7 +251,7 @@ let countdownForNeeds = () => {
         console.log('     You dont care enough about my FOOD. YOU ARE FIRED ! ! !');
     }
     if (yoshi.drink <= 0) {
-        clearInterval(countdownMainStop);
+        clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
