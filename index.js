@@ -19,6 +19,7 @@ import printTheIntro from './ui0_intro.js';
 
 // ==================================================
 
+
 const yoshi = {
     name: 'Yoshi',
     food: 100,
@@ -173,7 +174,8 @@ const yoshi = {
 };
 
 // START THE INTRO
-printTheIntro();
+
+    printTheIntro();
 
 // EVERYTHING WHAT IS NEED FOR CHOOSE THE DIFFICULTY // 
 const difficulty = [
@@ -210,8 +212,8 @@ let countdownForNeeds = () => {
     // NEEDS CALCULATION //
     yoshi.food -= 1;
     yoshi.drink -= 3;    
-    yoshi.mood -= 2;
-    yoshi.health = parseInt(((yoshi.food + yoshi.drink + yoshi.mood) / 3).toFixed()) 
+    yoshi.mood -= 2;    
+    yoshi.health = parseInt(((yoshi.food + yoshi.drink + yoshi.mood) / 3).toFixed())    
 
     // PRINT STATUS //  
     console.log();       
@@ -221,10 +223,10 @@ let countdownForNeeds = () => {
     // MENU //  
     console.log(printMenu());
 
-    // BREAK COMMAND //
-<<<<<<< HEAD
+ // BREAK COMMAND //
+
     if (yoshi.health <= 0) {
-        clearInterval(countdownMain);
+        clearInterval(countdownMainStop);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
@@ -232,7 +234,7 @@ let countdownForNeeds = () => {
         console.log('You dont care enough about my health. YOU ARE FIRED! ! !');
     }
     if (yoshi.mood <= 0) {
-        clearInterval(countdownMain);
+        clearInterval(countdownMainStop);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
         console.log(printCat(yoshi));
@@ -240,7 +242,7 @@ let countdownForNeeds = () => {
         console.log('You dont care enough about my mood. YOU ARE FIRED! ! !');
     }
     if (yoshi.food <= 0) {
-        clearInterval(countdownMain);
+        clearInterval(countdownMainStop);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
@@ -248,7 +250,7 @@ let countdownForNeeds = () => {
         console.log('You dont care enough about my food. YOU ARE FIRED! ! !');
     }
     if (yoshi.drink <= 0) {
-        clearInterval(countdownMain);
+        clearInterval(countdownMainStop);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
@@ -260,7 +262,7 @@ let countdownForNeeds = () => {
     console.log(printSubLine());
     console.log();
 
-    // INTERACTION BRAKEPOINT
+    // INTERACTION BREAKPOINT
     if( yoshi.health < 80 && yoshi.health > 75 ){
         interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
     }  
@@ -269,15 +271,13 @@ let countdownForNeeds = () => {
     }
     if( yoshi.health < 25 && yoshi.health > 15 ){
         interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
-    }
-    // console.log(yoshi);
+    }     
 };
 
-const countdownMain = () => { setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])) }; 
-const startCountdownMain = () => { setTimeout(function () { countdownMain() }, 15000)};
-startCountdownMain();
+const startCountdownMain = setTimeout(countdownForNeeds, 15000);
+const startCountdownMain2 = setTimeout(setDifficulty, 15000);
+startCountdownMain
+startCountdownMain2
+// const countdownMainStop = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr]));
 
 export default yoshi;
-
-
-
