@@ -186,14 +186,18 @@ const difficulty = [
 ];
 
 // LET THE USER CHOOSE THE DIFFICULTY LEVEL
-const catchTheNumArr = [];
+let catchTheNumArr = [];
 const setDifficulty = () => {
     printMode();
-    printSubLine();
-    const queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
-    const catchTheNum = queryTheDifficulty-1;
-    catchTheNumArr.push(catchTheNum);
-};
+    printSubLine();      
+    let queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);    
+     if( queryTheDifficulty != "1" && queryTheDifficulty != "2" && queryTheDifficulty != "3" ){          
+          queryTheDifficulty = prompt(`                                  Choose your difficulty level: `)             
+         }
+        const catchTheNum = queryTheDifficulty-1;
+        catchTheNumArr.push(catchTheNum);
+    };
+
 setDifficulty();
 yoshi.mode = Object.keys(difficulty[catchTheNumArr]).join("");
 
