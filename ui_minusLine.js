@@ -1,6 +1,5 @@
-const printMinusLine = () => {
-    return `
-    - - - - - - - - - - - - - - - - - - - - - - --=xXx=-- - - - - - - - - - - - - - - - - - - - - -`
-};
+function printMinusLine () {
+    console.log(`- - - - - - - - - - - - - - - - - - - - - - --=xXx=-- - - - - - - - - - - - - - - - - - - - - -`
+)};
 
 export default printMinusLine;

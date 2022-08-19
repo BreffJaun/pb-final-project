@@ -4,7 +4,7 @@ import printSubLine from './ui_subline.js';
 
 // ==================================================
 
-const printIntro = () => {
+function printIntro () {
   const line1Output = setTimeout(line1, 250);
   const line2Output = setTimeout(line2, 500);
   const line3Output = setTimeout(line3, 1000);
@@ -41,24 +41,24 @@ const printTheIntro = () => { setTimeout(function () { printIntro() }, 250) };
 // const printTheIntro = setTimeout(function () { printIntro() }, 250);
 
 // THE SINGLE VARIABLES
-const line1 = () => {
+const line1  = () => {
   console.clear();
   console.log(`                                    ●-=========xXx=========-●`)
 };
-const line2 = () => {
+const line2  = () => {
   console.clear();
   console.log(`
                                       ●-=========xXx=========-●
   ==================================-●  " t a m a Y O S H I "  ●-==================================`)
 };
-const line3 = () => {
+const line3  = () => {
   console.clear();
   console.log(`
                                       ●-=========xXx=========-●
   ==================================-●  " t a m a Y O S H I "  ●-==================================
                                       ●-=========xXx=========-● `)
 };
-const line4 = () => {
+const line4  = () => {
   console.clear();
   console.log(`
                                       ●-=========xXx=========-●
@@ -67,7 +67,7 @@ const line4 = () => {
                                     
                                       `)
 }
-const line5 = () => {
+const line5  = () => {
   console.clear();
   console.log(`
                                       ●-=========xXx=========-●
@@ -77,7 +77,7 @@ const line5 = () => {
   
                                       `)
 }
-const line6 = () => {
+const line6  = () => {
   console.clear();
   console.log(`
                                       ●-=========xXx=========-●
@@ -86,38 +86,31 @@ const line6 = () => {
   
   
 
-                                            - --=xXx=-- -`)
-}
-const line7 = () => {
-  console.log(`
-                                       - -= W E L C O M E =- -`)
-}
-const line8 = () => {
-  console.log(`
-                                            - --=xXx=-- -`)
-}
-const line9 = () => {console.log(``)}
-const line10 = () => {console.log(``)}
-const line11 = () => {console.log(`                                   This is a BRANDNEW RETRO game.`)}
-const line12 = () => {console.log(`                                   Dedicated to a Cat named YOSHI`)}
-const line13 = () => {console.log(`                                   but calls itself "Your Highness".`)}
-const line14 = () => {console.log(``)}
-const line15 = () => {console.log(`                                   What you are about to experience`)}
-const line16 = () => {console.log(`                                   is what it's like to walk in`)}
-const line17 = () => {console.log(`                                   "full time servant shoes" for`)}
-const line18 = () => {console.log(`                                   "Your Highness".`)}
-const line19 = () => {console.log(``)}
-const line20 = () => {console.log(`                                   Needs are high, time is little.`)}
-const line21 = () => {console.log(`                                   Enjoy the challenge an have fun.`)}
-const line22 = () => {console.log(`                                   And we wish you good luck.`)}
-const line23 = () => {console.log(`                                  `)}
-const line24 = () => {console.log(`                                  `)}
-const line25 = () => {console.log(`                                   ... Really!`)}
-const line26 = () => {console.log(``)}
-const line27 = () => {console.log(``)}
-const line28 = () => {console.log(`                                      - - - - --=xXx=-- - - - -`)}
-const line29 = () => {console.log(``) }
-const line30 = () => {console.log(`  =================================================================================================  `)}
+                                            - --=xXx=-- -`)}
+const line7  = () => {console.log(`                                    - -= W E L C O M E =- -                                    `)}
+const line8  = () => { onsole.log(`                                         - --=xXx=-- -                                         `)}
+const line9  = () => {console.log(`                                                                                               `)}
+const line10 = () => {console.log(`                                                                                               `)}
+const line11 = () => {console.log(`                                   This is a BRANDNEW RETRO game.                              `)}
+const line12 = () => {console.log(`                                   Dedicated to a Cat named YOSHI                              `)}
+const line13 = () => {console.log(`                                   but calls itself "Your Highness".                           `)}
+const line14 = () => {console.log(`                                                                                               `)}
+const line15 = () => {console.log(`                                   What you are about to experience                            `)}
+const line16 = () => {console.log(`                                   is what it's like to walk in                                `)}
+const line17 = () => {console.log(`                                   "full time servant shoes" for                               `)}
+const line18 = () => {console.log(`                                   "Your Highness".                                            `)}
+const line19 = () => {console.log(`                                                                                               `)}
+const line20 = () => {console.log(`                                   Needs are high, time is little.                             `)}
+const line21 = () => {console.log(`                                   Enjoy the challenge an have fun.                            `)}
+const line22 = () => {console.log(`                                   And we wish you good luck.                                  `)}
+const line23 = () => {console.log(`                                                                                               `)}
+const line24 = () => {console.log(`                                                                                               `)}
+const line25 = () => {console.log(`                                   ... Really!                                                 `)}
+const line26 = () => {console.log(`                                                                                               `)}
+const line27 = () => {console.log(`                                                                                               `)}
+const line28 = () => {console.log(`                                      - - - - --=xXx=-- - - - -                                `)}
+const line29 = () => {console.log(`                                                                                               `)}
+const line30 = () => {console.log(`===============================================================================================`)}
 
 export default printTheIntro;
  

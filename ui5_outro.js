@@ -1,5 +1,5 @@
-const printIntro = () => {
-    return`
+function printOutro () {
+    console.log(`
                                     ●-=========xXx=========-●
 ==================================-●  " t a m a Y O S H I "  ●-==================================
                                     ●-=========xXx=========-●
@@ -44,6 +44,8 @@ const printIntro = () => {
 
                                     - - - - --=xXx=-- - - - -                                           
     `
-};
+)};
 
-export default printIntro; 
+export default printOutro; 
+
+printIntro()
