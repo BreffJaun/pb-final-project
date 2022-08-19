@@ -198,7 +198,7 @@ let countdownForNeeds = () => {
     console.log(printMenu());
 
     // BREAK COMMAND //
-    if (yoshi.health === 0 || yoshi.health < 0) {       
+    if (yoshi.health <= 0) {       
         clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
@@ -222,7 +222,7 @@ let countdownForNeeds = () => {
         console.log(printMenu());
         console.log('You dont care enough about my food. YOU ARE FIRED! ! !');
     }
-    if (yoshi.drink === 0 || yoshi.drink < 0) {        
+    if (yoshi.drink <= 0) {        
         clearInterval(countdownMain);
         console.clear();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
@@ -253,7 +253,7 @@ let countdownForNeeds = () => {
 const difficulty = [
     { Footmen: 4000 },   // => Hausdiener
     { Valet: 3000 },     // => Kammerdiener
-    { Butler: 250 },     // => (Chef-) Diener
+    { Butler: 1000 },     // => (Chef-) Diener
 ];
 
 // LET THE USER CHOOSE THE DIFFICULTY LEVEL
