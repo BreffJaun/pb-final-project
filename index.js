@@ -188,7 +188,8 @@ const setDifficulty = () => {
     printIntro();
     printMode();
     printSubLine();
-    const queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
+                  // .....console.log(chalk.redBright.bold('===============================================================================================')
+    const queryTheDifficulty = prompt(chalk.redBright.bold(`                               Choose your difficulty level:                                   `));
     const catchTheNum = queryTheDifficulty-1;
     catchTheNumArr.push(catchTheNum);
 };
@@ -229,7 +230,8 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
-        console.log('     You dont care enough about my HEALTH. YOU ARE FIRED ! ! !');
+// .....console.log(chalk.redBrightbold('===============================================================================================')
+        console.log(chalk.redBrightbold('                               You make me sick!  YOU ARE FIRED!                               '));
     }
     if (yoshi.mood <= 0) {
         clearInterval(countdownMain);
@@ -237,7 +239,8 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
         console.log(printCat(yoshi));
         printMenu();
-        console.log('     You dont care enough about my MOOD. YOU ARE FIRED ! ! !');
+// .....console.log(chalk.redBright.bold('===============================================================================================')
+        console.log(chalk.redBright.bold('                           I didn´t have enough fun!  YOU ARE FIRED!                           '));
     }
     if (yoshi.food <= 0) {
         clearInterval(countdownMain);
@@ -245,7 +248,8 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
-        console.log('     You dont care enough about my FOOD. YOU ARE FIRED ! ! !');
+// .....console.log(chalk.redBright.bold('===============================================================================================')
+        console.log(chalk.redBright.bold('                               I was too hungry!  YOU ARE FIRED!                               '));
     }
     if (yoshi.drink <= 0) {
         clearInterval(countdownMain);
@@ -253,7 +257,8 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
-        console.log('     You dont care enough about my DRINK. YOU ARE FIRED ! ! !');
+// .....console.log(chalk.redBright.bold('===============================================================================================')
+        console.log(chalk.redBright.bold('                              I got too thirsty!   YOU ARE FIRED!                              '));
     }
     // PRINT THE WARNINGS OF THE 4 NEEDS //
     needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
