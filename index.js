@@ -189,7 +189,10 @@ const setDifficulty = () => {
     printIntro();
     printMode();
     printSubLine();
-    const queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
+    let queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
+    if( queryTheDifficulty != "1" && queryTheDifficulty != "2" && queryTheDifficulty != "3"){
+        queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
+    }
     const catchTheNum = queryTheDifficulty-1;
     catchTheNumArr.push(catchTheNum);
 };
