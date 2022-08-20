@@ -11,10 +11,10 @@ import printCat from './design/ui_body.js';
 import printMode from './design/ui_mode.js';
 import printMinusLine from './design/ui_minusLine.js';
 import printSubLine from './design/ui_subline.js';
-import needs_terminal_warnings from './ui_warnings.js';
+import needs_terminal_warnings from './design/ui_warnings.js';
 // import break_The_Interval from './break_commands.js';
 import interact from './interact_querry.js';
-import printIntro from './ui0_intro.js';
+import printIntro from './design/ui_intro.js';
 // import printTheIntro from './ui0_intro.js';
 
 // ==================================================

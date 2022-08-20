@@ -1,9 +1,9 @@
 // JS DATA IMPORTS
 import yoshi from "./index.js";
 import countdownMain from './index.js';
-import printStatus from "./ui1_header.js";
-import printCat from "./ui2_body.js";
-import printMenu from "./ui3_footer.js";
+import printStatus from "./design/ui_header.js";
+import printCat from "./design/ui_body.js";
+import printMenu from "./design/ui_menu.js";
 import printMinusLine from './ui_minusLine.js';
 
 // =======================================
