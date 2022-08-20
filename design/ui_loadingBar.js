@@ -5,9 +5,9 @@ function printLoadingBar () {
                                     ●-=========xXx=========-●
 
 
-                                          - --=xXx=-- - 
-                               - -= Y O U   A R E   F I R E D =- -                                                                 
-                                          - --=xXx=-- - 
+                                        - --=xXx=-- - 
+                                   - -= W E L C O M E =- -                                  
+                                        - --=xXx=-- - 
 
 
                                   Never mind...
