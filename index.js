@@ -5,13 +5,13 @@ import chalk from 'chalk';
 // ==================================
 
 // JS DATA IMPORTS
-import printStatus from './ui1_header.js';
-import printMenu from './ui3_footer.js';
-import printCat from './ui2_body.js';
-import printMode from './ui0_mode.js';
-import printMinusLine from './ui_minusLine.js';
-import printSubLine from './ui_subline.js';
-import needs_terminal_warnings from './ui_determine_warnings.js';
+import printStatus from './design/ui_header.js';
+import printMenu from './design/ui_menu.js';
+import printCat from './design/ui_body.js';
+import printMode from './design/ui_mode.js';
+import printMinusLine from './design/ui_minusLine.js';
+import printSubLine from './design/ui_subline.js';
+import needs_terminal_warnings from './ui_warnings.js';
 // import break_The_Interval from './break_commands.js';
 import interact from './interact_querry.js';
 import printIntro from './ui0_intro.js';

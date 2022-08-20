@@ -4,7 +4,7 @@ const prompt = promptSync();
 import chalk from 'chalk';
 // ==================================
 
-import yoshi from "./index.js"
+import yoshi from "../index.js"
 
 
 // yoshi.food, yoshi.drink, yoshi.mood, yoshi.health

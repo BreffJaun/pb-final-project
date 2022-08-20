@@ -6,7 +6,7 @@ import chalk from 'chalk';
 
 // JS DATA IMPORTS
 import yoshi from "./index.js";
-import printMenu from "./ui3_footer.js";
+import printMenu from "./design/ui_menu.js";
 
 // ===============================
 
