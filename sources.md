@@ -9,6 +9,8 @@ https://www.w3schools.com/js/js_timing.asp
 
 https://stackoverflow.com/questions/7137401/why-is-the-method-executed-immediately-when-i-use-settimeout
 
+
+
 <!-- Code for the game in generell -->
 https://github.com/nanettegirzi/tamagotchi/blob/master/src/tamagatchi.js
 
@@ -19,9 +21,6 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
 
+
 <!-- Design -->
 https://unicode-table.com/de/sets/
-
-https://www.tecmint.com/boxes-draws-ascii-art-boxes-in-linux-terminal/
-
-https://phoenixnap.com/kb/how-to-create-a-table-in-mysql

@@ -1,6 +1,5 @@
 function printLoadingBar1 () {
      return `
-
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -50,7 +49,6 @@ function printLoadingBar1 () {
 
 function printLoadingBar2 () {
      return `
-
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -99,7 +97,6 @@ function printLoadingBar2 () {
 
 function printLoadingBar3 () {
      return `
-
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -121,11 +118,11 @@ function printLoadingBar3 () {
                          X    X     (●) X   X (●)     x     X       XxX=vVVv=._
                          xX     >=--=<X   ▼   x>=--=<      Xx         -         Vv=.
                           XX         ===> Y <===          XX           _=x         Xx
-                           XXx        (___|___)        xXX  _-=xXxxx=X-             :Xx
-                             XXx       V     V       xXX  xX        X-              -xX
-                            xX-_ XXXx=-------==xxXXX   xX           X-              -xX
-                          xX                           X            X-             =xX
-          ●-==============Xx=-_____-=======-_____-=xXx=Xx=-__________Xx==-_____-==xX=========-●
+                           XXx        (___|___)        xXX  _-=xXxxx=-X-            :Xx
+                             XXx       V     V       xXX  xX         X-             -xX
+                            xX-_ XXXx=-------==xxXXX   xX            X-             -xX
+                          xX                           X              X-           =xX
+          ●-==============Xx=-_____-=======-_____-=xXx=Xx=-____________Xx==-___-==xX=========-●
           |                                                                                   |
           |    L O A D I N G :   ●●●●●●●●●●●●●●●●..................................    32 %   |
           |                                                                                   |
@@ -148,7 +145,6 @@ function printLoadingBar3 () {
 
 function printLoadingBar4 () {
      return `
-
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -159,7 +155,26 @@ function printLoadingBar4 () {
                                                - --=xXx=-- - 
      
      
-                        X-_                                _X                     XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX                               X Xv_xX                       Xx_vX X                   X   >                           <   X                    X                                   X                                         X                                   X                           X        =vVVv=       =vVVv=        X                          X      X        X   X        X      XXXxx=_    _.=vVVVVVv=._                    X    X     (●) X   X (●)     x     X       XxX  _-        Xx                    xX     >=--=<X   ▼   x>=--=<      Xx         Xx=           -X                     XX         ===> Y <===          XX         X-             xX                      XXx        (___|___)        xXX  _-=xXxxx=X-            -xX                        XXx       V     V       xXX  xX         X-           =xX                       xX-_ XXXx=-------==xxXXX   xX              Xx=-___-=xX                      xX                           X                    -X     ●-==============Xx=-_____-=======-_____-=xXx=Xx=-_____________-=xXX================-●     |                                                                                   |     |    L O A D I N G :   ●●●●●●●●●●●●●●●●●●●●●●●●●.........................    50 %   |     |                                                                                   |     ●-=======================================xXx=======================================-●
+                        X-_                                _X                     
+                        XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX                               
+                        X Xv_xX                       Xx_vX X                   
+                        X   >                           <   X                    
+                        X                                   X                                         
+                        X                                   X                           
+                        X        =vVVv=       =vVVv=        X                          
+                        X      X        X   X        X      XXXxx=_    _.=vVVVVVv=._                    
+                         X    X     (●) X   X (●)     x     X       XxX  _-        Xx                    
+                         xX     >=--=<X   ▼   x>=--=<      Xx         Xx=           -X                     
+                          XX         ===> Y <===          XX         X-             xX                      
+                           XXx        (___|___)        xXX  _-=xXxxx=X-            -xX                        
+                             XXx       V     V       xXX  xX         X-           =xX                       
+                            xX-_ XXXx=-------==xxXXX   xX              Xx=-___-=xX                      
+                          xX                           X                    -X     
+          ●-==============Xx=-_____-=======-_____-=xXx=Xx=-_____________-=xXX================-●     
+          |                                                                                   |     
+          |    L O A D I N G :   ●●●●●●●●●●●●●●●●●●●●●●●●●.........................    50 %   |     
+          |                                                                                   |     
+          ●-=======================================xXx=======================================-●
      
      
      
@@ -178,7 +193,6 @@ function printLoadingBar4 () {
 
 function printLoadingBar5 () {
      return `
-
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -190,7 +204,7 @@ function printLoadingBar5 () {
      
      
      
-                        X-_                                _X  
+........................X-_                                _X  
                         XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX            
                         X Xv_xX                       Xx_vX X
                         X   >                           <   X 
@@ -228,7 +242,6 @@ function printLoadingBar5 () {
 
 function printLoadingBar6 () {
      return `
-
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -278,7 +291,6 @@ function printLoadingBar6 () {
 
 function printLoadingBar7 () {
      return `
-
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
