@@ -48,4 +48,4 @@ function printOutro () {
 
 export default printOutro; 
 
-printIntro()
+printOutro()

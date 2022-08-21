@@ -132,7 +132,7 @@ const printIntro = () => {
 
 //                                             - --=xXx=-- -`)}
 // const line7  = () => {console.log(`                                    - -= W E L C O M E =- -                                    `)}
-// const line8  = () => { onsole.log(`                                         - --=xXx=-- -                                         `)}
+// const line8  = () => {console.log(`                                         - --=xXx=-- -                                         `)}
 // const line9  = () => {console.log(`                                                                                               `)}
 // const line10 = () => {console.log(`                                                                                               `)}
 // const line11 = () => {console.log(`                                   This is a BRANDNEW RETRO game.                              `)}
