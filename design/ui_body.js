@@ -80,7 +80,7 @@ const printCatAngry = () => {
        XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX            _=vVVVv=_            -= G A M E =- 
        X >v_x=                       =x_v< X           x         X          ●-====xXx====-●
        X        -{_____  |  _____}-        X          X-         -X         |             |
-       X        > _(●)_  ▼  _(●)_ <         X          Xx-         -X        |  Mode:      |
+       X        > _(●)_  ▼  _(●)_ <         X          Xx-         -X       |  Mode:      |
        X            ===> Y <===            X            X-        -X        |  ${yoshi.lvl()}    |
        X       (  _______A_______  )       XXXxx=_       X-       -X        |  _________  |
        X           vvVV vvv VVvv           X       Xx    X-       -X        |             |
