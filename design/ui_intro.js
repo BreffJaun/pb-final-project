@@ -2,16 +2,9 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 import chalk from 'chalk';
-// ==================================
-
-// // JS DATA IMPORTS
-import printSubLine from './ui_subline.js';
-
-
-// ==================================================
 
 // const intro = prompt(`
-//                                     ●-=========xXx=========-●
+//                                     ●-=========xXx=========-●                                    
 // ==================================-●  " t a m a Y O S H I "  ●-==================================
 //                                     ●-=========xXx=========-●
 
@@ -21,9 +14,25 @@ import printSubLine from './ui_subline.js';
 //                                           - --=xXx=-- - 
 
 
+
 //                                   This is a BRANDNEW RETRO game. 
 //                                   Dedicated to a Cat named YOSHI
 //                                   but calls itself "Your Highness".
+
+
+
+
+//                                 What you are about to experience
+//                                 is what it's like to walk in 
+//                                 "full time servant shoes" for
+//                                 "Your Highness".
+
+
+
+//                                 Needs are high, time is little.
+//                                 Enjoy the challenge an have fun.
+//                                 And we wish you good luck. 
+
 
 
 //                                   What you are about to experience
@@ -36,22 +45,29 @@ import printSubLine from './ui_subline.js';
 //                                   Enjoy the challenge an have fun.
 //                                   And we wish you good luck. 
                                 
+
                                 
 //                                   ... Really!
 
 
-//                                     - - - - --=xXx=-- - - - -                                           
-// ===============================================================================================
-//                                       P R E S S  E N T E R`)
-// const printIntro = () => {
-//   return intro;
-// };
 
+
+
+// =================================================================================================
+
+//                                     P R E S S  E N T E R
+
+// `)
+
+
+const printIntro = () => {
+  return intro;
+};
 
 function printIntro () {
-  const line1Output = setTimeout(line1, 0);
-  const line2Output = setTimeout(line2, 0);
-  const line3Output = setTimeout(line3, 0);
+  const line1Output = setTimeout(line1, 250);
+  const line2Output = setTimeout(line2, 500);
+  const line3Output = setTimeout(line3, 1000);
   const line4Output = setTimeout(line4, 1500);
   const line5Output = setTimeout(line5, 2000);
   const line6Output = setTimeout(line6, 2500);
@@ -82,7 +98,7 @@ function printIntro () {
 };
 // const printTheIntro = () => { setTimeout(function () { printIntro() }, 250) };
 // printTheIntro();
-const printTheIntro = setTimeout(function () { printIntro() }, 0);
+const printTheIntro = setTimeout(function () { printIntro() }, 250);
 
 // THE SINGLE VARIABLES
 const line1  = () => {
@@ -131,8 +147,8 @@ const line6  = () => {
   
 
                                             - --=xXx=-- -`)}
-const line7  = () => {console.log(`                                       - -= W E L C O M E =- -                                    `)}
-const line8  = () => {console.log(`                                            - --=xXx=-- -                                         `)}
+const line7  = () => {console.log(`                                    - -= W E L C O M E =- -                                    `)}
+const line8  = () => {console.log(`                                         - --=xXx=-- -                                         `)}
 const line9  = () => {console.log(`                                                                                               `)}
 const line10 = () => {console.log(`                                                                                               `)}
 const line11 = () => {console.log(`                                   This is a BRANDNEW RETRO game.                              `)}
@@ -154,7 +170,7 @@ const line26 = () => {console.log(`                                             
 const line27 = () => {console.log(`                                                                                               `)}
 const line28 = () => {console.log(`                                      - - - - --=xXx=-- - - - -                                `)}
 const line29 = () => {console.log(`                                                                                               `)}
-const line30 = () => {console.log(`  ===============================================================================================`)}
+const line30 = () => {console.log(`===============================================================================================`)}
 
 
 // export default printIntro;
