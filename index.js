@@ -19,6 +19,7 @@ import loadingBar from './design/ui_loadingBar.js';
 
 // ==================================================
 await printIntro();
+console.clear();
 await loadingBar();
 
 const yoshi = {
