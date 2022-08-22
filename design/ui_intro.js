@@ -167,17 +167,10 @@ async function printIntro () {
 };
 // const printTheIntro = () => { setTimeout(function () { printIntro() }, 250) };
 // printTheIntro();
-<<<<<<< HEAD
-const printTheIntro = setTimeout(function () { printIntro() }, 250);
+// const printTheIntro = setTimeout(function () { printIntro() }, 250);
 
 
 // THE SINGLE VARIABLES
-
-=======
-// const printTheIntro = setTimeout(function () { printIntro() }, 250);
-// printIntro();
-// // THE SINGLE VARIABLES
->>>>>>> 7665b58f632a26c2d941a66c3611f207f228c403
 // const line1  = () => {
 //   console.clear();
 //   console.log(`                                    ●-=========xXx=========-●`)
