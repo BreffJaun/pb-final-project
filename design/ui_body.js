@@ -3,6 +3,7 @@ import yoshi from '../index.js'
 
 const printCatHappy = () => {
   return`
+
        X-_                                _X            _=vVVVv=_
        XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX          x-         x           -= G A M E =- 
        X  >_xX                       Xx_<  X         X            X         ●-====xXx====-●
@@ -26,6 +27,7 @@ const printCatHappy = () => {
 
 const printCatNormal = () => {
   return`
+
        X-_                                _X  
        XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX            _=vVVVv=_            -= G A M E =- 
        X Xv_xX                       Xx_vX X           x         X          ●-====xXx====-●
@@ -50,6 +52,7 @@ const printCatNormal = () => {
 const printCatBored = () => {
      return`
 
+
        X=-_   _-=-vvvVVVVVVVVVVvvv=-_   _-=X            _=vVVVv=_            -= G A M E =- 
        X Xv_xX                       Xx_vX X           x         X          ●-====xXx====-●
        X    X                          X   X          X-         -X         |             |
@@ -72,6 +75,7 @@ const printCatBored = () => {
 
 const printCatAngry = () => {
   return`
+
        X-_                               _-X  
        XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX            _=vVVVv=_            -= G A M E =- 
        X >v_x=                       =x_v< X           x         X          ●-====xXx====-●
@@ -95,6 +99,7 @@ const printCatAngry = () => {
 
 const printCatHate = () => {
   return`
+
        X-_                               _-X  
        XX =-_ _-=-vvvVVVVVVVVVvvv=-_  _-= XX            _=vVVVv=_            -= G A M E =- 
        X    xX                       Xx    X           x         X          ●-====xXx====-●
@@ -113,35 +118,6 @@ const printCatHate = () => {
        Xx_     _xX                             X=_     _=x                  ●-====xXx====-●
           vVVv                                     vVVv
 `};
-
-
-
-
-// function printCat(yoshi) {
-//   if (yoshi.food <= 0) {
-//     return printCatHate()
-//   }
-//   if (yoshi.drink <= 0) {
-//     return printCatHate()
-//   }
-//   if (yoshi.mood <= 0) {
-//     return printCatHate()
-//   };
-//   if ( yoshi.health > 90){
-//     return printCatHappy();
-//   } else if ( yoshi.health > 60 ) {
-//     return printCatNormal();
-//   } else if ( yoshi.health > 35) {
-//     return printCatBored()
-//   } else if ( yoshi.health > 10) {
-//     return printCatAngry()
-//   } else if ( yoshi.health <= 0) {
-//     return printCatHate()
-//   }
-// };
-
-// export default printCat;
-
 
 function printCat(yoshi) {
   if (yoshi.food <= 5 || yoshi.drink <= 5 || yoshi.mood <= 5 || yoshi.health <= 5) {
@@ -162,7 +138,5 @@ function printCat(yoshi) {
     return printCatHappy();
 }
 }
-
-
 
 export default printCat;

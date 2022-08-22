@@ -5,7 +5,7 @@ Dedicated to Jeffs Cat called Yoshi and the old Tamagotchi-Game.
 Just pure JavaScript, a clear Terminal and joy of games from 1997.
 But more Yoshi than Tamagotchi as you might think off.
 
-## Let's get it started:
+## How to install:
 
 1. Clone this repo with THIS ssh-key => "git clone git@github.com:BreffJaun/pb-final-project.git"
 2. Install npm-package (if necessary) =>  "npm install"
@@ -13,9 +13,9 @@ But more Yoshi than Tamagotchi as you might think off.
 4. Start the game on your terminal => "node index.js"
 5. Enjoy the life of a full time cat servant!
 
-## What "tamaYOSHI" is about:
+## How to play:
 
-"tamaYOSHI" is the javascript version of owning a cat, what basicly means, to be the servant of a cat.
+"tamaYOSHI" is the javascript version of owning a cat, what basically means, to be the servant of a cat.
 And Yoshis is the "Highness" of all cats. So be prepared for "Your Highnesses high standards".
 That´s why tamaYOSHI has THREE game modes:
 1. FOOTMAN (easy): for beginners, means, people who haven´t hat a cat before
@@ -23,15 +23,9 @@ That´s why tamaYOSHI has THREE game modes:
 3. BUTLER (hard): for those, who never met Yoshi before. 
 
 ### FOOD: 
-- Tuna
-- Usual Cat food from the Supermarket
-- Lasagne
-
+Finest Tuna - Cat Food - Lasagne
 ### DRINK: 
-- Just Pure Water
-- Delicious milk
-- Champagne
-
+Just Pure Water - Cool Fresh Milk - Nice Champagne
 ### MOOD:
 ere more a nervous breakdown or a "meowlife crisis" of his purrriness**   
 
