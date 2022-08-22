@@ -1,5 +1,13 @@
-function printOutro () {
-    console.log(`
+// Prompt and Chalk Integration
+import promptSync from 'prompt-sync';
+const prompt = promptSync();
+import chalk from 'chalk';
+// ==================================
+
+
+
+const printOutro = () => {
+        const outro = prompt(`
                                     ●-=========xXx=========-●
 ==================================-●  " t a m a Y O S H I "  ●-==================================
                                     ●-=========xXx=========-●
@@ -44,9 +52,12 @@ function printOutro () {
 
                                   
 =================================================================================================
-`                                         
-)};
+`);
+};
+
+// printOutro();
+
+
 
 export default printOutro; 
 
-printOutro()
