@@ -186,13 +186,12 @@ const difficulty = [
 let catchTheNumArr = [];
 const setDifficulty = () => {
     console.clear();
-    printIntro();
     printMode();
     printSubLine();
     let queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
-    // if( queryTheDifficulty != "1" && queryTheDifficulty != "2" && queryTheDifficulty != "3"){      
-    //     queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
-    // }
+    if( queryTheDifficulty != "1" && queryTheDifficulty != "2" && queryTheDifficulty != "3"){      
+         queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
+    }
     const catchTheNum = queryTheDifficulty-1;
     catchTheNumArr.push(catchTheNum);
 };
