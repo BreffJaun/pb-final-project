@@ -18,62 +18,20 @@ But more Yoshi than Tamagotchi as you might think off.
 "tamaYOSHI" is the javascript version of owning a cat, what basically means, to be the servant of a cat.
 And Yoshis is the "Highness" of all cats. So be prepared for "Your Highnesses high standards".
 That´s why tamaYOSHI has THREE game modes:
-1. FOOTMAN (easy): for beginners, means, people who haven´t hat a cat before
-2. VALET (normal): for those, who think they know cats.
-3. BUTLER (hard): for those, who never met Yoshi before. 
+   **FOOTMAN** (easy): for beginners, means, people who haven´t hat a cat before
+   **VALET** (normal): for those, who think they know cats.
+   **BUTLER** (hard): for those, who never met Yoshi before. 
 
-### FOOD: 
+#### FOOD: 
 Finest Tuna - Cat Food - Lasagne
-### DRINK: 
+#### DRINK: 
 Just Pure Water - Cool Fresh Milk - Nice Champagne
-### MOOD:
+#### MOOD:
 Turn on the TV! - Dance for me! - Stroke my Belly!
 
-## **What has to be programmed to realize the Project?**
-- a class to create your own cat. 
---> the result is, you can't create your own cat, your fluffiness still exists. We are  not on a "Wishconcert" ;)
-- Queries (Abfragen) with prompt to get in the pet needs
-- a countdown to see when the pet is hungry, drinky, sick, or bored.
+#### HEALTH:
+All your decisions will effect YOSHIs health. If you don´t fullfill all his needs, you´ll be fired.
 
-------------------------------------------------------------------
-------------------------------------------------------------------
-
-## **Values and effects of the needs:**
-
-**1. food**   
-
-|   **Name**    |     Tuna     |   Usual Cat food   |   Lasagne   |
-|:-------------:|:------------:|:------------------:|:-----------:|
-|     **+**     |  food: +75 |     food: +50    | food: +25 |
-|     **-**     |  Mood:   -25 |     drink: -25    | Health: -50 |
-|   **Print**   | "that makes me full, but not satisfied" | "are you Kidding me?"    | "let's do the Garfield way, you may kiss the paw now" |
-
-------------------------------------------------------------------------
-
-**2. drink**   
-
-|   **Name**    |     Water    |        Milk          |  Champagne  |
-|:-------------:|:------------:|:--------------------:|:-----------:|
-|     **+**     |  drink: +75 |     drink: +50      | drink: +25 |
-|     **-**     |  Mood:   -25 |     Mood: -25        | Health: -75 |
-|   **Print**   |  "Go away with the cheap booze.....but thanks loyal human" | "uhh mewow"    | "just a little dropplet for my royal paw" |
-
-------------------------------------------------------------------------
-
-**3. Health**   
-
-|   **Name**    |    Massage   |       Stroke       |   Kiss the paw   |
-|:-------------:|:------------:|:------------------:|:----------------:|
-|     **+**     |  Health: +75 |     Health: +50    | Health: +25      |
-|     **-**     |  food: -25 |     drink: -25    | Mood: -75        |
-|   **Print**   | "yeahh...this point in the neck, yeahh exactly" | "purr purr....purr it's better now"    | "but was also time for this my loyal human" |
-
-------------------------------------------------------------------------
-
-**4. Mood**  
-
-|   **Name**    | Throw a ball | Dance for your cat | Turn on the TV |
-|:-------------:|:------------:|:------------------:|:--------------:|
-|     **+**     |  Mood: +75   |     Mood: +50      | Mood:   +25    |
-|     **-**     |  food: -25 |     drink: -25    | Health: -50    |
-|   **Print**   | "that makes me full, but not satisfied" | "dance little monkey...dance!"    | "Finally I can continue watching "How to sell drugs online (fast)". Do not disturb me" |
+## How we made it**
+We are all DCI students since March 2022. We will become web developer and started JavaScript 2 month ago.
+This is our final modul project. That´s why you just have a terminal instead of fancy stuff. For fancy stuff visit our younger repos.
