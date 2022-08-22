@@ -3,6 +3,7 @@ import yoshi from '../index.js'
 
 const printCatHappy = () => {
   return`
+  
        X-_                                _X            _=vVVVv=_
        XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX          x-         x           -= G A M E =- 
        X  >_xX                       Xx_<  X         X            X         ●-====xXx====-●
@@ -26,6 +27,7 @@ const printCatHappy = () => {
 
 const printCatNormal = () => {
   return`
+
        X-_                                _X  
        XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX            _=vVVVv=_            -= G A M E =- 
        X Xv_xX                       Xx_vX X           x         X          ●-====xXx====-●
@@ -50,6 +52,7 @@ const printCatNormal = () => {
 const printCatBored = () => {
      return`
 
+
        X=-_   _-=-vvvVVVVVVVVVVvvv=-_   _-=X            _=vVVVv=_            -= G A M E =- 
        X Xv_xX                       Xx_vX X           x         X          ●-====xXx====-●
        X    X                          X   X          X-         -X         |             |
@@ -72,6 +75,7 @@ const printCatBored = () => {
 
 const printCatAngry = () => {
   return`
+
        X-_                               _-X  
        XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX            _=vVVVv=_            -= G A M E =- 
        X >v_x=                       =x_v< X           x         X          ●-====xXx====-●
@@ -95,6 +99,7 @@ const printCatAngry = () => {
 
 const printCatHate = () => {
   return`
+
        X-_                               _-X  
        XX =-_ _-=-vvvVVVVVVVVVvvv=-_  _-= XX            _=vVVVv=_            -= G A M E =- 
        X    xX                       Xx    X           x         X          ●-====xXx====-●
