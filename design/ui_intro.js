@@ -61,48 +61,123 @@ import chalk from 'chalk';
 
 
 // const printIntro = () => {
-//   return intro;
-// };
+  //   return intro;
+  // };
+  const line6  = () => {
+    console.clear();
+    console.log(`
+                                        ●-=========xXx=========-●
+    ==================================-●  " t a m a Y O S H I "  ●-==================================
+                                        ●-=========xXx=========-● 
+    
+    
+  
+                                              - --=xXx=-- -`)}
+  const line7  = () => {console.log(`                                    - -= W E L C O M E =- -                                    `)}
+  const line8  = () => {console.log(`                                         - --=xXx=-- -                                         `)}
+  const line9  = () => {console.log(`                                                                                               `)}
+  const line10 = () => {console.log(`                                                                                               `)}
+  const line11 = () => {console.log(`                                   This is a BRANDNEW RETRO game.                              `)}
+  const line12 = () => {console.log(`                                   Dedicated to a Cat named YOSHI                              `)}
+  const line13 = () => {console.log(`                                   but calls itself "Your Highness".                           `)}
+  const line14 = () => {console.log(`                                                                                               `)}
+  const line15 = () => {console.log(`                                   What you are about to experience                            `)}
+  const line16 = () => {console.log(`                                   is what it's like to walk in                                `)}
+  const line17 = () => {console.log(`                                   "full time servant shoes" for                               `)}
+  const line18 = () => {console.log(`                                   "Your Highness".                                            `)}
+  const line19 = () => {console.log(`                                                                                               `)}
+  const line20 = () => {console.log(`                                   Needs are high, time is little.                             `)}
+  const line21 = () => {console.log(`                                   Enjoy the challenge an have fun.                            `)}
+  const line22 = () => {console.log(`                                   And we wish you good luck.                                  `)}
+  const line23 = () => {console.log(`                                                                                               `)}
+  const line24 = () => {console.log(`                                                                                               `)}
+  const line25 = () => {console.log(`                                   ... Really!                                                 `)}
+  const line26 = () => {console.log(`                                                                                               `)}
+  const line27 = () => {console.log(`                                                                                               `)}
+  const line28 = () => {console.log(`                                      - - - - --=xXx=-- - - - -                                `)}
+  const line29 = () => {console.log(`                                                                                               `)}
+  const line30 = () => {console.log(`===============================================================================================`)}
 
-function printIntro () {
+function resolveAfter500Ms(callback) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      callback();
+      resolve('resolved');
+    }, 500);
+  });
+}
+
+
+async function printIntro () {
   // const line1Output = setTimeout(line1, 250);
   // const line2Output = setTimeout(line2, 500);
   // const line3Output = setTimeout(line3, 1000);
   // const line4Output = setTimeout(line4, 1500);
   // const line5Output = setTimeout(line5, 2000);
-  const line6Output = setTimeout(line6, 2500);
-  const line7Output = setTimeout(line7, 3000);
-  const line8Output = setTimeout(line8, 3500);
-  const line9Output = setTimeout(line9, 4000);
-  const line10Output = setTimeout(line10, 4500);
-  const line11Output = setTimeout(line11, 5000);
-  const line12Output = setTimeout(line12, 5500);
-  const line13Output = setTimeout(line13, 6000);
-  const line14Output = setTimeout(line14, 6500);
-  const line15Output = setTimeout(line15, 7000);
-  const line16Output = setTimeout(line16, 7500);
-  const line17Output = setTimeout(line17, 8000);
-  const line18Output = setTimeout(line18, 8500);
-  const line19Output = setTimeout(line19, 9000);
-  const line20Output = setTimeout(line20, 9500);
-  const line21Output = setTimeout(line21, 10000);
-  const line22Output = setTimeout(line22, 10500);
-  const line23Output = setTimeout(line23, 11000);
-  const line24Output = setTimeout(line24, 11500);
-  const line25Output = setTimeout(line25, 12000);
-  const line26Output = setTimeout(line26, 12500);
-  const line27Output = setTimeout(line27, 13000);
-  const line28Output = setTimeout(line28, 13500);
-  const line29Output = setTimeout(line29, 14000);
-  const line30Output = setTimeout(line30, 14500);
+  await resolveAfter500Ms(line6);
+  await resolveAfter500Ms(line7);
+  await resolveAfter500Ms(line8);
+  await resolveAfter500Ms(line9);
+  await resolveAfter500Ms(line10);
+  await resolveAfter500Ms(line11);
+  await resolveAfter500Ms(line12);
+  await resolveAfter500Ms(line13);
+  await resolveAfter500Ms(line14);
+  await resolveAfter500Ms(line15);
+  await resolveAfter500Ms(line16);
+  await resolveAfter500Ms(line17);
+  await resolveAfter500Ms(line18);
+  await resolveAfter500Ms(line19);
+  await resolveAfter500Ms(line20);
+  await resolveAfter500Ms(line21);
+  await resolveAfter500Ms(line22);
+  await resolveAfter500Ms(line23);
+  await resolveAfter500Ms(line24);
+  await resolveAfter500Ms(line25);
+  await resolveAfter500Ms(line26);
+  await resolveAfter500Ms(line27);
+  await resolveAfter500Ms(line28);
+  await resolveAfter500Ms(line29);
+  await resolveAfter500Ms(line30);
+  // setTimeout(line6, 2500);
+  // setTimeout(line7, 3000);
+  // setTimeout(line8, 3500);
+  // setTimeout(line9, 4000);
+  // setTimeout(line10, 4500);
+  // setTimeout(line11, 5000);
+  // setTimeout(line12, 5500);
+  // setTimeout(line13, 6000);
+  // setTimeout(line14, 6500);
+  // setTimeout(line15, 7000);
+  // setTimeout(line16, 7500);
+  // setTimeout(line17, 8000);
+  // setTimeout(line18, 8500);
+  // setTimeout(line19, 9000);
+  // setTimeout(line20, 9500);
+  // setTimeout(line21, 10000);
+  // setTimeout(line22, 10500);
+  // setTimeout(line23, 11000);
+  // setTimeout(line24, 11500);
+  // setTimeout(line25, 12000);
+  // setTimeout(line26, 12500);
+  // setTimeout(line27, 13000);
+  // setTimeout(line28, 13500);
+  // setTimeout(line29, 14000);
+  // setTimeout(line30, 14500);
 };
 // const printTheIntro = () => { setTimeout(function () { printIntro() }, 250) };
 // printTheIntro();
+<<<<<<< HEAD
 const printTheIntro = setTimeout(function () { printIntro() }, 250);
 
 
 // THE SINGLE VARIABLES
 
+=======
+// const printTheIntro = setTimeout(function () { printIntro() }, 250);
+// printIntro();
+// // THE SINGLE VARIABLES
+>>>>>>> 7665b58f632a26c2d941a66c3611f207f228c403
 // const line1  = () => {
 //   console.clear();
 //   console.log(`                                    ●-=========xXx=========-●`)
@@ -139,42 +214,8 @@ const printTheIntro = setTimeout(function () { printIntro() }, 250);
   
 //                                       `)
 // }
-const line6  = () => {
-  console.clear();
-  console.log(`
-                                      ●-=========xXx=========-●
-  ==================================-●  " t a m a Y O S H I "  ●-==================================
-                                      ●-=========xXx=========-● 
-  
-  
-
-                                            - --=xXx=-- -`)}
-const line7  = () => {console.log(`                                    - -= W E L C O M E =- -                                    `)}
-const line8  = () => {console.log(`                                         - --=xXx=-- -                                         `)}
-const line9  = () => {console.log(`                                                                                               `)}
-const line10 = () => {console.log(`                                                                                               `)}
-const line11 = () => {console.log(`                                   This is a BRANDNEW RETRO game.                              `)}
-const line12 = () => {console.log(`                                   Dedicated to a Cat named YOSHI                              `)}
-const line13 = () => {console.log(`                                   but calls itself "Your Highness".                           `)}
-const line14 = () => {console.log(`                                                                                               `)}
-const line15 = () => {console.log(`                                   What you are about to experience                            `)}
-const line16 = () => {console.log(`                                   is what it's like to walk in                                `)}
-const line17 = () => {console.log(`                                   "full time servant shoes" for                               `)}
-const line18 = () => {console.log(`                                   "Your Highness".                                            `)}
-const line19 = () => {console.log(`                                                                                               `)}
-const line20 = () => {console.log(`                                   Needs are high, time is little.                             `)}
-const line21 = () => {console.log(`                                   Enjoy the challenge an have fun.                            `)}
-const line22 = () => {console.log(`                                   And we wish you good luck.                                  `)}
-const line23 = () => {console.log(`                                                                                               `)}
-const line24 = () => {console.log(`                                                                                               `)}
-const line25 = () => {console.log(`                                   ... Really!                                                 `)}
-const line26 = () => {console.log(`                                                                                               `)}
-const line27 = () => {console.log(`                                                                                               `)}
-const line28 = () => {console.log(`                                      - - - - --=xXx=-- - - - -                                `)}
-const line29 = () => {console.log(`                                                                                               `)}
-const line30 = () => {console.log(`===============================================================================================`)}
 
 
-// export default printIntro;
-export default printTheIntro;
+export default printIntro;
+// export default printTheIntro;
  

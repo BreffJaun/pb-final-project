@@ -14,9 +14,15 @@ import printSubLine from './design/ui_subline.js';
 import needs_terminal_warnings from './design/ui_warnings.js';
 // import break_The_Interval from './break_commands.js';
 import interact from './interact_querry.js';
+<<<<<<< HEAD
+=======
+import printIntro from './design/ui_intro.js';
+import loadingBar from './design/ui_loadingBar.js';
+>>>>>>> 7665b58f632a26c2d941a66c3611f207f228c403
 
 // ==================================================
-
+await printIntro();
+await loadingBar();
 
 const yoshi = {
     name: 'Yoshi',
