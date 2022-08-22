@@ -212,7 +212,7 @@ function printLoadingBar5 () {
      
      
      
-........................X-_                                _X  
+                        X-_                                _X  
                         XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX            
                         X Xv_xX                       Xx_vX X
                         X   >                           <   X 
@@ -406,14 +406,14 @@ function setTimeoutPromise(callback, ms) {
 
      const loadingBar = async () => { 
         await setTimeoutPromise( printLoadingBar1, 250 )  
-        await setTimeoutPromise( printLoadingBar2, 2000 )  
-        await setTimeoutPromise( printLoadingBar3, 2000 )  
-        await setTimeoutPromise( printLoadingBar4, 2000 )  
-        await setTimeoutPromise( printLoadingBar5, 2000 )  
-        await setTimeoutPromise( printLoadingBar6, 2000 )  
-        await setTimeoutPromise( printLoadingBar7, 2000 )  
-        await setTimeoutPromise( printLoadingBar8, 2000 )  
-        await setTimeoutPromise( printLoadingBar8, 2000 )  
+        await setTimeoutPromise( printLoadingBar2, 1500 )  
+        await setTimeoutPromise( printLoadingBar3, 1250 )  
+        await setTimeoutPromise( printLoadingBar4, 750 )  
+        await setTimeoutPromise( printLoadingBar5, 500 )  
+        await setTimeoutPromise( printLoadingBar6, 1000 )  
+        await setTimeoutPromise( printLoadingBar7, 650 )  
+        await setTimeoutPromise( printLoadingBar8, 500 )  
+        await setTimeoutPromise( printLoadingBar8, 250 )  
      }
 
      // const printLoadingBar = setTimeout(function() {loadingBar()}, 250)
