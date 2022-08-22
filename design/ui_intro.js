@@ -2,16 +2,9 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 import chalk from 'chalk';
-// ==================================
-
-// // JS DATA IMPORTS
-import printSubLine from './ui_subline.js';
-
-
-// ==================================================
-
+c
 const intro = prompt(`
-                                    ●-=========xXx=========-●
+                                    ●-=========xXx=========-●                                    
 ==================================-●  " t a m a Y O S H I "  ●-==================================
                                     ●-=========xXx=========-●
 
@@ -21,9 +14,25 @@ const intro = prompt(`
                                           - --=xXx=-- - 
 
 
+
                                   This is a BRANDNEW RETRO game. 
                                   Dedicated to a Cat named YOSHI
                                   but calls itself "Your Highness".
+
+
+
+
+                                What you are about to experience
+                                is what it's like to walk in 
+                                "full time servant shoes" for
+                                "Your Highness".
+
+
+
+                                Needs are high, time is little.
+                                Enjoy the challenge an have fun.
+                                And we wish you good luck. 
+
 
 
                                   What you are about to experience
@@ -36,13 +45,19 @@ const intro = prompt(`
                                   Enjoy the challenge an have fun.
                                   And we wish you good luck. 
                                 
+
                                 
                                   ... Really!
 
 
-                                    - - - - --=xXx=-- - - - -                                           
-===============================================================================================
-                                      P R E S S  E N T E R`)
+
+
+
+=================================================================================================
+
+                                    P R E S S  E N T E R
+
+`)
 const printIntro = () => {
   return intro;
 };
