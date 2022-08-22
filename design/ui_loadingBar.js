@@ -407,12 +407,3 @@ function printLoadingBar8 () {
         const pic8a = setTimeout( printLoadingBar8, 16250 )  
      }
      const printLoadingBar = setTimeout(function() {loadingBar()}, 250)
-
-     // console.log(printLoadingBar1());
-     // console.log(printLoadingBar2());
-     // console.log(printLoadingBar3());
-     // console.log(printLoadingBar4());
-     // console.log(printLoadingBar5());
-     // console.log(printLoadingBar6());
-     // console.log(printLoadingBar7());
-     // console.log(printLoadingBar8());
