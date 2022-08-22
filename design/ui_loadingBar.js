@@ -1,5 +1,5 @@
 function printLoadingBar1 () {
-     console.log( `
+     console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -49,7 +49,7 @@ function printLoadingBar1 () {
 
 
 function printLoadingBar2 () {
-     console.log( `
+     console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -99,7 +99,7 @@ function printLoadingBar2 () {
 
 
 function printLoadingBar3 () {
-     console.log( `
+     console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -149,7 +149,7 @@ function printLoadingBar3 () {
 
 
 function printLoadingBar4 () {
-     console.log( `
+     console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -199,7 +199,7 @@ function printLoadingBar4 () {
 
 
 function printLoadingBar5 () {
-     console.log( `
+     console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -249,7 +249,7 @@ function printLoadingBar5 () {
 
 
 function printLoadingBar6 () {
-     console.log (`
+     console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -349,8 +349,7 @@ function printLoadingBar7 () {
 
 
 function printLoadingBar8 () {
-     console.log(`
-                                         ●-=========xXx=========-●
+     console.log(`                                         ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
      

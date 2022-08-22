@@ -1,8 +1,8 @@
 const printHeadLine = () => {
-    return`                                    ●-=========xXx=========-●
-==================================-●  " t a m a Y O S H I "  ●-==================================
-                                    ●-=========xXx=========-●
-                                                                    ●-========xXx========-●`
+    return`                                        ●-=========xXx=========-●
+    ==================================-●  " t a m a Y O S H I "  ●-==================================
+                                        ●-=========xXx=========-●
+                                                                        ●-========xXx========-●`
 };
 
 
@@ -15,7 +15,7 @@ const printFood = ( food ) => {
             print = print + `.`
         };
     }
-    return `      Food:   ${print}    |  -= H E A L T H =-  |`
+    return `          Food:   ${print}    |  -= H E A L T H =-  |`
 };
 
 
@@ -29,7 +29,7 @@ const printDrinks = ( drinks, health ) => {
             print = print + `.`
         };
     }
-    return `    Drinks:   ${print}    |         ${health} %        |`
+    return `        Drinks:   ${print}    |         ${health} %        |`
 };
 
 
@@ -43,7 +43,7 @@ const printMood = ( mood ) => {
             print = print + `.`
         };
     }
-    return `      Mood:   ${print}    ●-========xXx========-●`
+    return `          Mood:   ${print}    ●-========xXx========-●`
 };
 
 
