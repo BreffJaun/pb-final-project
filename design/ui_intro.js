@@ -60,9 +60,9 @@ import chalk from 'chalk';
 // `)
 
 
-const printIntro = () => {
-  return intro;
-};
+// const printIntro = () => {
+//   return intro;
+// };
 
 function printIntro () {
   const line1Output = setTimeout(line1, 250);
