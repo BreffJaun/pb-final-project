@@ -39,7 +39,7 @@ function printMode () {
     `
 )};
 
-printMode()
+// printMode()
 
 export default printMode; 
 

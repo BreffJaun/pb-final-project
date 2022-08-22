@@ -16,14 +16,18 @@ const intro = prompt(`
                                           - --=xXx=-- - 
                                      - -= W E L C O M E =- -                                  
                                           - --=xXx=-- - 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 498c969405fcd14a4ca2708a1985c47f4926cd10
 
 
+                                  This is a BRANDNEW RETRO game. 
+                                  Dedicated to a Cat named YOSHI
+                                  but calls itself "Your Highness".
 
-                                This is a BRANDNEW RETRO game. 
-                                Dedicated to a Cat named YOSHI
-                                but calls itself "Your Highness".
 
-
+<<<<<<< HEAD
 
 
                                 What you are about to experience
@@ -40,10 +44,23 @@ const intro = prompt(`
 
 
 
+=======
+                                  What you are about to experience
+                                  is what it's like to walk in 
+                                  "full time servant shoes" for
+                                  "Your Highness".
+
+
+                                  Needs are high, time is little.
+                                  Enjoy the challenge an have fun.
+                                  And we wish you good luck. 
                                 
-                                ... Really!
+>>>>>>> 498c969405fcd14a4ca2708a1985c47f4926cd10
+                                
+                                  ... Really!
 
 
+<<<<<<< HEAD
 
 
 =================================================================================================
@@ -51,6 +68,11 @@ const intro = prompt(`
                                     P R E S S  E N T E R
 
 `)
+=======
+                                    - - - - --=xXx=-- - - - -                                           
+===============================================================================================
+                                      P R E S S  E N T E R`)
+>>>>>>> 498c969405fcd14a4ca2708a1985c47f4926cd10
 const printIntro = () => {
   return intro;
 };

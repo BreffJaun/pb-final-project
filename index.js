@@ -221,7 +221,7 @@ let countdownForNeeds = () => {
     // PRINT STATUS //  
     console.log();       
     printStatus ( yoshi.food, yoshi.drink, yoshi.mood, yoshi.health ); 
-    console.log(printCat(yoshi))
+    console.log(printCat(yoshi));
 
     // MENU //  
     printMenu();
@@ -280,7 +280,6 @@ let countdownForNeeds = () => {
         interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
     }     
 };
-
 
 const countdownMain = (setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])));
 
