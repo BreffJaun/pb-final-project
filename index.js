@@ -18,6 +18,7 @@ import needs_terminal_warnings from './design/ui_warnings.js';
 import interact from './interact_querry.js';
 import printIntro from './design/ui_intro.js';
 import loadingBar from './design/ui_loadingBar.js';
+import printOutro from './design/ui_outro.js'
 
 // ==================================================
 await printIntro();
@@ -235,6 +236,9 @@ let countdownForNeeds = () => {
         printMenu();
 // .....console.log(chalk.redBrightbold('===============================================================================================')
         console.log(chalk.redBrightbold('                               You make me sick!  YOU ARE FIRED!                               '));
+        let querry2 = prompt(' P R E S S   E N T E R ');
+        console.clear();
+        printOutro();
     }
     if (yoshi.mood <= 0) {
         clearInterval(countdownMain);
@@ -244,6 +248,9 @@ let countdownForNeeds = () => {
         printMenu();
 // .....console.log(chalk.redBright.bold('===============================================================================================')
         console.log(chalk.redBright.bold('                           I didn´t have enough fun!  YOU ARE FIRED!                           '));
+        let again = prompt(' P R E S S   E N T E R ');
+        console.clear();
+        printOutro();
     }
     if (yoshi.food <= 0) {
         clearInterval(countdownMain);
@@ -253,6 +260,9 @@ let countdownForNeeds = () => {
         printMenu();
 // .....console.log(chalk.redBright.bold('===============================================================================================')
         console.log(chalk.redBright.bold('                               I was too hungry!  YOU ARE FIRED!                               '));
+        let again = prompt(' P R E S S   E N T E R ');
+        console.clear();
+        printOutro();
     }
     if (yoshi.drink <= 0) {
         clearInterval(countdownMain);
@@ -262,6 +272,9 @@ let countdownForNeeds = () => {
         printMenu();
 // .....console.log(chalk.redBright.bold('===============================================================================================')
         console.log(chalk.redBright.bold('                              I got too thirsty!   YOU ARE FIRED!                              '));
+        let querry2 = prompt(' P R E S S   E N T E R ');
+        console.clear();
+        printOutro();
     }
     // PRINT THE WARNINGS OF THE 4 NEEDS //
     needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
@@ -281,5 +294,6 @@ let countdownForNeeds = () => {
 };
 
 const countdownMain = (setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])));
+
 
 export default yoshi;
