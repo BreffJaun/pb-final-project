@@ -5,8 +5,7 @@
   "description": "JavaScript Modul Final Project",
   "main": "index.js",
   "scripts": {
-
-    "tamayoshi": "node index.js",
+    "tamayoshi": "node ./design/ui_intro.js && node ./design/ui_loadingBar.js && node ./index.js" ,
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -160,7 +160,9 @@ function printCat(yoshi) {
     return printCatHappy()
   } else {
     return printCatHappy();
-  }
 }
+}
+
+
 
 export default printCat;
