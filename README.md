@@ -17,11 +17,12 @@ But more Yoshi than Tamagotchi as you might think off.
 
 "tamaYOSHI" is the javascript version of owning a cat, what basically means, to be the servant of a cat.
 And Yoshis is the "Highness" of all cats. So be prepared for "Your Highnesses high standards".
-That´s why tamaYOSHI has THREE game modes:
-   **FOOTMAN** (easy): for beginners, means, people who haven´t hat a cat before
-   **VALET** (normal): for those, who think they know cats.
-   **BUTLER** (hard): for those, who never met Yoshi before. 
+That´s why tamaYOSHI has THREE game modes:  
+**FOOTMAN** (easy): for beginners, means, people who haven´t hat a cat before  
+**VALET** (normal): for those, who think they know cats.  
+**BUTLER** (hard): for those, who never met Yoshi before.  
 
+## How t:
 #### FOOD: 
    Finest Tuna - Cat Food - Lasagne
 #### DRINK: 
