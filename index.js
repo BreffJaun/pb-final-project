@@ -14,8 +14,6 @@ import printSubLine from './design/ui_subline.js';
 import needs_terminal_warnings from './design/ui_warnings.js';
 // import break_The_Interval from './break_commands.js';
 import interact from './interact_querry.js';
-import printIntro from './design/ui_intro.js';
-import printTheIntro from './design/ui_intro.js';
 
 // ==================================================
 
@@ -201,11 +199,7 @@ let countdownForNeeds = () => {
     // SET TIME (TIME PER UNIT) HIGHER
     if (catchTheNumArr.length > 0 ) {
         yoshi.time += (Object.values(difficulty[catchTheNumArr]) / 1000); 
-    } else if (catchTheNumArr.length > 0) {
-        yoshi.time += (Object.values(difficulty[catchTheNumArr]) / 1000);
-    } else if (catchTheNumArr.length > 0) {
-        yoshi.time += (Object.values(difficulty[catchTheNumArr]) / 1000);
-    };
+    } 
 
     // to clear the console on every execution
     console.clear();  
