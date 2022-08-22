@@ -60,6 +60,8 @@ function printLoadingBar2 () {
                                                - --=xXx=-- - 
      
      
+     
+     
                         X-_                                _X  
                         XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX            
                         X Xv_xX                       Xx_vX X
@@ -108,6 +110,8 @@ function printLoadingBar3 () {
                                                - --=xXx=-- - 
      
      
+     
+     
                         X-_                                _X  
                         XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX            
                         X Xv_xX                       Xx_vX X
@@ -154,6 +158,8 @@ function printLoadingBar4 () {
                                                - --=xXx=-- - 
                                           - -= L O A D I N G =- -                                  
                                                - --=xXx=-- - 
+     
+     
      
      
                         X-_                                _X                     
@@ -205,6 +211,7 @@ function printLoadingBar5 () {
      
      
      
+     
 ........................X-_                                _X  
                         XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX            
                         X Xv_xX                       Xx_vX X
@@ -251,6 +258,7 @@ function printLoadingBar6 () {
                                                - --=xXx=-- - 
                                           - -= L O A D I N G =- -                                  
                                                - --=xXx=-- - 
+     
      
      
      
@@ -342,7 +350,6 @@ function printLoadingBar7 () {
 
 function printLoadingBar8 () {
      console.log(`
-
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
