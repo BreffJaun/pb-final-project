@@ -22,7 +22,7 @@ That´s why tamaYOSHI has THREE game modes:
 **VALET** (normal): for those, who think they know cats.  
 **BUTLER** (hard): for those, who never met Yoshi before.  
 
-## How t:
+## How to satisfy "Your Highness":
 #### FOOD: 
    Finest Tuna - Cat Food - Lasagne
 #### DRINK: 
