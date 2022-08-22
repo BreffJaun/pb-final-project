@@ -14,6 +14,7 @@ import printSubLine from './design/ui_subline.js';
 import needs_terminal_warnings from './design/ui_warnings.js';
 // import break_The_Interval from './break_commands.js';
 import interact from './interact_querry.js';
+import printIntro from './design/ui_intro.js';
 
 
 // ==================================================
@@ -184,6 +185,7 @@ const difficulty = [
 let catchTheNumArr = [];
 const setDifficulty = () => {
     console.clear();
+    printIntro();
     printMode();
     printSubLine();
     let queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);

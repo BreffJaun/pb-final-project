@@ -98,7 +98,9 @@ function printIntro () {
 };
 // const printTheIntro = () => { setTimeout(function () { printIntro() }, 250) };
 // printTheIntro();
-const printTheIntro = setTimeout(function () { printIntro() }, 250);
+// const printTheIntro = setTimeout(function () { printIntro() }, 250);
+
+// printIntro()
 
 // // THE SINGLE VARIABLES
 // const line1  = () => {
@@ -174,5 +176,5 @@ const line30 = () => {console.log(`=============================================
 
 
 // export default printIntro;
-export default printTheIntro;
+export default printIntro;
  
