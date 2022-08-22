@@ -20,11 +20,11 @@ That´s why tamaYOSHI has THREE game modes:
 ## How it works?
 Yoshi will tell you, what to do. If you don´t full fill all his needs, you´ll get fired. That easy!
 + #### FOOD: 
-   Finest Tuna - Cat Food - Lasagne
+   Finest Tuna > Cat Food > Lasagne
 + #### DRINK: 
-   Just Pure Water - Cool Fresh Milk - Nice Champagne
+   Just Pure Water > Cool Fresh Milk > Nice Champagne
 + #### MOOD:
-   Turn on the TV! - Dance for me! - Stroke my Belly!
+   Turn on the TV! > Dance for me! > Stroke my Belly!
 
 ## How we made it?
 We are all DCI students since March 2022. We will become web developer and started JavaScript 2 month ago.
