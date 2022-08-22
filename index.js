@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Prompt and Chalk Integration
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
@@ -19,6 +21,7 @@ import loadingBar from './design/ui_loadingBar.js';
 
 // ==================================================
 await printIntro();
+console.clear()
 await loadingBar();
 
 const yoshi = {
