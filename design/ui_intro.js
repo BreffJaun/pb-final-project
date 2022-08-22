@@ -106,6 +106,14 @@ function resolveAfter500Ms(callback) {
     }, 500);
   });
 }
+function resolveAfter1000Ms(callback) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      callback();
+      resolve('resolved');
+    }, 1000);
+  });
+}
 
 
 async function printIntro () {
@@ -138,7 +146,7 @@ async function printIntro () {
   await resolveAfter500Ms(line27);
   await resolveAfter500Ms(line28);
   await resolveAfter500Ms(line29);
-  await resolveAfter500Ms(line30);
+  await resolveAfter1000Ms(line30);
   // setTimeout(line6, 2500);
   // setTimeout(line7, 3000);
   // setTimeout(line8, 3500);

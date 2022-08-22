@@ -413,7 +413,7 @@ function setTimeoutPromise(callback, ms) {
         await setTimeoutPromise( printLoadingBar6, 1000 )  
         await setTimeoutPromise( printLoadingBar7, 650 )  
         await setTimeoutPromise( printLoadingBar8, 500 )  
-        await setTimeoutPromise( printLoadingBar8, 250 )  
+        await setTimeoutPromise( printLoadingBar8, 2000 )  
      }
 
      // const printLoadingBar = setTimeout(function() {loadingBar()}, 250)
