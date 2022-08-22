@@ -149,7 +149,7 @@ const printCatHate = () => {
 
 
 function printCat(yoshi) {  
-  if ( yoshi.food <= 5 || yoshi.drink <= 5 || yoshi.mood <= 5 || yoshi.health <= 5 ) {
+if ( yoshi.food <= 5 || yoshi.drink <= 5 || yoshi.mood <= 5 || yoshi.health <= 5 ) {
   return printCatHate()
 };
 if ( yoshi.food <= 25 || yoshi.drink <= 25 || yoshi.mood <= 25 || yoshi.health <= 25 ) {
@@ -161,9 +161,12 @@ if ( yoshi.food <= 50 || yoshi.drink <= 50 || yoshi.mood <= 50 || yoshi.health <
 if ( yoshi.food <= 70 || yoshi.drink <= 70 || yoshi.mood <= 70 || yoshi.health <= 70 ) {
   return printCatNormal()
 };
-  if ( yoshi.food <= 90 || yoshi.drink <= 90 || yoshi.mood <= 90 || yoshi.health <= 90 ) {
+if ( yoshi.food <= 90 || yoshi.drink <= 90 || yoshi.mood <= 90 || yoshi.health <= 90 ) {
     return printCatHappy()
-  }
+} else {
+    return printCatHappy();
+}
+
 }
 
 export default printCat;

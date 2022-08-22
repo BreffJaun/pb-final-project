@@ -16,33 +16,33 @@ const intro = prompt(`
                                     ●-=========xXx=========-●
 
 
-                                        - --=xXx=-- - 
-                                   - -= W E L C O M E =- -                                  
-                                        - --=xXx=-- - 
+                                          - --=xXx=-- - 
+                                     - -= W E L C O M E =- -                                  
+                                          - --=xXx=-- - 
 
 
-                                This is a BRANDNEW RETRO game. 
-                                Dedicated to a Cat named YOSHI
-                                but calls itself "Your Highness".
+                                  This is a BRANDNEW RETRO game. 
+                                  Dedicated to a Cat named YOSHI
+                                  but calls itself "Your Highness".
 
 
-                                What you are about to experience
-                                is what it's like to walk in 
-                                "full time servant shoes" for
-                                "Your Highness".
+                                  What you are about to experience
+                                  is what it's like to walk in 
+                                  "full time servant shoes" for
+                                  "Your Highness".
 
 
-                                Needs are high, time is little.
-                                Enjoy the challenge an have fun.
-                                And we wish you good luck. 
+                                  Needs are high, time is little.
+                                  Enjoy the challenge an have fun.
+                                  And we wish you good luck. 
                                 
                                 
-                                ... Really!
+                                  ... Really!
 
 
-                                  - - - - --=xXx=-- - - - -                                           
+                                    - - - - --=xXx=-- - - - -                                           
 ===============================================================================================
-                                    P R E S S  E N T E R`)
+                                      P R E S S  E N T E R`)
 const printIntro = () => {
   return intro;
 };
