@@ -19,6 +19,7 @@ import loadingBar from './design/ui_loadingBar.js';
 
 // ==================================================
 await printIntro();
+console.clear()
 await loadingBar();
 
 const yoshi = {
@@ -277,10 +278,5 @@ let countdownForNeeds = () => {
 };
 
 const countdownMain = (setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])));
-
-// const countdownMain = () => { setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])) }; 
-// const startCountdownMain = () => { setTimeout(function () { countdownMain() }, 15000)};
-// startCountdownMain();
-// const countdownMainStop = setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr]));
 
 export default yoshi;
