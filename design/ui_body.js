@@ -163,6 +163,8 @@ if ( yoshi.food <= 70 || yoshi.drink <= 70 || yoshi.mood <= 70 || yoshi.health <
 };
   if ( yoshi.food <= 90 || yoshi.drink <= 90 || yoshi.mood <= 90 || yoshi.health <= 90 ) {
     return printCatHappy()
+  }else {
+    printCatHappy()
   }
 }
 
