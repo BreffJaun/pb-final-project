@@ -116,24 +116,35 @@ const printCatHate = () => {
 
 
 
+// function printCat(yoshi) {
+//   if (yoshi.food <= 0) {
+//     return printCatHate()
+//   }
+//   if (yoshi.drink <= 0) {
+//     return printCatHate()
+//   }
+//   if (yoshi.mood <= 0) {
+//     return printCatHate()
+//   };
+//   if ( yoshi.health > 90){
+//     return printCatHappy();
+//   } else if ( yoshi.health > 60 ) {
+//     return printCatNormal();
+//   } else if ( yoshi.health > 35) {
+//     return printCatBored()
+//   } else if ( yoshi.health > 10) {
+//     return printCatAngry()
+//   } else if ( yoshi.health <= 0) {
+//     return printCatHate()
+//   }
+// };
+
+// export default printCat;
+
+
 function printCat(yoshi) {  
-if ( yoshi.food <= 5 || yoshi.drink <= 5 || yoshi.mood <= 5 || yoshi.health <= 5 ) {
+  if ( yoshi.food <= 5 || yoshi.drink <= 5 || yoshi.mood <= 5 || yoshi.health <= 5 ) {
   return printCatHate()
-<<<<<<< HEAD
-  };
-  if ( yoshi.food <= 25 || yoshi.drink <= 25 || yoshi.mood <= 25 || yoshi.health <= 25 ) {
-    return printCatAngry()
-  };
-  if ( yoshi.food <= 50 || yoshi.drink <= 50 || yoshi.mood <= 50 || yoshi.health <= 50 ) {
-    return printCatBored()
-  };
-  if ( yoshi.food <= 70 || yoshi.drink <= 70 || yoshi.mood <= 70 || yoshi.health <= 70 ) {
-    return printCatNormal()
-  };
-    if ( yoshi.food <= 90 || yoshi.drink <= 90 || yoshi.mood <= 90 || yoshi.health <= 90 ) {
-      return printCatHappy()
-  }
-=======
 };
 if ( yoshi.food <= 25 || yoshi.drink <= 25 || yoshi.mood <= 25 || yoshi.health <= 25 ) {
   return printCatAngry()
@@ -144,13 +155,9 @@ if ( yoshi.food <= 50 || yoshi.drink <= 50 || yoshi.mood <= 50 || yoshi.health <
 if ( yoshi.food <= 70 || yoshi.drink <= 70 || yoshi.mood <= 70 || yoshi.health <= 70 ) {
   return printCatNormal()
 };
-if ( yoshi.food <= 90 || yoshi.drink <= 90 || yoshi.mood <= 90 || yoshi.health <= 90 ) {
+  if ( yoshi.food <= 90 || yoshi.drink <= 90 || yoshi.mood <= 90 || yoshi.health <= 90 ) {
     return printCatHappy()
-} else {
-    return printCatHappy();
-}
-
->>>>>>> 498c969405fcd14a4ca2708a1985c47f4926cd10
+  }
 }
 
 export default printCat;
