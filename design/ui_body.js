@@ -133,12 +133,9 @@ function printCat(yoshi) {
     return printCatHappy()
   } else {
     return printCatHappy();
-<<<<<<< HEAD
 }
-=======
-  }
->>>>>>> aa2a21e96f3cb873e58f1f2d326d7410face47dd
 }
+
 
 
 export default printCat;

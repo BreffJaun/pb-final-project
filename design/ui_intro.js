@@ -60,16 +60,16 @@ import chalk from 'chalk';
 // `)
 
 
-const printIntro = () => {
-  return intro;
-};
+// const printIntro = () => {
+//   return intro;
+// };
 
 function printIntro () {
-  const line1Output = setTimeout(line1, 250);
-  const line2Output = setTimeout(line2, 500);
-  const line3Output = setTimeout(line3, 1000);
-  const line4Output = setTimeout(line4, 1500);
-  const line5Output = setTimeout(line5, 2000);
+  // const line1Output = setTimeout(line1, 250);
+  // const line2Output = setTimeout(line2, 500);
+  // const line3Output = setTimeout(line3, 1000);
+  // const line4Output = setTimeout(line4, 1500);
+  // const line5Output = setTimeout(line5, 2000);
   const line6Output = setTimeout(line6, 2500);
   const line7Output = setTimeout(line7, 3000);
   const line8Output = setTimeout(line8, 3500);
@@ -100,43 +100,43 @@ function printIntro () {
 // printTheIntro();
 const printTheIntro = setTimeout(function () { printIntro() }, 250);
 
-// THE SINGLE VARIABLES
-const line1  = () => {
-  console.clear();
-  console.log(`                                    ●-=========xXx=========-●`)
-};
-const line2  = () => {
-  console.clear();
-  console.log(`
-                                      ●-=========xXx=========-●
-  ==================================-●  " t a m a Y O S H I "  ●-==================================`)
-};
-const line3  = () => {
-  console.clear();
-  console.log(`
-                                      ●-=========xXx=========-●
-  ==================================-●  " t a m a Y O S H I "  ●-==================================
-                                      ●-=========xXx=========-● `)
-};
-const line4  = () => {
-  console.clear();
-  console.log(`
-                                      ●-=========xXx=========-●
-  ==================================-●  " t a m a Y O S H I "  ●-==================================
-                                      ●-=========xXx=========-● 
+// // THE SINGLE VARIABLES
+// const line1  = () => {
+//   console.clear();
+//   console.log(`                                    ●-=========xXx=========-●`)
+// };
+// const line2  = () => {
+//   console.clear();
+//   console.log(`
+//                                       ●-=========xXx=========-●
+//   ==================================-●  " t a m a Y O S H I "  ●-==================================`)
+// };
+// const line3  = () => {
+//   console.clear();
+//   console.log(`
+//                                       ●-=========xXx=========-●
+//   ==================================-●  " t a m a Y O S H I "  ●-==================================
+//                                       ●-=========xXx=========-● `)
+// };
+// const line4  = () => {
+//   console.clear();
+//   console.log(`
+//                                       ●-=========xXx=========-●
+//   ==================================-●  " t a m a Y O S H I "  ●-==================================
+//                                       ●-=========xXx=========-● 
                                     
-                                      `)
-}
-const line5  = () => {
-  console.clear();
-  console.log(`
-                                      ●-=========xXx=========-●
-  ==================================-●  " t a m a Y O S H I "  ●-==================================
-                                      ●-=========xXx=========-● 
+//                                       `)
+// }
+// const line5  = () => {
+//   console.clear();
+//   console.log(`
+//                                       ●-=========xXx=========-●
+//   ==================================-●  " t a m a Y O S H I "  ●-==================================
+//                                       ●-=========xXx=========-● 
   
   
-                                      `)
-}
+//                                       `)
+// }
 const line6  = () => {
   console.clear();
   console.log(`
