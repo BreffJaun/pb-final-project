@@ -388,18 +388,28 @@ function printLoadingBar8 () {
      `)
 };
 
-     const loadingBar = () => { 
-        const pic1 = setTimeout( printLoadingBar1, 250 )  
-        const pic2 = setTimeout( printLoadingBar2, 2250 )  
-        const pic3 = setTimeout( printLoadingBar3, 4250 )  
-        const pic4 = setTimeout( printLoadingBar4, 6250 )  
-        const pic5 = setTimeout( printLoadingBar5, 8250 )  
-        const pic6 = setTimeout( printLoadingBar6, 10250 )  
-        const pic7 = setTimeout( printLoadingBar7, 12250 )  
-        const pic8 = setTimeout( printLoadingBar8, 14250 )  
-        const pic8a = setTimeout( printLoadingBar8, 16250 )  
+function setTimeoutPromise(callback, ms) {
+     return new Promise(resolve => {
+          setTimeout(() => {
+               callback();
+               resolve('resolved');
+          }, ms);
+     });
+}
+
+     const loadingBar = async () => { 
+        await setTimeoutPromise( printLoadingBar1, 250 )  
+        await setTimeoutPromise( printLoadingBar2, 2000 )  
+        await setTimeoutPromise( printLoadingBar3, 2000 )  
+        await setTimeoutPromise( printLoadingBar4, 2000 )  
+        await setTimeoutPromise( printLoadingBar5, 2000 )  
+        await setTimeoutPromise( printLoadingBar6, 2000 )  
+        await setTimeoutPromise( printLoadingBar7, 2000 )  
+        await setTimeoutPromise( printLoadingBar8, 2000 )  
+        await setTimeoutPromise( printLoadingBar8, 2000 )  
      }
-     const printLoadingBar = setTimeout(function() {loadingBar()}, 250)
+     // const printLoadingBar = setTimeout(function() {loadingBar()}, 250)
+     loadingBar();
 
      // console.log(printLoadingBar1());
      // console.log(printLoadingBar2());
