@@ -1,33 +1,45 @@
-# "tamaYOSHI"
+# pb-final-project
+JavaScript Modul Final Project
+(by Florian, Martin and Jeff)
 
-A BRANDNEW RETRO GAME by BreffJaun, itzFlorian and grossesbewirken.
-Dedicated to Jeffs Cat called Yoshi and the old Tamagotchi-Game.
-Just pure JavaScript, a clear Terminal and joy of games from 1997.
-But more Yoshi than Tamagotchi as you might think off.
+-----------------------------------------
 
-## How to install:
+Project Name: "tamaYoshi" --> an Tamagotchi like game (just with a fat cat as your pet ;)
 
-1. Clone this repo with THIS ssh-key => "git clone git@github.com:BreffJaun/pb-final-project.git"
-2. Install npm-package (if necessary) =>  "npm install"
-3. Install npm packages promp-sync and chalk => "npm install prompt-sync chalk"
-4. Start the game on your terminal => "node index.js"
-5. Enjoy the life of a full time cat servant!
+-----------------------------------------
 
-## How to play:
+## **Pet Needs**
+### The 4 main needs are 
+1. food 
+2. drink
+3. Health
+4. Mood
 
-"tamaYOSHI" is the javascript version of owning a cat, what basicly means, to be the servant of a cat.
-And Yoshis is the "Highness" of all cats. So be prepared for "Your Highnesses high standards".
-That´s why tamaYOSHI has THREE game modes:
-1. FOOTMAN (easy): for beginners, means, people who haven´t hat a cat before
-2. VALET (normal): for those, who think they know cats.
-3. BUTLER (hard): for those, who never met Yoshi before. 
+Explanation:
+You will Start with a set of stats for each of the 4 needs. At the beginning, every need on default is at 100 Points. The needs will reduce over time (getting hungry, drinky, sick and unhappy).
 
-### FOOD: 
-Finest Tuna / Cat Food / Lasagne
-### DRINK: 
-Just Pure Water / Cool Fresh Milk / Nice Champagne
-### MOOD:
-ere more a nervous breakdown or a "meowlife crisis" of his purrriness**   
+|   food   |   drink   |   Health   |    Mood    |
+|:----------:|:----------:|:----------:|:----------:|
+|    100     |    100     |    100     |    100     |
+
+For each need, you have 3 things to choose from to satisfy it. These 3 choices consist of a good, a bad and a neutral one. Every decision also has an impact on the other needs. Note this to satisfy his fluffy highness.
+
+
+**1. food: Feed your Pet with a selection of several foods**   
+
+  The following choices are available to select:
+- Tuna
+- Usual Cat food from the Supermarket
+- Lasagne
+
+**2. drink: Quench the drink of his fluffiness with several drinks**   
+
+  The following choices are available to select:
+- delicious milk
+- water
+- Champagne
+
+**3. Health: Means here more a nervous breakdown or a "meowlife crisis" of his purrriness**   
 
   The following choices are available to select:
 - massage your pet
