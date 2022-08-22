@@ -3,7 +3,7 @@ import yoshi from '../index.js'
 
 const printCatHappy = () => {
   return`
-  
+
        X-_                                _X            _=vVVVv=_
        XX  -_ _-=-vvvVVVVVVVVVVvvv=-_  _= XX          x-         x           -= G A M E =- 
        X  >_xX                       Xx_<  X         X            X         ●-====xXx====-●
@@ -119,34 +119,6 @@ const printCatHate = () => {
           vVVv                                     vVVv
 `};
 
-
-
-// function printCat(yoshi) {
-//   if (yoshi.food <= 0) {
-//     return printCatHate()
-//   }
-//   if (yoshi.drink <= 0) {
-//     return printCatHate()
-//   }
-//   if (yoshi.mood <= 0) {
-//     return printCatHate()
-//   };
-//   if ( yoshi.health > 90){
-//     return printCatHappy();
-//   } else if ( yoshi.health > 60 ) {
-//     return printCatNormal();
-//   } else if ( yoshi.health > 35) {
-//     return printCatBored()
-//   } else if ( yoshi.health > 10) {
-//     return printCatAngry()
-//   } else if ( yoshi.health <= 0) {
-//     return printCatHate()
-//   }
-// };
-
-// export default printCat;
-
-
 function printCat(yoshi) {
   if (yoshi.food <= 5 || yoshi.drink <= 5 || yoshi.mood <= 5 || yoshi.health <= 5) {
     return printCatHate()
@@ -166,7 +138,5 @@ function printCat(yoshi) {
     return printCatHappy();
 }
 }
-
-
 
 export default printCat;

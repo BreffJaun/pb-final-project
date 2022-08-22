@@ -1,16 +1,16 @@
 function printMode () {
-    console.log(`
+        console.log(`
                                         ●-=========xXx=========-●
     ==================================-●  " t a m a Y O S H I "  ●-==================================
                                         ●-=========xXx=========-●
 
 
-                                            - --=xXx=-- - 
-                                    - -= G A M E - M O D E S =- -
-                                            - --=xXx=-- - 
+                                              - --=xXx=-- - 
+                                       - -= G A M E - M O D E S =- -
+                                              - --=xXx=-- - 
 
 
-        -= F O O T M A N =-               -= V A L E T =-                -= B U T L E R =-       
+           -= F O O T M A N =-               -= V A L E T =-                -= B U T L E R =-       
         ●-=========xXx=========-●       ●-=========xXx=========-●       ●-=========xXx=========-●  
         |                       |       |                       |       |                       |
         |      "Hausdiener"     |       |     "Kammerdiener"    |       |     "Chef-Diener"     |
@@ -36,7 +36,11 @@ function printMode () {
         |                       |       |                       |       |                       |
         ●-=========xXx=========-●       ●-=========xXx=========-●       ●-=========xXx=========-● 
 
-    `
+
+        
+
+
+        `
 )};
 
 // printMode()
