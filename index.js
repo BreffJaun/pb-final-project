@@ -15,7 +15,7 @@ import needs_terminal_warnings from './design/ui_warnings.js';
 // import break_The_Interval from './break_commands.js';
 import interact from './interact_querry.js';
 import printIntro from './design/ui_intro.js';
-// import printTheIntro from './ui0_intro.js';
+import printTheIntro from './design/ui_intro.js';
 
 // ==================================================
 
@@ -173,8 +173,6 @@ const yoshi = {
     }
 };
 
-// START THE INTRO
-// printTheIntro();
 
 // EVERYTHING WHAT IS NEED FOR CHOOSE THE DIFFICULTY // 
 const difficulty = [
@@ -186,7 +184,7 @@ const difficulty = [
 // LET THE USER CHOOSE THE DIFFICULTY LEVEL
 let catchTheNumArr = [];
 const setDifficulty = () => {
-    printIntro();
+    console.clear();
     printMode();
     printSubLine();
     let queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
