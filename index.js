@@ -19,6 +19,7 @@ import loadingBar from './design/ui_loadingBar.js';
 
 // ==================================================
 await printIntro();
+console.clear();
 await loadingBar();
 
 const yoshi = {
@@ -190,7 +191,7 @@ const setDifficulty = () => {
     printSubLine();
     let queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
     if( queryTheDifficulty != "1" && queryTheDifficulty != "2" && queryTheDifficulty != "3"){      
-         queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
+        queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
     }
     const catchTheNum = queryTheDifficulty-1;
     catchTheNumArr.push(catchTheNum);
@@ -202,7 +203,8 @@ let countdownForNeeds = () => {
     // SET TIME (TIME PER UNIT) HIGHER
     if (catchTheNumArr.length > 0 ) {
         yoshi.time += (Object.values(difficulty[catchTheNumArr]) / 1000); 
-    }
+    } 
+
 
     // to clear the console on every execution
     console.clear();  

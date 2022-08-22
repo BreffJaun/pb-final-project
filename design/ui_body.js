@@ -119,8 +119,6 @@ const printCatHate = () => {
           vVVv                                     vVVv
 `};
 
-
-
 function printCat(yoshi) {
   if (yoshi.food <= 5 || yoshi.drink <= 5 || yoshi.mood <= 5 || yoshi.health <= 5) {
     return printCatHate()
@@ -140,7 +138,5 @@ function printCat(yoshi) {
     return printCatHappy();
 }
 }
-
-
 
 export default printCat;
