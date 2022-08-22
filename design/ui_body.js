@@ -116,7 +116,7 @@ const printCatHate = () => {
 
 
 
-<<<<<<< HEAD
+
 // function printCat(yoshi) {
 //   if (yoshi.food <= 0) {
 //     return printCatHate()
