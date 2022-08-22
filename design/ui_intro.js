@@ -73,8 +73,8 @@ import chalk from 'chalk';
     
   
                                               - --=xXx=-- -`)}
-  const line7  = () => {console.log(`                                    - -= W E L C O M E =- -                                    `)}
-  const line8  = () => {console.log(`                                         - --=xXx=-- -                                         `)}
+  const line7  = () => {console.log(`                                         - -= W E L C O M E =- -                                    `)}
+  const line8  = () => {console.log(`                                              - --=xXx=-- -                                         `)}
   const line9  = () => {console.log(`                                                                                               `)}
   const line10 = () => {console.log(`                                                                                               `)}
   const line11 = () => {console.log(`                                   This is a BRANDNEW RETRO game.                              `)}
@@ -104,6 +104,14 @@ function resolveAfter500Ms(callback) {
       callback();
       resolve('resolved');
     }, 500);
+  });
+}
+function resolveAfter1000Ms(callback) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      callback();
+      resolve('resolved');
+    }, 1000);
   });
 }
 
@@ -138,7 +146,7 @@ async function printIntro () {
   await resolveAfter500Ms(line27);
   await resolveAfter500Ms(line28);
   await resolveAfter500Ms(line29);
-  await resolveAfter500Ms(line30);
+  await resolveAfter1000Ms(line30);
   // setTimeout(line6, 2500);
   // setTimeout(line7, 3000);
   // setTimeout(line8, 3500);
@@ -168,7 +176,7 @@ async function printIntro () {
 // const printTheIntro = () => { setTimeout(function () { printIntro() }, 250) };
 // printTheIntro();
 // const printTheIntro = setTimeout(function () { printIntro() }, 250);
-// printIntro();
+
 // // THE SINGLE VARIABLES
 // const line1  = () => {
 //   console.clear();
@@ -209,5 +217,5 @@ async function printIntro () {
 
 
 export default printIntro;
-// export default printTheIntro;
+
  
