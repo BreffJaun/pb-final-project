@@ -409,7 +409,7 @@ function setTimeoutPromise(callback, ms) {
         await setTimeoutPromise( printLoadingBar8, 2000 )  
      }
      // const printLoadingBar = setTimeout(function() {loadingBar()}, 250)
-     loadingBar();
+     // loadingBar();
 
      // console.log(printLoadingBar1());
      // console.log(printLoadingBar2());
@@ -419,3 +419,4 @@ function setTimeoutPromise(callback, ms) {
      // console.log(printLoadingBar6());
      // console.log(printLoadingBar7());
      // console.log(printLoadingBar8());
+export default loadingBar;

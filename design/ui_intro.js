@@ -168,7 +168,7 @@ async function printIntro () {
 // const printTheIntro = () => { setTimeout(function () { printIntro() }, 250) };
 // printTheIntro();
 // const printTheIntro = setTimeout(function () { printIntro() }, 250);
-printIntro();
+// printIntro();
 // // THE SINGLE VARIABLES
 // const line1  = () => {
 //   console.clear();
@@ -208,6 +208,6 @@ printIntro();
 // }
 
 
-// export default printIntro;
+export default printIntro;
 // export default printTheIntro;
  
