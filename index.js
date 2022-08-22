@@ -15,10 +15,11 @@ import needs_terminal_warnings from './design/ui_warnings.js';
 // import break_The_Interval from './break_commands.js';
 import interact from './interact_querry.js';
 import printIntro from './design/ui_intro.js';
-
+import loadingBar from './design/ui_loadingBar.js';
 
 // ==================================================
-
+await printIntro();
+await loadingBar();
 
 const yoshi = {
     name: 'Yoshi',
