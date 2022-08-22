@@ -41,7 +41,7 @@ const yoshi = {
         if (this.food < 71){ 
         this.food += 30
         this.mood -= 25
-        console.log("that makes me full, but not satisfied");
+        // console.log("that makes me full, but not satisfied");
         this.services++
         }else {
             this.food = 100;
@@ -52,7 +52,7 @@ const yoshi = {
         if (this.food < 81){
         this.food += 20
         this.drink -= 25
-        console.log("are you Kidding me?");
+        // console.log("are you Kidding me?");
         this.services++
         }else{
             this.food = 100;
@@ -63,7 +63,7 @@ const yoshi = {
         if (this.food < 91){
         this.food += 10
         this.health -= 30
-        console.log("let's do the Garfield way, you may kiss the paw now");
+        // console.log("let's do the Garfield way, you may kiss the paw now");
         this.services++
         }else {
             this.food = 100;
@@ -76,7 +76,7 @@ const yoshi = {
         if (this.drink < 71){
         this.drink += 30
         this.mood -= 25
-        console.log("Go away with the cheap booze.....but thanks loyal human");
+        // console.log("Go away with the cheap booze.....but thanks loyal human");
         this.services++
     }else {
         this.drink = 100;
@@ -87,7 +87,7 @@ const yoshi = {
         if(this.drink < 81){
         this.drink += 20
         this.mood -= 20
-        console.log("uhh mewow");
+        // console.log("uhh mewow");
         this.services++
         }else {
             this.drink = 100;
@@ -98,7 +98,7 @@ const yoshi = {
         if(this.drink < 91){
         this.drink += 10
         this.health -= 30
-        console.log("just a little dropplet for my royal paw");
+        // console.log("just a little dropplet for my royal paw");
         this.services++
         }else {
             this.drink = 100;
@@ -111,7 +111,7 @@ const yoshi = {
         if(this.mood < 71){
         this.mood += 30
         this.food -= 25
-        console.log("purr purr....purr it's better now");
+        // console.log("purr purr....purr it's better now");
         this.services++
         }else {
             this.mood = 100;
@@ -122,7 +122,7 @@ const yoshi = {
         if(this.mood < 81){
         this.mood += 20
         this.drink -= 10
-        console.log("dance little monkey...dance!");
+        // console.log("dance little monkey...dance!");
         this.services++
         }else {
             this.mood = 100;
@@ -133,7 +133,7 @@ const yoshi = {
         if(this.mood < 81){
         this.mood += 20
         this.health -= 30
-        console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
+        // console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
         this.services++
         }else {
             this.mood = 100;
@@ -192,9 +192,10 @@ const setDifficulty = () => {
     console.clear();
     printMode();
     printSubLine();
-    let queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
-    if( queryTheDifficulty != "1" && queryTheDifficulty != "2" && queryTheDifficulty != "3"){      
-        queryTheDifficulty = prompt(`                                  Choose your difficulty level: `);
+    //                             ('===============================================================================================')
+    let queryTheDifficulty = prompt(`                     C H O O S E   Y O U R   G A M E   M O D E  >>    `);
+    if( queryTheDifficulty != "1" && queryTheDifficulty != "2" && queryTheDifficulty != "3"){
+        queryTheDifficulty = prompt(`                     C H O O S E   Y O U R   G A M E   M O D E  >>    `);
     }
     const catchTheNum = queryTheDifficulty-1;
     catchTheNumArr.push(catchTheNum);
@@ -234,9 +235,10 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
-// .....console.log(chalk.redBrightbold('===============================================================================================')
+//                                     ('===============================================================================================')
         console.log(chalk.redBrightbold('                               You make me sick!  YOU ARE FIRED!                               '));
-        let querry2 = prompt(' P R E S S   E N T E R ');
+//                          ('===============================================================================================')
+        let querry2 = prompt('                                   { P R E S S   E N T E R }                                   ');
         console.clear();
         printOutro();
     }
@@ -246,9 +248,10 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
         console.log(printCat(yoshi));
         printMenu();
-// .....console.log(chalk.redBright.bold('===============================================================================================')
-        console.log(chalk.redBright.bold('                           I didn´t have enough fun!  YOU ARE FIRED!                           '));
-        let again = prompt(' P R E S S   E N T E R ');
+//                                      ('===============================================================================================')
+        console.log(chalk.redBright.bold('                           I didn`t have enough fun!  YOU ARE FIRED!                           '));
+//                        ('===============================================================================================')
+        let again = prompt('                                   { P R E S S   E N T E R }                                   ');
         console.clear();
         printOutro();
     }
@@ -258,9 +261,10 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
-// .....console.log(chalk.redBright.bold('===============================================================================================')
+//                                      ('===============================================================================================')
         console.log(chalk.redBright.bold('                               I was too hungry!  YOU ARE FIRED!                               '));
-        let again = prompt(' P R E S S   E N T E R ');
+//                        ('===============================================================================================')
+        let again = prompt('                                   { P R E S S   E N T E R }                                   ');
         console.clear();
         printOutro();
     }
@@ -270,9 +274,10 @@ let countdownForNeeds = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
-// .....console.log(chalk.redBright.bold('===============================================================================================')
+//                                      ('===============================================================================================')
         console.log(chalk.redBright.bold('                              I got too thirsty!   YOU ARE FIRED!                              '));
-        let querry2 = prompt(' P R E S S   E N T E R ');
+//                          ('===============================================================================================')
+        let querry2 = prompt('                                   { P R E S S   E N T E R }                                   ');
         console.clear();
         printOutro();
     }
