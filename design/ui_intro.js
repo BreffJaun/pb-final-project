@@ -2,7 +2,11 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 import chalk from 'chalk';
-c
+
+
+
+
+
 const intro = prompt(`
                                     ●-=========xXx=========-●                                    
 ==================================-●  " t a m a Y O S H I "  ●-==================================
