@@ -1,5 +1,5 @@
 function printLoadingBar1 () {
-     return `
+     console.log( `
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -42,14 +42,14 @@ function printLoadingBar1 () {
      
      
      =================================================================================================
-     `
+     `)
 };
 
 
 
 
 function printLoadingBar2 () {
-     return `
+     console.log( `
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -90,14 +90,14 @@ function printLoadingBar2 () {
      
      
      =================================================================================================
-     `
+     `)
 };
 
 
 
 
 function printLoadingBar3 () {
-     return `
+     console.log( `
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -138,14 +138,14 @@ function printLoadingBar3 () {
      
      
      =================================================================================================
-     `
+     `)
 };
 
 
 
 
 function printLoadingBar4 () {
-     return `
+     console.log( `
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -186,14 +186,14 @@ function printLoadingBar4 () {
      
      
      =================================================================================================
-     `
+     `)
 };
 
 
 
 
 function printLoadingBar5 () {
-     return `
+     console.log( `
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -235,14 +235,14 @@ function printLoadingBar5 () {
      
      
      =================================================================================================
-     `
+     `)
 };
 
 
 
 
 function printLoadingBar6 () {
-     return `
+     console.log (`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -284,14 +284,14 @@ function printLoadingBar6 () {
      
      
      =================================================================================================
-     `
+     `)
 };
 
 
 
 
 function printLoadingBar7 () {
-     return `
+     console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
@@ -334,14 +334,14 @@ function printLoadingBar7 () {
      
      
      =================================================================================================
-     `
-};
+     `)
+}
 
 
 
 
 function printLoadingBar8 () {
-     return `
+     console.log(`
 
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
@@ -385,17 +385,27 @@ function printLoadingBar8 () {
      
      
      =================================================================================================
-     `
+     `)
 };
 
+     const loadingBar = () => { 
+        const pic1 = setTimeout( printLoadingBar1, 250 )  
+        const pic2 = setTimeout( printLoadingBar2, 2250 )  
+        const pic3 = setTimeout( printLoadingBar3, 4250 )  
+        const pic4 = setTimeout( printLoadingBar4, 6250 )  
+        const pic5 = setTimeout( printLoadingBar5, 8250 )  
+        const pic6 = setTimeout( printLoadingBar6, 10250 )  
+        const pic7 = setTimeout( printLoadingBar7, 12250 )  
+        const pic8 = setTimeout( printLoadingBar8, 14250 )  
+        const pic8a = setTimeout( printLoadingBar8, 16250 )  
+     }
+     const printLoadingBar = setTimeout(function() {loadingBar()}, 250)
 
-
-
-     console.log(printLoadingBar1());
-     console.log(printLoadingBar2());
-     console.log(printLoadingBar3());
-     console.log(printLoadingBar4());
-     console.log(printLoadingBar5());
-     console.log(printLoadingBar6());
-     console.log(printLoadingBar7());
-     console.log(printLoadingBar8());
+     // console.log(printLoadingBar1());
+     // console.log(printLoadingBar2());
+     // console.log(printLoadingBar3());
+     // console.log(printLoadingBar4());
+     // console.log(printLoadingBar5());
+     // console.log(printLoadingBar6());
+     // console.log(printLoadingBar7());
+     // console.log(printLoadingBar8());
