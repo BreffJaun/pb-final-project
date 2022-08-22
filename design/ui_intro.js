@@ -115,12 +115,8 @@ const line26 = () => {
 }
   const line27 = () => {console.log(`                                                                                               `)}
   const line28 = () => {console.log(`                                      - - - - --=xXx=-- - - - -                                `)}
-const line29 = () => {
-  console.log(`
-  
-  `)
-}
-  const line30 = () => {console.log(`     ===============================================================================================`)}
+  const line29 = () => {console.log(`                                                                                               `)}
+  const line30 = () => {console.log(`===============================================================================================`)}
 
 function resolveAfter500Ms(callback) {
   return new Promise(resolve => {
