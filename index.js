@@ -183,7 +183,7 @@ const yoshi = {
 const difficulty = [
     { Footmen: 3000 },   // => Hausdiener
     { Valet: 2000 },     // => Kammerdiener
-    { Butler: 500 },     // => (Chef-) Diener
+    { Butler: 1000 },     // => (Chef-) Diener
 ];
 
 // LET THE USER CHOOSE THE DIFFICULTY LEVEL
@@ -236,6 +236,7 @@ let countdownForNeeds = () => {
     if (yoshi.health <= 0) {
         clearInterval(countdownMain);
         console.clear();
+        console.log();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
@@ -250,6 +251,7 @@ let countdownForNeeds = () => {
     if (yoshi.mood <= 0) {
         clearInterval(countdownMain);
         console.clear();
+        console.log();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
         console.log(printCat(yoshi));
         printMenu();
@@ -264,6 +266,7 @@ let countdownForNeeds = () => {
     if (yoshi.food <= 0) {
         clearInterval(countdownMain);
         console.clear();
+        console.log();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
@@ -278,6 +281,7 @@ let countdownForNeeds = () => {
     if (yoshi.drink <= 0) {
         clearInterval(countdownMain);
         console.clear();
+        console.log();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();

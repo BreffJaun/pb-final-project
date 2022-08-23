@@ -1,4 +1,5 @@
-function printLoadingBar1 () {
+function printLoadingBar1() {
+     console.clear();
      console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
@@ -48,7 +49,8 @@ function printLoadingBar1 () {
 
 
 
-function printLoadingBar2 () {
+function printLoadingBar2() {
+     console.clear();
      console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
@@ -99,6 +101,7 @@ function printLoadingBar2 () {
 
 
 function printLoadingBar3 () {
+     console.clear();
      console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
@@ -148,7 +151,8 @@ function printLoadingBar3 () {
 
 
 
-function printLoadingBar4 () {
+function printLoadingBar4() {
+     console.clear();
      console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
@@ -198,7 +202,8 @@ function printLoadingBar4 () {
 
 
 
-function printLoadingBar5 () {
+function printLoadingBar5() {
+     console.clear();
      console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
@@ -249,6 +254,7 @@ function printLoadingBar5 () {
 
 
 function printLoadingBar6 () {
+     console.clear();
      console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
@@ -298,7 +304,8 @@ function printLoadingBar6 () {
 
 
 
-function printLoadingBar7 () {
+function printLoadingBar7() {
+     console.clear();
      console.log(`
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
@@ -348,7 +355,8 @@ function printLoadingBar7 () {
 
 
 
-function printLoadingBar8 () {
+function printLoadingBar8() {
+     console.clear();
      console.log(`                                         
                                          ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
@@ -399,8 +407,7 @@ function setTimeoutPromise(callback, ms) {
      return new Promise(resolve => {
           setTimeout(() => {
                callback();
-               resolve('resolved');
-               console.clear()
+               resolve('resolved');               
           }, ms);
      });
 }
@@ -416,5 +423,6 @@ const loadingBar = async () => {
      await setTimeoutPromise( printLoadingBar8, 500 )     
      await setTimeoutPromise( printLoadingBar8, 2000 )  
 }
+
 
 export default loadingBar;
