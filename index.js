@@ -286,11 +286,11 @@ let countdownForNeeds = () => {
     console.log();
    
     // INTERACTION BREAKPOINT
-    if( yoshi.health < 80 && yoshi.health > 75 ){
+    if( yoshi.health < 70 && yoshi.health > 67 ){
         interact();
-    }else if( yoshi.health < 55 && yoshi.health > 50 ){
+    }else if( yoshi.health < 55 && yoshi.health > 52 ){
         interact();
-    }else if( yoshi.health < 25 && yoshi.health > 15 ){
+    }else if( yoshi.health < 25 && yoshi.health > 22 ){
         interact();
     }     
 };
