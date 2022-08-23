@@ -181,9 +181,9 @@ const yoshi = {
 
 // EVERYTHING WHAT IS NEED FOR CHOOSE THE DIFFICULTY // 
 const difficulty = [
-    { Footmen: 4000 },   // => Hausdiener
-    { Valet: 3000 },     // => Kammerdiener
-    { Butler: 250 },     // => (Chef-) Diener
+    { Footmen: 3000 },   // => Hausdiener
+    { Valet: 2000 },     // => Kammerdiener
+    { Butler: 500 },     // => (Chef-) Diener
 ];
 
 // LET THE USER CHOOSE THE DIFFICULTY LEVEL
@@ -236,6 +236,7 @@ let countdownForNeeds = () => {
     if (yoshi.health <= 0) {
         clearInterval(countdownMain);
         console.clear();
+        console.log();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
@@ -250,6 +251,7 @@ let countdownForNeeds = () => {
     if (yoshi.mood <= 0) {
         clearInterval(countdownMain);
         console.clear();
+        console.log();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
         console.log(printCat(yoshi));
         printMenu();
@@ -264,6 +266,7 @@ let countdownForNeeds = () => {
     if (yoshi.food <= 0) {
         clearInterval(countdownMain);
         console.clear();
+        console.log();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
@@ -278,6 +281,7 @@ let countdownForNeeds = () => {
     if (yoshi.drink <= 0) {
         clearInterval(countdownMain);
         console.clear();
+        console.log();
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
@@ -289,11 +293,6 @@ let countdownForNeeds = () => {
         console.clear();
         printOutro();
     }
-
-    // PRINT THE WARNINGS OF THE 4 NEEDS //
-    needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
-    printSubLine();
-    console.log();   
 
     // INTERACTION BREAKPOINT
     if( yoshi.health < 70 && yoshi.health > 67 ){
