@@ -408,27 +408,16 @@ function setTimeoutPromise(callback, ms) {
      });
 }
 
-     const loadingBar = async () => { 
-        await setTimeoutPromise( printLoadingBar1, 250 )  
-        await setTimeoutPromise( printLoadingBar2, 1500 )  
-        await setTimeoutPromise( printLoadingBar3, 1250 )  
-        await setTimeoutPromise( printLoadingBar4, 750 )  
-        await setTimeoutPromise( printLoadingBar5, 500 )  
-        await setTimeoutPromise( printLoadingBar6, 1000 )  
-        await setTimeoutPromise( printLoadingBar7, 650 )  
-        await setTimeoutPromise( printLoadingBar8, 500 )  
-        await setTimeoutPromise( printLoadingBar8, 2000 )  
-     }
+const loadingBar = async () => { 
+     await setTimeoutPromise( printLoadingBar1, 250 )  
+     await setTimeoutPromise( printLoadingBar2, 1500 )  
+     await setTimeoutPromise( printLoadingBar3, 1250 )  
+     await setTimeoutPromise( printLoadingBar4, 750 )  
+     await setTimeoutPromise( printLoadingBar5, 500 )  
+     await setTimeoutPromise( printLoadingBar6, 1000 )  
+     await setTimeoutPromise( printLoadingBar7, 650 )  
+     await setTimeoutPromise( printLoadingBar8, 500 )  
+     await setTimeoutPromise( printLoadingBar8, 2000 )  
+}
 
-     // const printLoadingBar = setTimeout(function() {loadingBar()}, 250)
-     // loadingBar();
-
-     // console.log(printLoadingBar1());
-     // console.log(printLoadingBar2());
-     // console.log(printLoadingBar3());
-     // console.log(printLoadingBar4());
-     // console.log(printLoadingBar5());
-     // console.log(printLoadingBar6());
-     // console.log(printLoadingBar7());
-     // console.log(printLoadingBar8());
 export default loadingBar;

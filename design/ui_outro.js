@@ -4,8 +4,6 @@ const prompt = promptSync();
 import chalk from 'chalk';
 // ==================================
 
-
-
 const printOutro = () => {
         const outro = prompt(`
                                         ●-=========xXx=========-●
@@ -54,7 +52,6 @@ const printOutro = () => {
 `);
 };
 
-// printOutro();
 
 export default printOutro; 
 
