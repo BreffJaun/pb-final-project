@@ -28,7 +28,7 @@ function printMode () {
         |  - - - -=xXx=- - - -  |       |  - - - -=xXx=- - - -  |       |  - - - -=xXx=- - - -  |
         |                       |       |                       |       |                       |
         |  Mode: E A S Y        |       |  Mode: N O R M A L    |       |  Mode: H A R D        |
-        |  Reaction: 5 sec      |       |  Reaction: 2.5 sec    |       |  Reaction: 1 sec      |
+        |  Reaction: 3 sec      |       |  Reaction: 2  sec     |       |  Reaction: 1 sec      |
         |                       |       |                       |       |                       |
         |  - - - -=xXx=- - - -  |       |  - - - -=xXx=- - - -  |       |  - - - -=xXx=- - - -  |
         |                       |       |                       |       |                       |
