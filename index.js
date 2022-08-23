@@ -38,106 +38,319 @@ const yoshi = {
     // INTERACTIONS
     // FOOD
     feedTuna() {
-        if (this.food < 71){ 
-        this.food += 30
-        this.mood -= 25
-        // console.log("that makes me full, but not satisfied");
-        this.services++
-        }else {
+        if ( this.mode === "Butler" ){
+            if (this.food < 71){ 
+            this.food += 30
+            this.mood -= 25
+            // console.log("that makes me full, but not satisfied");
+            this.services++
+            }else {
             this.food = 100;
             this.services++
+            }
+        }
+        if (this.mode === "Valet"){
+            if (this.food < 66){ 
+                this.food += 35
+                this.mood -= 20
+                // console.log("that makes me full, but not satisfied");
+                this.services++
+                }else {
+                this.food = 100;
+                this.services++
+                }
+        }
+        if (this.mode === "Footmen"){
+            if (this.food < 61){ 
+                this.food += 40
+                this.mood -= 15
+                // console.log("that makes me full, but not satisfied");
+                this.services++
+                }else {
+                this.food = 100;
+                this.services++
+                }
         }
     },
     feedCatfood() {
-        if (this.food < 81){
-        this.food += 20
-        this.drink -= 25
-        // console.log("are you Kidding me?");
-        this.services++
-        }else{
-            this.food = 100;
+        if ( this.mode === "Butler" ){
+            if (this.food < 81){
+            this.food += 20
+            this.drink -= 25
+            // console.log("are you Kidding me?");
             this.services++
-        }
+            }else{
+                this.food = 100;
+                this.services++
+            }
+    }
+        if ( this.mode === "Valet" ){
+            if (this.food < 76){
+            this.food += 25
+            this.drink -= 20
+            // console.log("are you Kidding me?");
+            this.services++
+            }else{
+                this.food = 100;
+                this.services++
+            }
+    }
+        if ( this.mode === "Footmen" ){
+            if (this.food < 71){
+            this.food += 30
+            this.drink -= 15
+            // console.log("are you Kidding me?");
+            this.services++
+            }else{
+                this.food = 100;
+                this.services++
+            }
+    }   
     },
     feedLasagne() {
-        if (this.food < 91){
-        this.food += 10
-        this.health -= 30
-        // console.log("let's do the Garfield way, you may kiss the paw now");
-        this.services++
-        }else {
-            this.food = 100;
+        if (this.mode === "Butler"){
+            if (this.food < 81){
+            this.food += 20
+            this.health -= 30
+            // console.log("let's do the Garfield way, you may kiss the paw now");
             this.services++
+            }else {
+                this.food = 100;
+                this.services++
+            }
+        }
+        if (this.mode === "Valet"){
+            if (this.food < 76){
+            this.food += 25
+            this.health -= 25
+            // console.log("let's do the Garfield way, you may kiss the paw now");
+            this.services++
+            }else {
+                this.food = 100;
+                this.services++
+            }
+        }
+        if (this.mode === "Footmen"){
+            if (this.food < 71){
+            this.food += 30
+            this.health -= 20
+            // console.log("let's do the Garfield way, you may kiss the paw now");
+            this.services++
+            }else {
+                this.food = 100;
+                this.services++
+            }
         }
     },
 
     // DRINK
     drinkWater() {
-        if (this.drink < 71){
-        this.drink += 30
-        this.mood -= 25
-        // console.log("Go away with the cheap booze.....but thanks loyal human");
-        this.services++
-    }else {
-        this.drink = 100;
-        this.services++
-    }
-    },
-    drinkMilk() {
-        if(this.drink < 81){
-        this.drink += 20
-        this.mood -= 20
-        // console.log("uhh mewow");
-        this.services++
+        if ( this.mode === "Butler" ){
+            if (this.drink < 71){
+            this.drink += 30
+            this.mood -= 25
+            // console.log("Go away with the cheap booze.....but thanks loyal human");
+            this.services++
         }else {
             this.drink = 100;
             this.services++
+        }
+    }
+        if ( this.mode === "Valet" ){
+            if (this.drink < 66){
+            this.drink += 35
+            this.mood -= 20
+            // console.log("Go away with the cheap booze.....but thanks loyal human");
+            this.services++
+        }else {
+            this.drink = 100;
+            this.services++
+        }
+    }
+        if ( this.mode === "Footmen" ){
+            if (this.drink < 61){
+            this.drink += 40
+            this.mood -= 15
+            // console.log("Go away with the cheap booze.....but thanks loyal human");
+            this.services++
+        }else {
+            this.drink = 100;
+            this.services++
+        }
+        }
+    },
+    drinkMilk() {
+        if( this.mode === "Butler" ){
+            if(this.drink < 81){
+            this.drink += 20
+            this.mood -= 20
+            // console.log("uhh mewow");
+            this.services++
+            }else {
+                this.drink = 100;
+                this.services++
+        }
+    }
+        if( this.mode === "Valet" ){
+            if(this.drink < 76){
+            this.drink += 25
+            this.mood -= 15
+            // console.log("uhh mewow");
+            this.services++
+            }else {
+                this.drink = 100;
+                this.services++
+        }
+    }
+        if( this.mode === "Footmen" ){
+            if(this.drink < 71){
+            this.drink += 30
+            this.mood -= 10
+            // console.log("uhh mewow");
+            this.services++
+            }else {
+                this.drink = 100;
+                this.services++
+        }
     }
     },
     drinkChampagne() {
-        if(this.drink < 91){
-        this.drink += 10
-        this.health -= 30
-        // console.log("just a little dropplet for my royal paw");
-        this.services++
-        }else {
-            this.drink = 100;
+        if ( this.mode === "Butler" )
+            if(this.drink < 91){
+            this.drink += 10
+            this.health -= 30
+            // console.log("just a little dropplet for my royal paw");
             this.services++
-    }
+            }else {
+                this.drink = 100;
+                this.services++
+        }
+        if ( this.mode === "Valet" )
+            if(this.drink < 86){
+            this.drink += 15
+            this.health -= 25
+            // console.log("just a little dropplet for my royal paw");
+            this.services++
+            }else {
+                this.drink = 100;
+                this.services++
+        }
+        if ( this.mode === "Footmen" )
+            if(this.drink < 81){
+            this.drink += 20
+            this.health -= 20
+            // console.log("just a little dropplet for my royal paw");
+            this.services++
+            }else {
+                this.drink = 100;
+                this.services++
+        }
     },
 
     // MOOD
     strokeBelly() {
-        if(this.mood < 71){
-        this.mood += 30
-        this.food -= 25
-        // console.log("purr purr....purr it's better now");
-        this.services++
-        }else {
-            this.mood = 100;
+        if( this.mode === "Butler" ){
+            if(this.mood < 71){
+            this.mood += 30
+            this.food -= 25
+            // console.log("purr purr....purr it's better now");
             this.services++
+            }else {
+                this.mood = 100;
+                this.services++
+            }
+    }
+        if( this.mode === "Valet" ){
+            if(this.mood < 67){
+            this.mood += 35
+            this.food -= 20
+            // console.log("purr purr....purr it's better now");
+            this.services++
+            }else {
+                this.mood = 100;
+                this.services++
+            }
         }
+        if( this.mode === "Footmen" ){
+            if(this.mood < 61){
+            this.mood += 40
+            this.food -= 15
+            // console.log("purr purr....purr it's better now");
+            this.services++
+            }else {
+                this.mood = 100;
+                this.services++
+            }
+    }
     },
     dance() {
-        if(this.mood < 81){
-        this.mood += 20
-        this.drink -= 10
-        // console.log("dance little monkey...dance!");
-        this.services++
-        }else {
-            this.mood = 100;
+        if( this.mode === "Butler" ){
+            if(this.mood < 81){
+            this.mood += 20
+            this.drink -= 10
+            // console.log("dance little monkey...dance!");
             this.services++
+            }else {
+                this.mood = 100;
+                this.services++
+            }
+        }
+        if( this.mode === "Valet" ){
+            if(this.mood < 76){
+            this.mood += 25
+            this.drink -= 5
+            // console.log("dance little monkey...dance!");
+            this.services++
+            }else {
+                this.mood = 100;
+                this.services++
+            }
+        }
+        if( this.mode === "Footmen" ){
+            if(this.mood < 71){
+            this.mood += 30
+            this.drink -= 0
+            // console.log("dance little monkey...dance!");
+            this.services++
+            }else {
+                this.mood = 100;
+                this.services++
+            }
         }
     },
     turnOnTv() {
-        if(this.mood < 81){
-        this.mood += 20
-        this.health -= 30
-        // console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
-        this.services++
-        }else {
-            this.mood = 100;
+        if( this.mode === "Butler" ){
+            if(this.mood < 81){
+            this.mood += 20
+            this.health -= 30
+            // console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
             this.services++
+            }else {
+                this.mood = 100;
+                this.services++
+        }
+    }
+        if( this.mode === "Valet" ){
+            if(this.mood < 76){
+            this.mood += 25
+            this.health -= 25
+            // console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
+            this.services++
+            }else {
+                this.mood = 100;
+                this.services++
+        }
+    }
+        if( this.mode === "Footmen" ){
+            if(this.mood < 71){
+            this.mood += 30
+            this.health -= 20
+            // console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
+            this.services++
+            }else {
+                this.mood = 100;
+                this.services++
+        }
     }
     },
     serv(){

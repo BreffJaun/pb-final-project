@@ -403,29 +403,26 @@ function printLoadingBar8() {
      `)
 };
 
-// function printClear() {
-//      console.clear();
-// }
-
 function setTimeoutPromise(callback, ms) {
      return new Promise(resolve => {
           setTimeout(() => {
                callback();
-               resolve('resolved');
+               resolve('resolved');               
           }, ms);
      });
 }
 
 const loadingBar = async () => { 
-     await setTimeoutPromise(printLoadingBar1, 250)
-     await setTimeoutPromise(printLoadingBar2, 1500)
-     await setTimeoutPromise(printLoadingBar3, 1250)
-     await setTimeoutPromise(printLoadingBar4, 750)
-     await setTimeoutPromise(printLoadingBar5, 500)
-     await setTimeoutPromise(printLoadingBar6, 1000)
-     await setTimeoutPromise(printLoadingBar7, 650)
-     await setTimeoutPromise(printLoadingBar8, 500)
-     await setTimeoutPromise(printLoadingBar8, 2000)
-     }
+     await setTimeoutPromise( printLoadingBar1, 250 )       
+     await setTimeoutPromise( printLoadingBar2, 1500 )       
+     await setTimeoutPromise( printLoadingBar3, 1250 )     
+     await setTimeoutPromise( printLoadingBar4, 750 )     
+     await setTimeoutPromise( printLoadingBar5, 500 )     
+     await setTimeoutPromise( printLoadingBar6, 3000 )     
+     await setTimeoutPromise( printLoadingBar7, 650 )     
+     await setTimeoutPromise( printLoadingBar8, 500 )     
+     await setTimeoutPromise( printLoadingBar8, 2000 )  
+}
+
 
 export default loadingBar;
