@@ -418,7 +418,7 @@ const loadingBar = async () => {
      await setTimeoutPromise( printLoadingBar3, 1250 )     
      await setTimeoutPromise( printLoadingBar4, 750 )     
      await setTimeoutPromise( printLoadingBar5, 500 )     
-     await setTimeoutPromise( printLoadingBar6, 1000 )     
+     await setTimeoutPromise( printLoadingBar6, 3000 )     
      await setTimeoutPromise( printLoadingBar7, 650 )     
      await setTimeoutPromise( printLoadingBar8, 500 )     
      await setTimeoutPromise( printLoadingBar8, 2000 )  
