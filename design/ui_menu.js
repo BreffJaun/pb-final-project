@@ -13,5 +13,3 @@ function printMenu () {
 export default printMenu;
 
 
-// printMenu()
-

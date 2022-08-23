@@ -7,12 +7,8 @@ import chalk from 'chalk';
 import yoshi from "../index.js"
 
 
-// yoshi.food, yoshi.drink, yoshi.mood, yoshi.health
+
 const needs_terminal_warnings = () => {
-
-// .....console.log('===============================================================================================')
-
-
     // E V E R Y T H I N G   I S   F I N E     
     if ( yoshi.mood <= 0 || yoshi.food <= 0 || yoshi.drink <= 0 || yoshi.health <= 0 ) {
         return  console.log(), 

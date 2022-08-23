@@ -54,7 +54,7 @@ const printOutro = () => {
 `);
 };
 
-// printOutro();
+
 
 export default printOutro; 
 
