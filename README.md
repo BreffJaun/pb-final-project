@@ -13,7 +13,7 @@ But more Yoshi than Tamagotchi as you might think off.
 And Yoshis is the "Highness" of all cats. So be prepared for "Your Highnesses high standards".  
 
 That´s why tamaYOSHI has THREE game modes: 
-   + **FOOTMAN** (easy): for beginners, means, people who haven´t hat a cat before  
+   + **FOOTMAN** (easy): for beginners, means, people who haven´t had a cat before  
    + **VALET** (normal): for those, who think they know cats.  
    + **BUTLER** (hard): for those, who never met Yoshi before.  
 
