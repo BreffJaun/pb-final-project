@@ -75,7 +75,7 @@ import chalk from 'chalk';
                                               - --=xXx=-- -`)}
   const line7  = () => {console.log(`                                         - -= W E L C O M E =- -                                    `)}
   const line8  = () => {console.log(`                                              - --=xXx=-- -                                         `)}
-  const line9  = () => {console.log(`                                                                                               `)}
+  const line9  = () => {console.log(`                                                                                                    `)}
   const line10 = () => {
   console.log(`
   
