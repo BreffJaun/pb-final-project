@@ -9,7 +9,4 @@ function printMenu () {
 
 `)};
 
-
 export default printMenu;
-
-
