@@ -11,8 +11,8 @@ import printMenu from "./design/ui_menu.js";
 // ===============================
 
 const interact = () =>{
-    
-    const interaction = prompt("     Type 1 - 9 for Interaction  ")             
+    //                        ('===============================================================================================')
+    const interaction = prompt("                        C H O O S E   Y O U R   S E R V I C E >>     ")             
         if (interaction === "7"){                
             yoshi.feedTuna()                   
         }if (interaction === "4"){                

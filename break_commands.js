@@ -15,7 +15,8 @@ const break_The_Interval = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
-        console.log('           You dont care enough about my health. YOU ARE FIRED! ! !');
+//                 ('===============================================================================================')
+        console.log('                              >>   Y O U   A R E   F I R E D   <<                              ');
     }
     if (yoshi.mood <= 0) {        
         clearInterval(countdownMain);
@@ -23,7 +24,8 @@ const break_The_Interval = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health)
         console.log(printCat(yoshi));
         printMenu();
-        console.log('           You dont care enough about my mood. YOU ARE FIRED! ! !');
+//                 ('===============================================================================================')
+        console.log('                              >>   Y O U   A R E   F I R E D   <<                              ');
     }
     if (yoshi.food <= 0) {     
         clearInterval(countdownMain);
@@ -31,7 +33,8 @@ const break_The_Interval = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
-        console.log('           You dont care enough about my food. YOU ARE FIRED! ! !');
+//                 ('===============================================================================================')
+        console.log('                              >>   Y O U   A R E   F I R E D   <<                              ');
     }
     if (yoshi.drink === 0 || yoshi.drink < 0) {        
         clearInterval(countdownMain);
@@ -39,7 +42,8 @@ const break_The_Interval = () => {
         printStatus(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
         console.log(printCat(yoshi));
         printMenu();
-        console.log('           You dont care enough about my DRINK. YOU ARE FIRED ! ! !');
+//                 ('===============================================================================================')
+        console.log('                              >>   Y O U   A R E   F I R E D   <<                              ');
     }
 };
 
