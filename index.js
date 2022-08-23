@@ -209,8 +209,7 @@ let countdownForNeeds = () => {
         yoshi.time += (Object.values(difficulty[catchTheNumArr]) / 1000); 
     } 
 
-
-    // to clear the console on every execution
+    // TO CLEAR THE CONSOLE ON EVERY EXECUTION
     console.clear();  
 
     // NEEDS CALCULATION //

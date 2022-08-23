@@ -136,7 +136,6 @@ function resolveAfter1000Ms(callback) {
   });
 }
 
-
 async function printIntro () {
   // const line1Output = setTimeout(line1, 250);
   // const line2Output = setTimeout(line2, 500);

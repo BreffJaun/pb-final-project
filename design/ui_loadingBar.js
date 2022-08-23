@@ -349,7 +349,8 @@ function printLoadingBar7 () {
 
 
 function printLoadingBar8 () {
-     console.log(`                                         ●-=========xXx=========-●
+     console.log(`                                         
+                                         ●-=========xXx=========-●
      ==================================-●  " t a m a Y O S H I "  ●-==================================
                                          ●-=========xXx=========-●
      
@@ -393,6 +394,10 @@ function printLoadingBar8 () {
      =================================================================================================
      `)
 };
+
+// function printClear() {
+//      console.clear();
+// }
 
 function setTimeoutPromise(callback, ms) {
      return new Promise(resolve => {
