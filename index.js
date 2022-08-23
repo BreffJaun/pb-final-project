@@ -226,6 +226,11 @@ let countdownForNeeds = () => {
     // MENU //  
     printMenu();
 
+    // PRINT THE WARNINGS OF THE 4 NEEDS //
+    needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+    printSubLine();
+    console.log();
+
     // BREAK COMMAND //
 
     if (yoshi.health <= 0) {
@@ -237,6 +242,7 @@ let countdownForNeeds = () => {
 //                                     ('===============================================================================================')
         console.log(chalk.redBrightbold('                               You make me sick!  YOU ARE FIRED!                               '));
 //                          ('===============================================================================================')
+        printSubLine();
         let enter = prompt('                                >>   P R E S S   E N T E R   <<                                ');
         console.clear();
         printOutro();
@@ -250,6 +256,7 @@ let countdownForNeeds = () => {
 //                                      ('===============================================================================================')
         console.log(chalk.redBright.bold('                           I didn`t have enough fun!  YOU ARE FIRED!                           '));
 //                        ('===============================================================================================')
+        printSubLine();
         let enter = prompt('                                >>   P R E S S   E N T E R   <<                                ');
         console.clear();
         printOutro();
@@ -263,6 +270,7 @@ let countdownForNeeds = () => {
 //                                      ('===============================================================================================')
         console.log(chalk.redBright.bold('                               I was too hungry!  YOU ARE FIRED!                               '));
 //                        ('===============================================================================================')
+        printSubLine();
         let enter = prompt('                                >>   P R E S S   E N T E R   <<                                ');
         console.clear();
         printOutro();
@@ -276,15 +284,12 @@ let countdownForNeeds = () => {
 //                                      ('===============================================================================================')
         console.log(chalk.redBright.bold('                              I got too thirsty!   YOU ARE FIRED!                              '));
 //                          ('===============================================================================================')
+        printSubLine();
         let enter = prompt('                                >>   P R E S S   E N T E R   <<                                ');
         console.clear();
         printOutro();
     }
-    // PRINT THE WARNINGS OF THE 4 NEEDS //
-    needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
-    printSubLine();
-    console.log();
-
+    
     // INTERACTION BREAKPOINT
     if( yoshi.health < 80 && yoshi.health > 75 ){
         interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
