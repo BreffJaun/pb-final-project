@@ -183,7 +183,7 @@ const yoshi = {
 const difficulty = [
     { Footmen: 3000 },   // => Hausdiener
     { Valet: 2000 },     // => Kammerdiener
-    { Butler: 500 },     // => (Chef-) Diener
+    { Butler: 1000 },     // => (Chef-) Diener
 ];
 
 // LET THE USER CHOOSE THE DIFFICULTY LEVEL
