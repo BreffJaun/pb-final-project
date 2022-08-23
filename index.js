@@ -284,18 +284,17 @@ let countdownForNeeds = () => {
     needs_terminal_warnings(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
     printSubLine();
     console.log();
-
+   
     // INTERACTION BREAKPOINT
     if( yoshi.health < 80 && yoshi.health > 75 ){
-        interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
-    }  
-    if( yoshi.health < 55 && yoshi.health > 50 ){
-        interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
-    }
-    if( yoshi.health < 25 && yoshi.health > 15 ){
-        interact(yoshi.food, yoshi.drink, yoshi.mood, yoshi.health);
+        interact();
+    }else if( yoshi.health < 55 && yoshi.health > 50 ){
+        interact();
+    }else if( yoshi.health < 25 && yoshi.health > 15 ){
+        interact();
     }     
 };
+
 
 const countdownMain = (setInterval(function () { countdownForNeeds() }, Object.values(difficulty[catchTheNumArr])));
 
