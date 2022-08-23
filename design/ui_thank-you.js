@@ -4,7 +4,7 @@ const prompt = promptSync();
 import chalk from 'chalk';
 // ==================================
 
-const printOutro = () => {
+const printThankYou = () => {
         const outro = prompt(`
                                         ●-=========xXx=========-●
     ==================================-●  " t a m a Y O S H I "  ●-==================================
@@ -22,8 +22,8 @@ const printOutro = () => {
 
 
 
-                                      we are really looking forward seeing
-                                      your projects.
+                                      we are really looking forward
+                                      to seeing your projects.
 
                                       
 
@@ -52,5 +52,5 @@ const printOutro = () => {
 `);
 };
 
-export default printOutro; 
+export default printThankYou; 
 
