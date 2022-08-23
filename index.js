@@ -237,7 +237,7 @@ let countdownForNeeds = () => {
 //                                     ('===============================================================================================')
         console.log(chalk.redBrightbold('                               You make me sick!  YOU ARE FIRED!                               '));
 //                          ('===============================================================================================')
-        let querry2 = prompt('                                >>   P R E S S   E N T E R   <<                                ');
+        let enter = prompt('                                >>   P R E S S   E N T E R   <<                                ');
         console.clear();
         printOutro();
     }
@@ -250,7 +250,7 @@ let countdownForNeeds = () => {
 //                                      ('===============================================================================================')
         console.log(chalk.redBright.bold('                           I didn`t have enough fun!  YOU ARE FIRED!                           '));
 //                        ('===============================================================================================')
-        let again = prompt('                                >>   P R E S S   E N T E R   <<                                ');
+        let enter = prompt('                                >>   P R E S S   E N T E R   <<                                ');
         console.clear();
         printOutro();
     }
@@ -263,7 +263,7 @@ let countdownForNeeds = () => {
 //                                      ('===============================================================================================')
         console.log(chalk.redBright.bold('                               I was too hungry!  YOU ARE FIRED!                               '));
 //                        ('===============================================================================================')
-        let again = prompt('                                >>   P R E S S   E N T E R   <<                                ');
+        let enter = prompt('                                >>   P R E S S   E N T E R   <<                                ');
         console.clear();
         printOutro();
     }
@@ -276,7 +276,7 @@ let countdownForNeeds = () => {
 //                                      ('===============================================================================================')
         console.log(chalk.redBright.bold('                              I got too thirsty!   YOU ARE FIRED!                              '));
 //                          ('===============================================================================================')
-        let querry2 = prompt('                                >>   P R E S S   E N T E R   <<                                ');
+        let enter = prompt('                                >>   P R E S S   E N T E R   <<                                ');
         console.clear();
         printOutro();
     }
