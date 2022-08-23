@@ -111,7 +111,7 @@ const yoshi = {
         if (this.mode === "Butler"){
             if (this.food < 81){
             this.food += 20
-            this.health -= 30
+            this.drink -= 30
             // console.log("let's do the Garfield way, you may kiss the paw now");
             this.services++
             }else {
@@ -122,7 +122,7 @@ const yoshi = {
         if (this.mode === "Valet"){
             if (this.food < 76){
             this.food += 25
-            this.health -= 25
+            this.drink -= 25
             // console.log("let's do the Garfield way, you may kiss the paw now");
             this.services++
             }else {
@@ -133,7 +133,7 @@ const yoshi = {
         if (this.mode === "Footmen"){
             if (this.food < 71){
             this.food += 30
-            this.health -= 20
+            this.drink -= 20
             // console.log("let's do the Garfield way, you may kiss the paw now");
             this.services++
             }else {
@@ -218,7 +218,7 @@ const yoshi = {
         if ( this.mode === "Butler" )
             if(this.drink < 91){
             this.drink += 10
-            this.health -= 30
+            this.food -= 30
             // console.log("just a little dropplet for my royal paw");
             this.services++
             }else {
@@ -228,7 +228,7 @@ const yoshi = {
         if ( this.mode === "Valet" )
             if(this.drink < 86){
             this.drink += 15
-            this.health -= 25
+            this.food -= 25
             // console.log("just a little dropplet for my royal paw");
             this.services++
             }else {
@@ -238,7 +238,7 @@ const yoshi = {
         if ( this.mode === "Footmen" )
             if(this.drink < 81){
             this.drink += 20
-            this.health -= 20
+            this.food -= 20
             // console.log("just a little dropplet for my royal paw");
             this.services++
             }else {
@@ -322,7 +322,7 @@ const yoshi = {
         if( this.mode === "Butler" ){
             if(this.mood < 81){
             this.mood += 20
-            this.health -= 30
+            this.food -= 30
             // console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
             this.services++
             }else {
@@ -333,7 +333,7 @@ const yoshi = {
         if( this.mode === "Valet" ){
             if(this.mood < 76){
             this.mood += 25
-            this.health -= 25
+            this.food -= 25
             // console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
             this.services++
             }else {
@@ -344,7 +344,7 @@ const yoshi = {
         if( this.mode === "Footmen" ){
             if(this.mood < 71){
             this.mood += 30
-            this.health -= 20
+            this.food -= 20
             // console.log("Finally I can continue watching 'How to sell drugs online (fast)'. Do not disturb me");
             this.services++
             }else {
