@@ -10,7 +10,6 @@ import yoshi from "../index.js"
 // yoshi.food, yoshi.drink, yoshi.mood, yoshi.health
 const needs_terminal_warnings = () => {
 
-// .....console.log('===============================================================================================')
 
 
     // E V E R Y T H I N G   I S   F I N E     
