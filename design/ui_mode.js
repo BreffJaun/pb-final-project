@@ -32,7 +32,7 @@ function printMode () {
         |                       |       |                       |       |                       |
         |  - - - -=xXx=- - - -  |       |  - - - -=xXx=- - - -  |       |  - - - -=xXx=- - - -  |
         |                       |       |                       |       |                       |
-        |  Enter { 1 } to start |       |  Enter { 2 } to start |       |  Enter { 3 } to start |
+        |  Enter 1 >> to start  |       |  Enter 2 >> to start  |       |  Enter 3 >> to start  |
         |                       |       |                       |       |                       |
         ●-=========xXx=========-●       ●-=========xXx=========-●       ●-=========xXx=========-● 
 
